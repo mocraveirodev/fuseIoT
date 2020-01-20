@@ -1,9 +1,33 @@
-body{
+*{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color:#fff;
+}
+
+/* HEADER */
+
+header .navbar{
+    padding-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+header img{
+    width: 10rem;
+}
+
+header .navbar-nav{
+    margin: 0 auto;
+}
+
+header .nav-item{
+    padding-top: 2rem;
+    margin-left: 2rem;
+}
+
+@media only screen and (max-width: 992px) {
+
 }
 
 main{
