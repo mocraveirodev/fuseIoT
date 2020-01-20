@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color:#fff;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+
+}
+
+.logo{
+    width: 15rem;
+    height: 15rem;
+}
+
+.title{
+    margin-bottom: 3rem;
+}
+
+.sub{
+    font-size: 1.3rem;
+    font-weight: 100;
+    padding: 0 10rem;
+    margin-bottom: 5rem;
+}
+
+.btn{
+    background-color: #f7583c;
+    color:#fff;
+    border-radius: 3rem;
+    padding: 0.6rem 3rem;
+}
+
+.modal-content{
+    border-radius: 1.5rem;
+}
+
+.modal-body{
+    padding: 2rem;
+}
+
+.modal h3{
+    color:#f7583c;
+    font-weight: 700;
+}
+
+.modal p{
+    color:#8f8b8b;
+    margin-bottom: 2rem;
+}
+
+.form-control{
+    border-radius: 3rem;
+}
+
+#message {
+    border-radius: 1.5rem;
+    resize: none;
+    margin-bottom: 2rem;
+}
+
+.btn:focus, .form-control:focus {
+    box-shadow: 0 0 0 .2rem rgba(247, 88, 60,.25);
+    border-color: #f7583c;
+}
