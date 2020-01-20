@@ -1,5 +1,5 @@
 <?php
-    $bg = "background: url('views/img/BG.jpg') no-repeat center center; background-size: cover;";
+    // $bg = "background: url('views/img/BG.jpg') no-repeat center center; background-size: cover;";
     include_once('views/includes/phpmailer.php');
     include_once('views/includes/smtp.php');
     include_once('views/includes/envio.php');
@@ -32,16 +32,26 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav flex-row justify-content-center">
-                    <a class="nav-item nav-link" href="#">IoT</a>
-                    <a class="nav-item nav-link" href="#">Soluções</a>
-                    <a class="nav-item nav-link" href="#">Contato</a>
+                    <a class="nav-item nav-link text-body" href="#">IoT</a>
+                    <a class="nav-item nav-link text-body" href="#">Soluções</a>
+                    <a class="nav-item nav-link text-body" href="#">Contato</a>
                 </div>
             </div>
         </div>
     </nav>
     </header>
-    <main style="<?= $bg ?>">
-        <img src="views/img/logo-fuse.svg" class="logo" alt="Logo Fuse IoT">
+    <!-- <main style="<?= $bg ?>"> -->
+    <main>
+        <section class="banner">
+            <div class="container">
+                <div class="banner-lead">
+                    <h1 class="banner-titulo">Vamos fazer seu negócio gerar ainda mais resultados</h1>
+                    <p class="banner-texto">A Fuse IoT é uma StartUp focada em tecnologias de IoT e Inteligência Artificial, que gera resultados com aprimoramento de processos visando a melhoria contínua do seu negócio.</p>
+                    <a href="" class="btn banner-btn btn-outline-success">Me ajude agora</a>
+                </div>
+            </div>
+        </section>
+        <!-- <img src="views/img/logo-fuse.svg" class="logo" alt="Logo Fuse IoT">
         <h1 class="title">SITE EM CONSTRUÇÃO</h1>
         <p class="sub d-none d-md-block">Enquanto preparamos nosso  site, saiba mais sobre a Fuse IoT, uma StartUp especializada em soluções IoT, que fornece transformação digital para empresas e pessoas que querem melhorar seus indicativos!</P>
         <button class="btn" data-toggle="modal" data-target="#modalContact">Entre em contato</button>
@@ -118,7 +128,7 @@
                 <td>NODE</td>
                 <td>RESULT</td>
             </tr>
-        </table>
+        </table> -->
 
     </main>
 
