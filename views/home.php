@@ -45,7 +45,7 @@
                 <div class="banner-lead">
                     <h1 class="banner-titulo titulo">Vamos fazer seu negócio gerar ainda mais resultados</h1>
                     <p class="banner-texto">A Fuse IoT é uma StartUp focada em tecnologias de IoT e Inteligência Artificial, que gera resultados com aprimoramento de processos visando a melhoria contínua do seu negócio.</p>
-                    <a href="" class="btn banner-btn btn-outline-success">Me ajude agora</a>
+                    <a href="" class="btn btn-padrao banner-btn btn-outline-success">Me ajude agora</a>
                 </div>
             </div>
         </section>
@@ -53,6 +53,17 @@
             <div class="container text-center">
                 <h3 class="titulo">Você está preparado para a evolução digital?</h3>
                 <h3 class="titulo">A FuseIoT te ajuda nessa!</h3>
+                <p class="iot">Com ecossistemas completos, entregamos uma solução única para sua necessidade. Ajudamos a controlar e monitorar ambientes remotos, evitando desperdícios, aumentando a segurança com dados relevantes que agilizam a tomada de decisões. Use a tecnologia como sua aliada, e tenha redução de perdas e aumento de receita.</p>
+                <div class="row text-left justify-content-between">
+                    <div class="col-6">
+                        <h5 class="titulo">Smartcities</h5>
+                        <p class="verticais">Soluções para cidades conectadas. Monitore e controle a iluminação pública, lixeiras inteligentes, smart parking e muito mais.</p>
+                        <a href="" class="btn btn-padrao btn-success">Quero saber mais</a>
+                    </div>
+                    <div class="col-6">
+                        <img class="bg-verticais" src="views/img/cities.svg" alt="">
+                    </div>
+                </div>
             </div>
 
         </section>
