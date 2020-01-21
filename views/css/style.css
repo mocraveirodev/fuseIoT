@@ -3,7 +3,11 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color:#6c757d;
+    color:#435561;
+}
+
+.titulo{
+    color: #2d2f63;
 }
 
 /* HEADER */
@@ -28,10 +32,9 @@ header .nav-item{
 
 /* BANNER */
 
-.banner{
+#banner{
     background: url('../img/Banner.svg') no-repeat center center;
     background-size: cover;
-    width: 100vw;
     height: 100vh;
     position: relative;
 }
@@ -50,85 +53,32 @@ header .nav-item{
 .banner-titulo{
     font-weight: 700;
     font-size: 2rem;
-    color: #1b1b7a;
 }
 
 .banner-texto{
     font-weight: 300;
-    font-size: 1rem;
     margin-top: 1rem;
 }
 
 .banner-btn{
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    font-size: 1rem;
     margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
 }
 
 @media only screen and (max-width: 992px) {
+    .banner-lead{
+        position: absolute;
+        left: 10%;
+        top: 20%;
+        width: 80%;
+    }
 
+    .banner-titulo{
+        font-size: 1.5rem;
+    }
 }
 
-/* main{
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-
-}
-
-.logo{
-    width: 15rem;
-    height: 15rem;
-}
-
-.title{
-    margin-bottom: 3rem;
-}
-
-.sub{
-    font-size: 1.3rem;
-    font-weight: 100;
-    padding: 0 10rem;
-    margin-bottom: 5rem;
-}
-
-.btn{
-    background-color: #f7583c;
-    color:#fff;
-    border-radius: 3rem;
-    padding: 0.6rem 3rem;
-}
-
-.modal-content{
-    border-radius: 1.5rem;
-}
-
-.modal-body{
-    padding: 2rem;
-}
-
-.modal h3{
-    color:#f7583c;
-    font-weight: 700;
-}
-
-.modal p{
-    color:#8f8b8b;
-    margin-bottom: 2rem;
-}
-
-.form-control{
-    border-radius: 3rem;
-}
-
-#message {
-    border-radius: 1.5rem;
-    resize: none;
-    margin-bottom: 2rem;
-}
-
-.btn:focus, .form-control:focus {
-    box-shadow: 0 0 0 .2rem rgba(247, 88, 60,.25);
-    border-color: #f7583c;
-} */
+/* IOT */

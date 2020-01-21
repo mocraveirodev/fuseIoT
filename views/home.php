@@ -1,5 +1,4 @@
 <?php
-    // $bg = "background: url('views/img/BG.jpg') no-repeat center center; background-size: cover;";
     include_once('views/includes/phpmailer.php');
     include_once('views/includes/smtp.php');
     include_once('views/includes/envio.php');
@@ -40,16 +39,22 @@
         </div>
     </nav>
     </header>
-    <!-- <main style="<?= $bg ?>"> -->
     <main>
-        <section class="banner">
+        <section id="banner">
             <div class="container">
                 <div class="banner-lead">
-                    <h1 class="banner-titulo">Vamos fazer seu negócio gerar ainda mais resultados</h1>
+                    <h1 class="banner-titulo titulo">Vamos fazer seu negócio gerar ainda mais resultados</h1>
                     <p class="banner-texto">A Fuse IoT é uma StartUp focada em tecnologias de IoT e Inteligência Artificial, que gera resultados com aprimoramento de processos visando a melhoria contínua do seu negócio.</p>
                     <a href="" class="btn banner-btn btn-outline-success">Me ajude agora</a>
                 </div>
             </div>
+        </section>
+        <section id="iot">
+            <div class="container text-center">
+                <h3 class="titulo">Você está preparado para a evolução digital?</h3>
+                <h3 class="titulo">A FuseIoT te ajuda nessa!</h3>
+            </div>
+
         </section>
         <!-- <img src="views/img/logo-fuse.svg" class="logo" alt="Logo Fuse IoT">
         <h1 class="title">SITE EM CONSTRUÇÃO</h1>
