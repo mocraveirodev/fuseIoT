@@ -21,6 +21,7 @@
 header .navbar{
     padding-bottom: 2rem;
     background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0.5rem 0.5rem 0 rgba(0,0,0,0.4);
 }
 
 header img{
@@ -96,10 +97,53 @@ header .nav-item{
     padding: 3rem 0;
 }
 
-#iot .col-6{
-    
+#iot .col-md-6{
+    width: 17rem;
+    height: 17rem;
+    margin-bottom: 5rem;
 }
 
 #iot .verticais{
     padding: 1rem 0;
+}
+
+#iot .bg-verticais{
+    height: 80%;
+}
+
+#iot .direita{
+    text-align: right;
+}
+
+#iot .esquerda{
+    text-align: left;
+}
+
+@media only screen and (max-width: 992px) {
+    #iot .container{
+        padding: 3rem 2rem;
+    }
+
+    #iot .direita,#iot .esquerda{
+        height: 60%;
+    }
+
+    #iot .col-md-6{
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    #iot .bg-verticais{
+        height: 60%;
+    }
+}
+
+/* SOLUÇÕES */
+
+#solucoes{
+    width: 100%;
+    height: auto;
+    position: relative;
 }

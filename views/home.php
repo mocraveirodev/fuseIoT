@@ -55,17 +55,53 @@
                 <h3 class="titulo">A FuseIoT te ajuda nessa!</h3>
                 <p class="iot">Com ecossistemas completos, entregamos uma solução única para sua necessidade. Ajudamos a controlar e monitorar ambientes remotos, evitando desperdícios, aumentando a segurança com dados relevantes que agilizam a tomada de decisões. Use a tecnologia como sua aliada, e tenha redução de perdas e aumento de receita.</p>
                 <div class="row text-left justify-content-between">
-                    <div class="col-6">
+                    <div class="col-md-6 order-md-1">
                         <h5 class="titulo">Smartcities</h5>
                         <p class="verticais">Soluções para cidades conectadas. Monitore e controle a iluminação pública, lixeiras inteligentes, smart parking e muito mais.</p>
                         <a href="" class="btn btn-padrao btn-success">Quero saber mais</a>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6 direita order-md-2">
                         <img class="bg-verticais" src="views/img/cities.svg" alt="">
+                    </div>
+                    <div class="col-md-6 order-md-4">
+                        <h5 class="titulo">Agrobusiness</h5>
+                        <p class="verticais">Aumente sua produtividade com monitoração climática e de solo, controle de temperatura e umidade, localização de ativos, rastreamento de bovino numa plataforma de gestão de fazendas.</p>
+                        <a href="" class="btn btn-padrao btn-success">Quero saber mais</a>
+                    </div>
+                    <div class="col-md-6 esquerda order-md-3">
+                        <img class="bg-verticais" src="views/img/boi.svg" alt="">
+                    </div>
+                    <div class="col-md-6 order-md-5 sizeResp">
+                        <h5 class="titulo">Health</h5>
+                        <p class="verticais">Evite desperdícios, reduza custos e riscos controlando a temperatura e o funcionamento de geladeiras de vacinas e medicamentos, tecidos e amostras, bolsas de sangue e plasma, para ambientes hospitalares, clínicas, medicina diagnóstica e centros de pesquisa.</p>
+                        <a href="" class="btn btn-padrao btn-success">Quero saber mais</a>
+                    </div>
+                    <div class="col-md-6 direita order-md-6">
+                        <img class="bg-verticais" src="views/img/health.svg" alt="">
+                    </div>
+                    <div class="col-md-6 order-md-8 sizeResp">
+                        <h5 class="titulo">Indústria 4.0</h5>
+                        <p class="verticais">Aumente a competitividade do seu negócio com melhora de eficiência operacional. Monitoração do funcionamento de máquinas e serviços otimizando manutenções preventivas, com controle de consumo elétrico, de água e gás.</p>
+                        <a href="" class="btn btn-padrao btn-success">Quero saber mais</a>
+                    </div>
+                    <div class="col-md-6 esquerda order-md-7">
+                        <img class="bg-verticais" src="views/img/ind.svg" alt="">
                     </div>
                 </div>
             </div>
-
+        </section>
+        <section id="solucoes">
+            <div class="carousel-solucoes">
+                <div class="solucao efeito">
+                    <h6 class="carousel-titulo">SOLUÇÕES</h6>
+                    <img src="views/img/c01.jpg" alt="Fuse Bov">
+                    <div class="carousel-texto">
+                        <h4 class="titulo-solucao">Fuse Bov</h4>
+                        <p class="texto-solucao">Solução para monitoramento e rastreamento de gado de corte gerando informações de localização, comportamento e comparativo com dados históricos compeltos de cada animal.</p>
+                        <a href="" class="btn btn-solucao btn-outline-success">Quero saber mais</a>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- <img src="views/img/logo-fuse.svg" class="logo" alt="Logo Fuse IoT">
         <h1 class="title">SITE EM CONSTRUÇÃO</h1>
