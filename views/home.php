@@ -25,7 +25,7 @@
     <header>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="/fuseIoT"><img src="views/img/LogoFusenav.svg" alt="Logo Fuse IoT"></a>
+            <a class="navbar-brand" href="/fuseIoT"><object class="header-logo" data="views/img/LogoFusenav.svg" type="image/svg+xml"></object></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -71,7 +71,7 @@
                     <div class="col-md-6 esquerda order-md-3">
                         <img class="bg-verticais" src="views/img/boi.svg" alt="">
                     </div>
-                    <div class="col-md-6 order-md-5 sizeResp">
+                    <div class="col-md-6 order-md-5">
                         <h5 class="titulo">Health</h5>
                         <p class="verticais">Evite desperdícios, reduza custos e riscos controlando a temperatura e o funcionamento de geladeiras de vacinas e medicamentos, tecidos e amostras, bolsas de sangue e plasma, para ambientes hospitalares, clínicas, medicina diagnóstica e centros de pesquisa.</p>
                         <a href="" class="btn btn-padrao btn-success">Quero saber mais</a>
@@ -79,7 +79,7 @@
                     <div class="col-md-6 direita order-md-6">
                         <img class="bg-verticais" src="views/img/health.svg" alt="">
                     </div>
-                    <div class="col-md-6 order-md-8 sizeResp">
+                    <div class="col-md-6 order-md-8">
                         <h5 class="titulo">Indústria 4.0</h5>
                         <p class="verticais">Aumente a competitividade do seu negócio com melhora de eficiência operacional. Monitoração do funcionamento de máquinas e serviços otimizando manutenções preventivas, com controle de consumo elétrico, de água e gás.</p>
                         <a href="" class="btn btn-padrao btn-success">Quero saber mais</a>
@@ -92,9 +92,9 @@
         </section>
         <section id="solucoes">
             <div class="carousel-solucoes">
-                <div class="solucao efeito">
+                <div class="solucao efeito bov">
                     <h6 class="carousel-titulo">SOLUÇÕES</h6>
-                    <img src="views/img/c01.jpg" class="carousel-img" alt="Fuse Bov">
+                    <!-- <img src="views/img/c01.jpg" class="carousel-img" alt="Fuse Bov"> -->
                     <img src="views/img/border.png" class="border-texto" alt="Borda do texto">
                     <div class="carousel-texto">
                         <h4 class="titulo-solucao">Fuse Bov</h4>
@@ -235,7 +235,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="views/includes/carousel.js"></script>
+    <script src="views/js/carousel.js"></script>
     <script>
         var msgid = 1;
         function GoSend() {

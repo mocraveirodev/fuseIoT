@@ -20,12 +20,11 @@
 /* HEADER */
 
 header .navbar{
-    padding-bottom: 2rem;
     background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 0 0.5rem 0.5rem 0 rgba(0,0,0,0.4);
 }
 
-header img{
+header .header-logo{
     width: 10rem;
 }
 
@@ -34,13 +33,13 @@ header .navbar-nav{
 }
 
 header .nav-item{
-    padding-top: 2rem;
     margin-left: 1.5rem;
 }
 
 /* BANNER */
 
 #banner{
+    background: ;
     background: url('../img/Banner.svg') no-repeat center center;
     background-size: cover;
     height: 100vh;
@@ -171,6 +170,13 @@ header .nav-item{
     to {opacity: 1}
 }
 
+#solucoes .bov{
+    background: url('../img/c01.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
 #solucoes .carousel-img{
     width: 100%;
     height: auto;    
@@ -238,4 +244,8 @@ header .nav-item{
 
 #solucoes .ativo{
     background-color: #fff;
+}
+
+@media only screen and (max-width: 992px) {
+
 }
