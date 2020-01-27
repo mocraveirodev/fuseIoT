@@ -94,7 +94,6 @@
             <div class="carousel-solucoes">
                 <div class="solucao efeito bov">
                     <h6 class="carousel-titulo">SOLUÇÕES</h6>
-                    <!-- <img src="views/img/c01.jpg" class="carousel-img" alt="Fuse Bov"> -->
                     <img src="views/img/border.png" class="border-texto" alt="Borda do texto">
                     <div class="carousel-texto">
                         <h4 class="titulo-solucao">Fuse Bov</h4>
@@ -102,19 +101,17 @@
                         <a href="" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
                     </div>
                 </div>
-                <div class="solucao efeito">
+                <div class="solucao efeito utilities">
                     <h6 class="carousel-titulo">SOLUÇÕES</h6>
-                    <img src="views/img/c02.jpg" class="carousel-img" alt="Fuse Utilities">
                     <img src="views/img/border.png" class="border-texto" alt="Borda do texto">
                     <div class="carousel-texto">
                         <h4 class="titulo-solucao">Fuse Utilities</h4>
-                        <p class="texto-solucao">Monitore o consumo de água, gás e energia elétrica e evite desperdícios, identifique vazamentos, aumente a segurança no trabalho e reduza custos.</p>
+                        <p class="texto-solucao mt-4 mb-4">Monitore o consumo de água, gás e <br>energia elétrica e evite desperdícios, identifique vazamentos, aumente a segurança no trabalho e reduza custos.<br></p>
                         <a href="" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
                     </div>
                 </div>
-                <div class="solucao efeito">
+                <div class="solucao efeito temp">
                     <h6 class="carousel-titulo">SOLUÇÕES</h6>
-                    <img src="views/img/c03.jpg" class="carousel-img" alt="Fuse Temp">
                     <img src="views/img/border.png" class="border-texto" alt="Borda do texto">
                     <div class="carousel-texto">
                         <h4 class="titulo-solucao">Fuse Temp</h4>
@@ -122,19 +119,17 @@
                         <a href="" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
                     </div>
                 </div>
-                <div class="solucao efeito">
+                <div class="solucao efeito track">
                     <h6 class="carousel-titulo">SOLUÇÕES</h6>
-                    <img src="views/img/c04.jpg" class="carousel-img" alt="Fuse Track">
                     <img src="views/img/border.png" class="border-texto" alt="Borda do texto">
                     <div class="carousel-texto">
                         <h4 class="titulo-solucao">Fuse Track</h4>
-                        <p class="texto-solucao">Saiba tudo sobre sua frota, rastreie seus ativos, otimize rotas, ganhe agilidade, reduza custos e tenha mais segurança sobre seus bens e serviços.</p>
+                        <p class="texto-solucao mt-4 mb-4">Saiba tudo sobre sua frota, rastreie seus ativos, otimize rotas, ganhe agilidade, reduza custos e tenha mais segurança sobre seus bens e serviços.</p>
                         <a href="" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
                     </div>
                 </div>
-                <div class="solucao efeito">
+                <div class="solucao efeito parking">
                     <h6 class="carousel-titulo">SOLUÇÕES</h6>
-                    <img src="views/img/c05.jpg" class="carousel-img" alt="Fuse Parking">
                     <img src="views/img/border.png" class="border-texto" alt="Borda do texto">
                     <div class="carousel-texto">
                         <h4 class="titulo-solucao">Fuse Parking</h4>

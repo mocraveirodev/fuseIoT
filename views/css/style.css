@@ -39,7 +39,6 @@ header .nav-item{
 /* BANNER */
 
 #banner{
-    background: ;
     background: url('../img/Banner.svg') no-repeat center center;
     background-size: cover;
     height: 100vh;
@@ -174,17 +173,40 @@ header .nav-item{
     background: url('../img/c01.jpg') no-repeat center center;
     background-size: cover;
     width: 100%;
-    height: auto;
+    height: 85vh;
 }
 
-#solucoes .carousel-img{
+#solucoes .utilities{
+    background: url('../img/c02.jpg') no-repeat center center;
+    background-size: cover;
     width: 100%;
-    height: auto;    
+    height: 85vh;
+}
+
+#solucoes .temp{
+    background: url('../img/c03.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 85vh;
+}
+
+#solucoes .track{
+    background: url('../img/c04.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 85vh;
+}
+
+#solucoes .parking{
+    background: url('../img/c05.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 85vh;
 }
 
 #solucoes .carousel-titulo{
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 50%;
     font-weight: 700;
     font-size: 1.5rem;
@@ -195,13 +217,13 @@ header .nav-item{
     width: 25rem;
     height: 22rem;
     position: absolute;
-    bottom: 28%;
+    bottom: 18%;
     left: 45%;
 }
 
 #solucoes .carousel-texto{
     position: absolute;
-    bottom: 30%;
+    bottom: 20%;
     left: 45%;
     padding: 3rem 3rem 2rem 4rem;
     color: #fff;
@@ -227,7 +249,7 @@ header .nav-item{
 
 #solucoes .carousel-controles{
     position: absolute;
-    bottom: 22%;
+    bottom: 12%;
     left: 50%;
 }
 
@@ -247,5 +269,54 @@ header .nav-item{
 }
 
 @media only screen and (max-width: 992px) {
+    #solucoes .carousel-titulo{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
+    #solucoes .bov{
+        background: url('../img/01_.jpg') no-repeat center center;
+    }
+    
+    #solucoes .utilities{
+        background: url('../img/02_.jpg') no-repeat center center;
+    }
+    
+    #solucoes .temp{
+        background: url('../img/03_.jpg') no-repeat center center;
+    }
+    
+    #solucoes .track{
+        background: url('../img/04_.jpg') no-repeat center center;
+    }
+    
+    #solucoes .parking{
+        background: url('../img/05_.jpg') no-repeat center center;
+    }
+
+    #solucoes .border-texto{
+        position: absolute;
+        top: 20%;
+        left: 7%;
+        width: 20rem;
+        height: 20rem;
+    }
+
+    #solucoes .carousel-texto{
+        position: absolute;
+        top: 25%;
+        left: 15%;
+        padding: 0;
+        color: #fff;
+        width: 17rem;
+    }
+
+    #solucoes .carousel-controles{
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
