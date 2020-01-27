@@ -87,7 +87,7 @@ header .nav-item{
 /* IOT */
 
 #iot .container{
-    padding: 3rem 12rem;
+    padding: 3rem 12rem 0 12rem;
 }
 
 #iot .iot{
@@ -120,11 +120,11 @@ header .nav-item{
 
 @media only screen and (max-width: 992px) {
     #iot .container{
-        padding: 3rem 2rem;
+        padding: 3rem 2rem 0 2rem;
     }
 
     #iot .direita,#iot .esquerda{
-        height: 60%;
+        margin-top: 2rem;
     }
 
     #iot .col-md-6{
@@ -133,10 +133,6 @@ header .nav-item{
         margin-bottom: 2rem;
         text-align: center;
     }
-
-    #iot .bg-verticais{
-        height: 60%;
-    }
 }
 
 /* SOLUÇÕES */
@@ -144,11 +140,11 @@ header .nav-item{
 #solucoes{
     width: 100%;
     height: auto;
+    z-index: -1;
     position: relative;  
 }
 
 #solucoes .solucao{
-    position: relative;
     display: none;
 }
 
@@ -173,61 +169,60 @@ header .nav-item{
     background: url('../img/c01.jpg') no-repeat center center;
     background-size: cover;
     width: 100%;
-    height: 85vh;
+    height: 100vh;
 }
 
 #solucoes .utilities{
     background: url('../img/c02.jpg') no-repeat center center;
     background-size: cover;
     width: 100%;
-    height: 85vh;
+    height: 100vh;
 }
 
 #solucoes .temp{
     background: url('../img/c03.jpg') no-repeat center center;
     background-size: cover;
     width: 100%;
-    height: 85vh;
+    height: 100vh;
 }
 
 #solucoes .track{
     background: url('../img/c04.jpg') no-repeat center center;
     background-size: cover;
     width: 100%;
-    height: 85vh;
+    height: 100vh;
 }
 
 #solucoes .parking{
     background: url('../img/c05.jpg') no-repeat center center;
     background-size: cover;
     width: 100%;
-    height: 85vh;
+    height: 100vh;
 }
 
 #solucoes .carousel-titulo{
-    position: absolute;
-    top: 10%;
-    left: 50%;
+    padding-top: 8%;
+    padding-left: 50%;
     font-weight: 700;
     font-size: 1.5rem;
     color: #1ca14b;
 }
 
 #solucoes .border-texto{
-    width: 25rem;
+    width: 30rem;
     height: 22rem;
-    position: absolute;
-    bottom: 18%;
-    left: 45%;
+    margin-left: 43%;
+    margin-top: 2%;
 }
 
 #solucoes .carousel-texto{
-    position: absolute;
-    bottom: 20%;
-    left: 45%;
-    padding: 3rem 3rem 2rem 4rem;
+    background: url('../img/border.png') no-repeat left top;
+    background-size: contain;
+    padding: 2rem 6rem 3rem 6rem;
     color: #fff;
-    width: 25rem;
+    width: 30rem;
+    margin-left: 43%;
+    margin-top: 2%;
 }
 
 #solucoes .titulo-solucao{
@@ -249,8 +244,11 @@ header .nav-item{
 
 #solucoes .carousel-controles{
     position: absolute;
-    bottom: 12%;
+    bottom: 17%;
     left: 50%;
+    /* padding-bottom: 15%; */
+    /* margin: -10%; */
+    /* z-index: 3; */
 }
 
 #solucoes .controle{
@@ -319,4 +317,16 @@ header .nav-item{
         left: 50%;
         transform: translate(-50%, -50%);
     }
+}
+
+/* NÃO ENCONTROU */
+
+.naoEncontrou{
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    background-color: #1ca14b;
+    border-radius: 1rem;
+    padding: 2rem;
+    z-index: 3;
 }

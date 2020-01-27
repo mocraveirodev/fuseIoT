@@ -94,7 +94,6 @@
             <div class="carousel-solucoes">
                 <div class="solucao efeito bov">
                     <h6 class="carousel-titulo">SOLUÇÕES</h6>
-                    <img src="views/img/border.png" class="border-texto" alt="Borda do texto">
                     <div class="carousel-texto">
                         <h4 class="titulo-solucao">Fuse Bov</h4>
                         <p class="texto-solucao">Solução para monitoramento e rastreamento de gado de corte gerando informações de localização, comportamento e comparativo com dados históricos compeltos de cada animal.</p>
@@ -103,7 +102,6 @@
                 </div>
                 <div class="solucao efeito utilities">
                     <h6 class="carousel-titulo">SOLUÇÕES</h6>
-                    <img src="views/img/border.png" class="border-texto" alt="Borda do texto">
                     <div class="carousel-texto">
                         <h4 class="titulo-solucao">Fuse Utilities</h4>
                         <p class="texto-solucao mt-4 mb-4">Monitore o consumo de água, gás e <br>energia elétrica e evite desperdícios, identifique vazamentos, aumente a segurança no trabalho e reduza custos.<br></p>
@@ -112,7 +110,6 @@
                 </div>
                 <div class="solucao efeito temp">
                     <h6 class="carousel-titulo">SOLUÇÕES</h6>
-                    <img src="views/img/border.png" class="border-texto" alt="Borda do texto">
                     <div class="carousel-texto">
                         <h4 class="titulo-solucao">Fuse Temp</h4>
                         <p class="texto-solucao">Solução completa para acompanhamento de temperatura, umidade, e contato binário (ligado/desligado, aberto/fechado), totalmente validável para hospitais e Inmetro.</p>
@@ -121,7 +118,6 @@
                 </div>
                 <div class="solucao efeito track">
                     <h6 class="carousel-titulo">SOLUÇÕES</h6>
-                    <img src="views/img/border.png" class="border-texto" alt="Borda do texto">
                     <div class="carousel-texto">
                         <h4 class="titulo-solucao">Fuse Track</h4>
                         <p class="texto-solucao mt-4 mb-4">Saiba tudo sobre sua frota, rastreie seus ativos, otimize rotas, ganhe agilidade, reduza custos e tenha mais segurança sobre seus bens e serviços.</p>
@@ -130,7 +126,6 @@
                 </div>
                 <div class="solucao efeito parking">
                     <h6 class="carousel-titulo">SOLUÇÕES</h6>
-                    <img src="views/img/border.png" class="border-texto" alt="Borda do texto">
                     <div class="carousel-texto">
                         <h4 class="titulo-solucao">Fuse Parking</h4>
                         <p class="texto-solucao">Monitore vagas de estacionamento ou locais de parada proibida, receba alertas em tempo real em caso de infração e controle o tráfego de veículos em locais de estudo.</p>
@@ -146,6 +141,11 @@
                 <span class="controle"></span>
             </div>
         </section>
+            <div class="naoEncontrou">
+                <h4 class="naoEncontrou-titulo">Não encontrou o que você procurava?</h4>
+                <p class="naoEncontrou-texto">Customizamos soluções sob medida para sua necessidade. Entre em contato e te ajudaremos a tornar a sua imaginação o limite para resolver problemas com IoT!</p>
+                <a href="" class="btn btn-padrao btn-naoEncontrou btn-outline-success">Quero saber mais</a>
+            </div>
         <!-- <img src="views/img/logo-fuse.svg" class="logo" alt="Logo Fuse IoT">
         <h1 class="title">SITE EM CONSTRUÇÃO</h1>
         <p class="sub d-none d-md-block">Enquanto preparamos nosso  site, saiba mais sobre a Fuse IoT, uma StartUp especializada em soluções IoT, que fornece transformação digital para empresas e pessoas que querem melhorar seus indicativos!</P>
