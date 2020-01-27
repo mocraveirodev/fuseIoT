@@ -141,11 +141,11 @@
                 <span class="controle"></span>
             </div>
         </section>
-            <div class="naoEncontrou">
-                <h4 class="naoEncontrou-titulo">Não encontrou o que você procurava?</h4>
-                <p class="naoEncontrou-texto">Customizamos soluções sob medida para sua necessidade. Entre em contato e te ajudaremos a tornar a sua imaginação o limite para resolver problemas com IoT!</p>
-                <a href="" class="btn btn-padrao btn-naoEncontrou btn-outline-success">Quero saber mais</a>
-            </div>
+                <div class="naoEncontrou">
+                    <h3 class="naoEncontrou-titulo">Não encontrou o que você procurava?</h3>
+                    <p class="naoEncontrou-texto">Customizamos soluções sob medida para sua necessidade. Entre em contato e te ajudaremos a tornar a sua imaginação o limite para resolver problemas com IoT!</p>
+                    <a href="" class="btn btn-padrao btn-naoEncontrou btn-secondary">Quero uma solução customizada</a>
+                </div>
         <!-- <img src="views/img/logo-fuse.svg" class="logo" alt="Logo Fuse IoT">
         <h1 class="title">SITE EM CONSTRUÇÃO</h1>
         <p class="sub d-none d-md-block">Enquanto preparamos nosso  site, saiba mais sobre a Fuse IoT, uma StartUp especializada em soluções IoT, que fornece transformação digital para empresas e pessoas que querem melhorar seus indicativos!</P>

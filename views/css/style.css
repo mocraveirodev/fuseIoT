@@ -244,7 +244,7 @@ header .nav-item{
 
 #solucoes .carousel-controles{
     position: absolute;
-    bottom: 17%;
+    bottom: 18%;
     left: 50%;
     /* padding-bottom: 15%; */
     /* margin: -10%; */
@@ -322,11 +322,33 @@ header .nav-item{
 /* NÃO ENCONTROU */
 
 .naoEncontrou{
-    margin: 0 auto;
+    margin: -3rem auto 0 auto;
     width: 60%;
     text-align: center;
     background-color: #1ca14b;
     border-radius: 1rem;
     padding: 2rem;
     z-index: 3;
+    /* position: absolute; */
+    /* bottom: 0;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+
+.naoEncontrou-titulo{
+    color: #fff;
+    font-weight: 700;
+    padding: 0 30%;
+}
+
+.naoEncontrou-texto{
+    color: #fff;
+    font-weight: 300;
+    padding: 0 10%;
+}
+
+.btn-naoEncontrou{
+    background-color: #303e48;
+    color: #fff;
+    margin-top: 2rem;
 }
