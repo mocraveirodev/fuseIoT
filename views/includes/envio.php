@@ -15,8 +15,10 @@
         $subject = $_REQUEST['subject'];
         $mailContato = $_REQUEST['email']; 
         $nomeContato = $_REQUEST['nome'];
+        $telefoneContato = $_REQUEST['telefone'];
+        $empresaContato = $_REQUEST['empresa'];
         $mensagemContato = $_REQUEST['message'];
-        $message = "Recebemos uma mensagem no site <br/><strong>Nome:</strong> $nomeContato<br/><strong>e-mail:</strong> $mailContato<br/><strong>mensagem:</strong> $mensagemContato";
+        $message = "Recebemos uma mensagem no site <br/><strong>Nome:</strong> $nomeContato<br/><strong>e-mail:</strong> $mailContato<br/><strong>Telefone:</strong> $telefoneContato<br/><strong>Empresa:</strong> $empresaContato<br/><strong>mensagem:</strong> $mensagemContato";
         if ( $from == "" || $toemail == "" ) {
             header("HTTP/1.1 500 WhatAreYouDoing");
             header("Content-Type: text/plain");

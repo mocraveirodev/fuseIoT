@@ -104,7 +104,7 @@
                     <h6 class="carousel-titulo">SOLUÇÕES</h6>
                     <div class="carousel-texto">
                         <h4 class="titulo-solucao">Fuse Utilities</h4>
-                        <p class="texto-solucao mt-4 mb-4">Monitore o consumo de água, gás e <br>energia elétrica e evite desperdícios, identifique vazamentos, aumente a segurança no trabalho e reduza custos.<br></p>
+                        <p class="texto-solucao mt-4 mb-md-4">Monitore o consumo de água, gás e <br>energia elétrica e evite desperdícios, identifique vazamentos, aumente a segurança no trabalho e reduza custos.<br></p>
                         <a href="" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
                     <h6 class="carousel-titulo">SOLUÇÕES</h6>
                     <div class="carousel-texto">
                         <h4 class="titulo-solucao">Fuse Track</h4>
-                        <p class="texto-solucao mt-4 mb-4">Saiba tudo sobre sua frota, rastreie seus ativos, otimize rotas, ganhe agilidade, reduza custos e tenha mais segurança sobre seus bens e serviços.</p>
+                        <p class="texto-solucao mt-4 mb-md-4">Saiba tudo sobre sua frota, rastreie seus ativos, otimize rotas, ganhe agilidade, reduza custos e tenha mais segurança sobre seus bens e serviços.</p>
                         <a href="" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
                     </div>
                 </div>
@@ -128,7 +128,7 @@
                     <h6 class="carousel-titulo">SOLUÇÕES</h6>
                     <div class="carousel-texto">
                         <h4 class="titulo-solucao">Fuse Parking</h4>
-                        <p class="texto-solucao">Monitore vagas de estacionamento ou locais de parada proibida, receba alertas em tempo real em caso de infração e controle o tráfego de veículos em locais de estudo.</p>
+                        <p class="texto-solucao mt-4">Monitore vagas de estacionamento ou locais de parada proibida, receba alertas em tempo real em caso de infração e controle o tráfego de veículos em locais de estudo.</p>
                         <a href="" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
                     </div>
                 </div>
@@ -141,11 +141,66 @@
                 <span class="controle"></span>
             </div>
         </section>
-                <div class="naoEncontrou">
-                    <h3 class="naoEncontrou-titulo">Não encontrou o que você procurava?</h3>
-                    <p class="naoEncontrou-texto">Customizamos soluções sob medida para sua necessidade. Entre em contato e te ajudaremos a tornar a sua imaginação o limite para resolver problemas com IoT!</p>
-                    <a href="" class="btn btn-padrao btn-naoEncontrou btn-secondary">Quero uma solução customizada</a>
+        <section id="contato">
+            <div class="naoEncontrou">
+                <h3 class="naoEncontrou-titulo">Não encontrou o que você procurava?</h3>
+                <p class="naoEncontrou-texto">Customizamos soluções sob medida para sua necessidade. Entre em contato e te ajudaremos a tornar a sua imaginação o limite para resolver problemas com IoT!</p>
+                <a href="" class="btn btn-padrao btn-naoEncontrou btn-secondary">Quero uma solução customizada</a>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 formulario">
+                        <h3 class="titulo">Contate-nos agora mesmo</h3>
+                        <form id="mailform" name="mailform">
+                            <div class="form-group">
+                                <input value="monica.craveiro@fuseiot.io" name="toemail" type="text" hidden />
+                            </div>
+                            <div class="form-group">
+                                <input value="contato@fuseiot.io" name="from" type="text" hidden />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="nome" id="nome" placeholder="Seu nome" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Seu e-mail" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Seu telefone"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="empresa" id="empresa" placeholder="Sua empresa"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto do contato"/>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Sua mensagem"></textarea>
+                            </div>
+                            <button type="button" id="sendemail" class="btn btn-padrao btn-success" onclick="GoSend();"><object class="btn-ctt" data="views/img/paper_plane-512.svg" type="image/svg+xml"></object> Enviar</button>
+                            <div class="form-group">
+                                <select class="form-control" name="sendmethod" hidden >
+                                    <option value="smtp" selected >SMTP</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="titulo">Onde estamos</h3>
+                        <p>SÃO PAULO</p>
+                        <br>
+                        <p>Av. Roque Petroni Jr., 850</p>
+                        <p>10º andar, Torre Jaceru</p>
+                        <p>Jd. das Acácias - 04707-000</p>
+                        <br>
+                        <p>Infos de contato</p>
+                        <p>contato@fuseiot.io</p>
+                        <p>+55 11 4200 - 8282</p>
+                        <br>
+                        <p></p>
+                    </div>
                 </div>
+            </div>
+        </section>
         <!-- <img src="views/img/logo-fuse.svg" class="logo" alt="Logo Fuse IoT">
         <h1 class="title">SITE EM CONSTRUÇÃO</h1>
         <p class="sub d-none d-md-block">Enquanto preparamos nosso  site, saiba mais sobre a Fuse IoT, uma StartUp especializada em soluções IoT, que fornece transformação digital para empresas e pessoas que querem melhorar seus indicativos!</P>
@@ -209,7 +264,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <table hidden id="msglog" border="1" bordercolor="#FFCC00" style="background-color:#FFFFCC" width="100%" cellpadding="3" cellspacing="3">
             <tr>
@@ -223,9 +278,22 @@
                 <td>NODE</td>
                 <td>RESULT</td>
             </tr>
-        </table> -->
+        </table>
 
     </main>
+    <footer>
+        <div class="container">
+            <div class="footer-cima">
+                <object class="" data="views/img/LogoFusefooter.svg" type="image/svg+xml"></object>
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item"><a href="" class="">Política de Privacidade</a></li>
+                    <li class="list-group-item"><a href="" class="">Informações Legais</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="footer-direitos">2020 FUSEIOT® | Todos os direitos reservados.</div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -270,6 +338,8 @@
                 postdata+="&sendmethod="+document.mailform.sendmethod.value;
                 postdata+="&nome="+document.mailform.nome.value;
                 postdata+="&email="+document.mailform.email.value;
+                postdata+="&telefone="+document.mailform.telefone.value;
+                postdata+="&empresa="+document.mailform.empresa.value;
                 postdata+="&message="+encodeURIComponent(document.mailform.message.value).replace("%20", "+");
             var url="<?=$_SERVER['PHP_SELF']; ?>";
             var request=new XMLHttpRequest();
@@ -287,9 +357,11 @@
                         } else {
                             RESULTcell.innerHTML="HTTP/1.1 "+request.status+" "+request.statusText+"<br /><br />"+request.responseText;
                             if(request.status == 200){
-                                $('#modalOk').modal('show');
+                                // $('#modalOk').modal('show');
+                                console.log("ok");
                             }else{
-                                $('#modalErro').modal('show');
+                                // $('#modalErro').modal('show');
+                                console.log("erro");
                             }
                         }
                     }

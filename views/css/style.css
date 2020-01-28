@@ -246,9 +246,6 @@ header .nav-item{
     position: absolute;
     bottom: 18%;
     left: 50%;
-    /* padding-bottom: 15%; */
-    /* margin: -10%; */
-    /* z-index: 3; */
 }
 
 #solucoes .controle{
@@ -268,60 +265,68 @@ header .nav-item{
 
 @media only screen and (max-width: 992px) {
     #solucoes .carousel-titulo{
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        padding: 8% 0 0 0;
+        text-align: center;
     }
 
     #solucoes .bov{
         background: url('../img/01_.jpg') no-repeat center center;
+        height: 80vh;
     }
     
     #solucoes .utilities{
         background: url('../img/02_.jpg') no-repeat center center;
+        height: 80vh;
     }
     
     #solucoes .temp{
         background: url('../img/03_.jpg') no-repeat center center;
+        height: 80vh;
     }
     
     #solucoes .track{
         background: url('../img/04_.jpg') no-repeat center center;
+        height: 80vh;
     }
     
     #solucoes .parking{
         background: url('../img/05_.jpg') no-repeat center center;
+        height: 80vh;
     }
-
-    #solucoes .border-texto{
-        position: absolute;
-        top: 20%;
-        left: 7%;
-        width: 20rem;
-        height: 20rem;
-    }
-
+    
     #solucoes .carousel-texto{
-        position: absolute;
-        top: 25%;
-        left: 15%;
+        margin: 2rem auto;
+        padding: 1.5rem 2rem;
+        width: 90%;
+        height: 80%;        
+        text-align: justify;
+    }
+
+    #solucoes .titulo-solucao{
+        font-size: 1.5rem;
         padding: 0;
-        color: #fff;
-        width: 17rem;
+    }
+    
+    #solucoes .texto-solucao{
+        font-size: 1rem;
+        margin-bottom: 4rem;
+    }
+    
+    #solucoes .btn-outline-success{
+        margin: 0 16%;
     }
 
     #solucoes .carousel-controles{
         position: absolute;
-        bottom: 5%;
+        bottom: 10%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 }
 
-/* NÃO ENCONTROU */
+/* CONTATO */
 
-.naoEncontrou{
+#contato .naoEncontrou{
     margin: -3rem auto 0 auto;
     width: 60%;
     text-align: center;
@@ -329,26 +334,78 @@ header .nav-item{
     border-radius: 1rem;
     padding: 2rem;
     z-index: 3;
-    /* position: absolute; */
-    /* bottom: 0;
-    left: 50%; */
-    /* transform: translate(-50%, -50%); */
 }
 
-.naoEncontrou-titulo{
+#contato .naoEncontrou-titulo{
     color: #fff;
     font-weight: 700;
     padding: 0 30%;
 }
 
-.naoEncontrou-texto{
+#contato .naoEncontrou-texto{
     color: #fff;
     font-weight: 300;
     padding: 0 10%;
 }
 
-.btn-naoEncontrou{
+#contato .btn-naoEncontrou{
     background-color: #303e48;
     color: #fff;
     margin-top: 2rem;
+}
+
+#contato .container{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+#contato .titulo{
+    margin-bottom: 2rem;
+}
+
+#contato .formulario{
+    padding: 0 2rem 0 9rem;
+}
+
+#contato input{
+    border-radius: 2rem;
+}
+
+#contato textarea{
+    border-radius: 1rem;
+    resize: none;
+}
+
+#contato .btn-ctt{
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+
+@media only screen and (max-width: 992px) {
+    #contato .naoEncontrou{
+        width: 90%;
+    }
+
+    #contato .naoEncontrou-titulo{
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    #contato .naoEncontrou-texto{
+        padding: 0;
+        text-align: justify;
+    }
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #323e48;
+}
+footer .footer-cima{
+    background-color: #323e48;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9rem 1rem 9rem;
 }
