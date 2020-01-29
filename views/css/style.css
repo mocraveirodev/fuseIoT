@@ -395,6 +395,15 @@ header .nav-item{
         padding: 0;
         text-align: justify;
     }
+
+    #contato .formulario{
+        padding: 0 2rem;
+    }
+
+    #contato .localizacao{
+        margin-top: 3rem;
+        padding: 0 2rem;
+    }
 }
 
 /* FOOTER */
@@ -402,10 +411,52 @@ header .nav-item{
 footer{
     background-color: #323e48;
 }
+
 footer .footer-cima{
-    background-color: #323e48;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 9rem 1rem 9rem;
+    padding: 2rem 9rem 0.5rem 9rem;
+}
+
+footer .footer-logo{
+    width: 7rem;
+}
+
+footer .footer-politica{
+    text-align: right;
+    list-style: none;
+}
+
+footer .footer-link{
+    font-size: 0.8rem;
+    font-weight: 700;
+    color:#435561;
+}
+
+footer hr{
+    margin: 0;
+    font-weight: 700;
+    border: 2px solid #435561;
+    margin: 0 9rem;
+}
+
+footer .footer-direitos{
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 1rem 0;
+}
+
+@media only screen and (max-width: 992px) {
+    footer .footer-cima{
+        padding: 1rem 2rem;
+    }
+
+    footer .footer-politica{
+        margin-top: 1rem;
+    }
+
+    footer hr{
+        margin: 0 2rem;
+    }
 }

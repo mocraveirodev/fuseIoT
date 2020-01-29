@@ -159,24 +159,24 @@
                                 <input value="contato@fuseiot.io" name="from" type="text" hidden />
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="nome" id="nome" placeholder="Seu nome" required>
+                                <input type="text" class="form-control" name="nome" id="nome" placeholder="Seu nome" required/>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Seu e-mail" required>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Seu e-mail" required/>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Seu telefone"/>
+                                <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Seu telefone" required/>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="empresa" id="empresa" placeholder="Sua empresa"/>
+                                <input type="text" class="form-control" name="empresa" id="empresa" placeholder="Sua empresa" required/>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto do contato"/>
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto do contato" required/>
                             </div>
                             <div class="form-group">
                                 <textarea class="form-control" id="message" name="message" rows="4" placeholder="Sua mensagem"></textarea>
                             </div>
-                            <button type="button" id="sendemail" class="btn btn-padrao btn-success" onclick="GoSend();"><object class="btn-ctt" data="views/img/paper_plane-512.svg" type="image/svg+xml"></object> Enviar</button>
+                            <button type="button" id="sendemail" class="btn btn-padrao btn-success" onclick="GoSend();"><object class="btn-ctt" data="views/img/paper_plane-512.svg" type="image/svg+xml"></object> Enviar contato</button>
                             <div class="form-group">
                                 <select class="form-control" name="sendmethod" hidden >
                                     <option value="smtp" selected >SMTP</option>
@@ -184,7 +184,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 localizacao">
                         <h3 class="titulo">Onde estamos</h3>
                         <p>SÃO PAULO</p>
                         <br>
@@ -284,10 +284,10 @@
     <footer>
         <div class="container">
             <div class="footer-cima">
-                <object class="" data="views/img/LogoFusefooter.svg" type="image/svg+xml"></object>
-                <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item"><a href="" class="">Política de Privacidade</a></li>
-                    <li class="list-group-item"><a href="" class="">Informações Legais</a></li>
+                <object class="footer-logo" data="views/img/LogoFusefooter.svg" type="image/svg+xml"></object>
+                <ul class="footer-politica">
+                    <li class=""><a href="" class="footer-link">Política de Privacidade</a></li>
+                    <li class=""><a href="" class="footer-link">Informações Legais</a></li>
                 </ul>
             </div>
             <hr>
