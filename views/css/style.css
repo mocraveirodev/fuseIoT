@@ -460,3 +460,23 @@ footer .footer-direitos{
         margin: 0 2rem;
     }
 }
+
+/* MODAL */
+
+.modal-content{
+    border-radius: 1.5rem;
+}
+
+.modal-body{
+    padding: 2rem;
+}
+
+.modal h3{
+    color:#2d2f63;
+    font-weight: 700;
+}
+
+.modal p{
+    color:#435561;
+    margin-bottom: 2rem;
+}
