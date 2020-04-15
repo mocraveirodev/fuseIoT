@@ -3,7 +3,10 @@
     class Conexao{
         private $host = 'mysql:host=50.62.209.154;dbname=fuseiot;port=3306'; //Caminho do BD
         private $user = 'user_fuse'; //Username
-        private $pass = 'kg3It8$8'; //senha
+        private $pass = '%Y5y8qx5'; //senha
+        // private $host = 'mysql:host=localhost;dbname=mex;port=3306'; //Caminho do BD
+        // private $user = 'root'; //Username
+        // private $pass = ''; //senha
 
         //Metodo para realizar a conexao
         protected function criarConexao(){

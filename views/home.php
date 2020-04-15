@@ -25,15 +25,16 @@
     <header id="header">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="/"><object class="header-logo" data="views/img/LogoFusenav.svg" type="image/svg+xml"></object></a>
+            <a class="navbar-brand" href="/"><img class="header-logo" src="views/img/LogoFusenav.svg" alt="Logo Fuse IoT"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav flex-row justify-content-center">
+                <div class="navbar-nav">
                     <a class="nav-item nav-link text-body" href="#iot">IoT</a>
                     <a class="nav-item nav-link text-body" href="#solucoes">Soluções</a>
                     <a class="nav-item nav-link text-body" href="#contato">Contato</a>
+                    <a class="nav-item nav-link text-body" href="#academy">Academy</a>
                 </div>
             </div>
         </div>
@@ -44,7 +45,7 @@
             <div class="container">
                 <div class="banner-lead">
                     <h1 class="banner-titulo titulo">Vamos fazer seu negócio gerar ainda mais resultados</h1>
-                    <p class="banner-texto">A Fuse IoT é uma StartUp focada em tecnologias de IoT e Inteligência Artificial, que gera resultados com aprimoramento de processos visando a melhoria contínua do seu negócio.</p>
+                    <p class="banner-texto">A <spam class="fuse">fuse</spam><spam class="iot"> | IoT</spam> é uma StartUp focada em tecnologias de IoT e Inteligência Artificial, que gera resultados com aprimoramento de processos visando a melhoria contínua do seu negócio.</p>
                     <a href="#contato" class="btn btn-padrao banner-btn btn-outline-success">Me ajude agora</a>
                 </div>
             </div>
@@ -177,7 +178,7 @@
                             <div class="form-group">
                                 <textarea class="form-control" id="message" name="message" rows="4" placeholder="Sua mensagem"></textarea>
                             </div>
-                            <button type="button" id="sendemail" class="btn btn-padrao btn-success" onclick="GoSend();"><object class="btn-ctt" data="views/img/paper_plane-512.svg" type="image/svg+xml"></object> Enviar contato</button>
+                            <button type="button" id="sendemail" class="btn btn-padrao btn-success" onclick="GoSend();"><img class="btn-ctt" src="views/img/paper_plane-512.svg" alt="Enviar"></img> Enviar contato</button>
                             <div class="form-group">
                                 <select class="form-control" name="sendmethod" hidden >
                                     <option value="smtp" selected >SMTP</option>
@@ -246,7 +247,7 @@
     <footer>
         <div class="container">
             <div class="footer-cima">
-                <object class="footer-logo" data="views/img/LogoFusefooter.svg" type="image/svg+xml"></object>
+                <img class="footer-logo" src="views/img/LogoFusefooter.svg" alt="Logo Fuse IoT"></img>
                 <ul class="footer-politica">
                     <li class=""><a href="/" class="footer-link">Política de Privacidade</a></li>
                     <li class=""><a href="/" class="footer-link">Informações Legais</a></li>
@@ -261,12 +262,12 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="views/js/carousel.js"></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         var divHeight;
-        var obj = document.querySelector('#header').outerHeight(true);
-        var body = document.querySelector('body');
+        var obj = document.querySelector('.navbar').offsetHeight;
+        var body = document.querySelector('html');
         body.setAttribute("style", `margin-top: ${obj}px`);
-    </script>
+    </script> -->
     <script>
         var msgid = 1;
         function GoSend() {
