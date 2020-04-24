@@ -1,35 +1,75 @@
+/* ==========================================| FONTES |========================================== */
+
+@font-face {
+    font-family: lato-bold;
+    src: local('fonts/Lato-Bold.ttf'), url('fonts/Lato-Bold.ttf');
+    src: url('fonts/Lato-Bold.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: lato-light;
+    src: local('fonts/Lato-Light.ttf'), url('fonts/Lato-Light.ttf');
+    src: url('fonts/Lato-Light.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: lato-regular;
+    src: local('fonts/Lato-Regular.ttf'), url('fonts/Lato-Regular.ttf');
+    src: url('fonts/Lato-Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: local('fonts/Roboto-Bold.ttf'), url('fonts/Roboto-Bold.ttf');
+    src: url('fonts/Roboto-Bold.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: roboto-light;
+    src: local('fonts/Roboto-Light.ttf'), url('fonts/Roboto-Light.ttf');
+    src: url('fonts/Roboto-Light.ttf') format('opentype');
+}
+@font-face {
+    font-family: roboto-medium;
+    src: local('fonts/Roboto-Medium.ttf'), url('fonts/Roboto-Medium.ttf');
+    src: url('fonts/Roboto-Medium.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: local('fonts/Roboto-Regular.ttf'), url('fonts/Roboto-Regular.ttf');
+    src: url('fonts/Roboto-Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: barlow-regular;
+    src: local('fonts/Barlow-Regular.ttf'), url('fonts/Barlow-Regular.ttf');
+    src: url('fonts/Barlow-Regular.ttf') format('opentype');
+}
+
+/* ==========================================| GERAL |========================================== */
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: roboto-light, sans-serif;
     font-size: 16px;
     color:#435561;
     box-sizing: border-box;
 }
 
 .titulo{
+    font-family: roboto-bold, sans-serif;
     color: #2d2f63;
 }
 
 .btn-padrao{
-    font-family: 'Lato', sans-serif;
+    font-family: lato-bold, sans-serif;
     padding: 0.5rem 1.5rem;
     border-radius: 2rem;
 }
 
-spam .fuse{
-    color: #212529;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-}
-
-spam .iot{
-    color: #435561;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-}
-
-/* HEADER */
+/* ==========================================| MENU |========================================== */
 
 header .navbar{
     background-color: rgba(255, 255, 255, 0.7);
@@ -38,6 +78,7 @@ header .navbar{
 
 header .header-logo{
     width: 10rem;
+    height: 3rem;
 }
 
 header .navbar-nav{
@@ -51,7 +92,7 @@ header .nav-item{
     margin-left: 1.5rem;
 }
 
-/* BANNER */
+/* ==========================================| BANNER |========================================== */
 
 #banner{
     background: url('../img/Banner.svg') no-repeat center center;
@@ -63,7 +104,7 @@ header .nav-item{
 .banner-lead{
     position: absolute;
     left: 20%;
-    top: 25%;
+    top: 20%;
     width: 25%;
     background-color: rgba(255, 255, 255, 0.8);
     padding:2rem;
@@ -86,7 +127,22 @@ header .nav-item{
     margin-top: 1rem;
 }
 
+/* ==========================================| IOT |========================================== */
+
+/* ==========================================| SOLUÇÕES |========================================== */
+
+/* ==========================================| CAROUSEL |========================================== */
+
+/* ==========================================| ACADEMY |========================================== */
+
+/* ==========================================| CONTATO |========================================== */
+
+/* ==========================================| RODAPÉ |========================================== */
+
+/* ==========================================| RESPONSIVO |========================================== */
+
 @media only screen and (max-width: 992px) {
+    /* BANNER */
     .banner-lead{
         position: absolute;
         left: 10%;
@@ -97,401 +153,4 @@ header .nav-item{
     .banner-titulo{
         font-size: 1.5rem;
     }
-}
-
-/* IOT */
-
-#iot .container{
-    padding: 3rem 12rem 0 12rem;
-}
-
-#iot .iot{
-    text-align: justify;
-    font-weight: 300;
-    padding: 3rem 0;
-}
-
-#iot .col-md-6{
-    width: 17rem;
-    height: 17rem;
-    margin-bottom: 5rem;
-}
-
-#iot .verticais{
-    padding: 1rem 0;
-}
-
-#iot .bg-verticais{
-    height: 80%;
-}
-
-#iot .direita{
-    text-align: right;
-}
-
-#iot .esquerda{
-    text-align: left;
-}
-
-@media only screen and (max-width: 992px) {
-    #iot .container{
-        padding: 3rem 2rem 0 2rem;
-    }
-
-    #iot .direita,#iot .esquerda{
-        margin-top: 2rem;
-    }
-
-    #iot .col-md-6{
-        width: 100%;
-        height: auto;
-        margin-bottom: 2rem;
-        text-align: center;
-    }
-}
-
-/* SOLUÇÕES */
-
-#solucoes{
-    width: 100%;
-    height: auto;
-    z-index: -1;
-    position: relative;  
-}
-
-#solucoes .solucao{
-    display: none;
-}
-
-#solucoes .efeito{
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-
-#solucoes .bov{
-    background: url('../img/c01.jpg') no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-}
-
-#solucoes .utilities{
-    background: url('../img/c02.jpg') no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-}
-
-#solucoes .temp{
-    background: url('../img/c03.jpg') no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-}
-
-#solucoes .track{
-    background: url('../img/c04.jpg') no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-}
-
-#solucoes .parking{
-    background: url('../img/c05.jpg') no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-}
-
-#solucoes .carousel-titulo{
-    padding-top: 8%;
-    padding-left: 50%;
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: #1ca14b;
-}
-
-#solucoes .border-texto{
-    width: 30rem;
-    height: 22rem;
-    margin-left: 43%;
-    margin-top: 2%;
-}
-
-#solucoes .carousel-texto{
-    background: url('../img/border.png') no-repeat left top;
-    background-size: contain;
-    padding: 2rem 6rem 3rem 6rem;
-    color: #fff;
-    width: 30rem;
-    margin-left: 43%;
-    margin-top: 2%;
-}
-
-#solucoes .titulo-solucao{
-    font-weight: 500;
-    color: #fff;
-    font-size: 2rem;
-    padding-bottom: 1rem;
-}
-
-#solucoes .texto-solucao{
-    font-weight: 300;
-    color: #fff;
-}
-
-#solucoes .btn-outline-success{
-    color: #fff;
-    border-width: 0.2rem;
-}
-
-#solucoes .carousel-controles{
-    position: absolute;
-    bottom: 18%;
-    left: 50%;
-}
-
-#solucoes .controle{
-    height: 0.5rem;
-    width: 0.5rem;
-    margin: 0 0.5rem;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    z-index: 1;
-}
-
-#solucoes .ativo{
-    background-color: #fff;
-}
-
-@media only screen and (max-width: 992px) {
-    #solucoes .carousel-titulo{
-        padding: 8% 0 0 0;
-        text-align: center;
-    }
-
-    #solucoes .bov{
-        background: url('../img/01_.jpg') no-repeat center center;
-        height: 80vh;
-    }
-    
-    #solucoes .utilities{
-        background: url('../img/02_.jpg') no-repeat center center;
-        height: 80vh;
-    }
-    
-    #solucoes .temp{
-        background: url('../img/03_.jpg') no-repeat center center;
-        height: 80vh;
-    }
-    
-    #solucoes .track{
-        background: url('../img/04_.jpg') no-repeat center center;
-        height: 80vh;
-    }
-    
-    #solucoes .parking{
-        background: url('../img/05_.jpg') no-repeat center center;
-        height: 80vh;
-    }
-    
-    #solucoes .carousel-texto{
-        margin: 2rem auto;
-        padding: 1.5rem 2rem;
-        width: 90%;
-        height: 80%;        
-        text-align: justify;
-    }
-
-    #solucoes .titulo-solucao{
-        font-size: 1.5rem;
-        padding: 0;
-    }
-    
-    #solucoes .texto-solucao{
-        font-size: 1rem;
-        margin-bottom: 4rem;
-    }
-    
-    #solucoes .btn-outline-success{
-        margin: 0 16%;
-    }
-
-    #solucoes .carousel-controles{
-        position: absolute;
-        bottom: 10%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
-
-/* CONTATO */
-
-#contato .naoEncontrou{
-    margin: -3rem auto 0 auto;
-    width: 60%;
-    text-align: center;
-    background-color: #1ca14b;
-    border-radius: 1rem;
-    padding: 2rem;
-    z-index: 3;
-}
-
-#contato .naoEncontrou-titulo{
-    color: #fff;
-    font-weight: 700;
-    padding: 0 30%;
-}
-
-#contato .naoEncontrou-texto{
-    color: #fff;
-    font-weight: 300;
-    padding: 0 10%;
-}
-
-#contato .btn-naoEncontrou{
-    background-color: #303e48;
-    color: #fff;
-    margin-top: 2rem;
-}
-
-#contato .container{
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-}
-
-#contato .titulo{
-    margin-bottom: 2rem;
-}
-
-#contato .formulario{
-    padding: 0 2rem 0 9rem;
-}
-
-#contato input{
-    border-radius: 2rem;
-}
-
-#contato textarea{
-    border-radius: 1rem;
-    resize: none;
-}
-
-#contato .btn-ctt{
-    width: 1rem;
-    margin-right: 0.5rem;
-}
-
-@media only screen and (max-width: 992px) {
-    #contato .naoEncontrou{
-        width: 90%;
-    }
-
-    #contato .naoEncontrou-titulo{
-        padding: 0;
-        margin-bottom: 2rem;
-    }
-
-    #contato .naoEncontrou-texto{
-        padding: 0;
-        text-align: justify;
-    }
-
-    #contato .formulario{
-        padding: 0 2rem;
-    }
-
-    #contato .localizacao{
-        margin-top: 3rem;
-        padding: 0 2rem;
-    }
-}
-
-/* FOOTER */
-
-footer{
-    background-color: #323e48;
-}
-
-footer .footer-cima{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 9rem 0.5rem 9rem;
-}
-
-footer .footer-logo{
-    width: 7rem;
-}
-
-footer .footer-politica{
-    text-align: right;
-    list-style: none;
-}
-
-footer .footer-link{
-    font-size: 0.8rem;
-    font-weight: 700;
-    color:#435561;
-}
-
-footer hr{
-    margin: 0;
-    font-weight: 700;
-    border: 2px solid #435561;
-    margin: 0 9rem;
-}
-
-footer .footer-direitos{
-    text-align: center;
-    font-size: 0.8rem;
-    padding: 1rem 0;
-}
-
-@media only screen and (max-width: 992px) {
-    footer .footer-cima{
-        padding: 1rem 2rem;
-    }
-
-    footer .footer-politica{
-        margin-top: 1rem;
-    }
-
-    footer hr{
-        margin: 0 2rem;
-    }
-}
-
-/* MODAL */
-
-.modal-content{
-    border-radius: 1.5rem;
-}
-
-.modal-body{
-    padding: 2rem;
-}
-
-.modal h3{
-    color:#2d2f63;
-    font-weight: 700;
-}
-
-.modal p{
-    color:#435561;
-    margin-bottom: 2rem;
 }

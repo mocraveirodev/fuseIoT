@@ -1,9 +1,11 @@
 <?php
+    session_start();
+
     class HomeController{
         public function acao($rotas){
             switch($rotas){
                 case "home":
-                    $this->viewHome(); //Alterando o metodo de chamadas para que traga todos os posts armazenados
+                    $this->viewHome();
                 break;
             }
         }
