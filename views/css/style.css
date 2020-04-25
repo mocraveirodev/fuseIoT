@@ -52,7 +52,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: roboto-light, sans-serif;
+    font-family: roboto-medium, sans-serif;
     font-size: 16px;
     color:#435561;
     box-sizing: border-box;
@@ -113,36 +113,229 @@ header .nav-item{
 }
 
 .banner-titulo{
-    font-weight: 700;
     font-size: 2rem;
 }
 
 .banner-texto{
-    font-weight: 300;
+    font-family: roboto-light, sans-serif;
     margin-top: 1rem;
 }
 
 .banner-btn{
-    font-weight: 700;
     margin-top: 1rem;
 }
 
 /* ==========================================| IOT |========================================== */
 
+#iot .container{
+    padding: 3rem 12rem 0 12rem;
+}
+
+#iot .iot{
+    padding: 3rem 0;
+}
+
+#iot .col-md-6{
+    height: 20rem;
+    margin: 1rem 0;
+}
+
+#iot .verticais{
+    padding: 1rem 0;
+}
+
+#iot .bg-verticais{
+    height: 80%;
+    width: 100%;
+}
+
 /* ==========================================| SOLUÇÕES |========================================== */
 
-/* ==========================================| CAROUSEL |========================================== */
+#carouselSolucoes{
+    width: 100%;
+    height: 80vh;
+}
+
+.carousel-inner, .carousel-item{
+    width: 100%;
+    height: 100%;
+}
+
+#solucoes .btn-outline-success{
+    color: #fff;
+    border-width: 0.2rem;
+    
+}
+
+.carousel-indicators{
+    margin-right: 2rem;
+}
+
+.carousel-indicators li{
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+}
+
+#solucoes .bov{
+    background: url('../img/bg1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#solucoes .utilities{
+    background: url('../img/bg2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#solucoes .temp{
+    background: url('../img/bg3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#solucoes .track{
+    background: url('../img/bg4.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#solucoes .parking{
+    background: url('../img/bg5.jpg') no-repeat center center;
+    background-size: cover;
+}
 
 /* ==========================================| ACADEMY |========================================== */
 
+#academy{
+    background: url('../img/academy.png') no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+}
+
+/* ==========================================| NÃO ENCONTROU |========================================== */
+
+.naoEncontrou{
+    margin: 3rem auto 0 auto;
+    width: 60%;
+    text-align: center;
+    background-color: #1ca14b;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.naoEncontrou-titulo{
+    color: #fff;
+    font-family: roboto-bold, sans-serif;
+    padding: 0 30%;
+}
+
+.naoEncontrou-texto{
+    color: #fff;
+    font-family: roboto-light, sans-serif;
+    padding: 0 10%;
+}
+
+.btn-naoEncontrou{
+    background-color: #303e48;
+    color: #fff;
+    margin-top: 2rem;
+}
+
 /* ==========================================| CONTATO |========================================== */
 
+#contato .container{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+#contato .formulario{
+    padding: 0 2rem 0 9rem;
+}
+
+#contato .titulo{
+    margin-bottom: 2rem;
+}
+
+#contato input{
+    border-radius: 2rem;
+    font-family: roboto-light, sans-serif;
+}
+
+#contato textarea{
+    border-radius: 1rem;
+    font-family: roboto-light, sans-serif;
+    resize: none;
+}
+
+/* ==========================================| MODAL CONTATO |========================================== */
+
+.modal-content{
+    border-radius: 1.5rem;
+}
+
+.modal-body{
+    padding: 2rem;
+}
+
+.modal h3{
+    color:#2d2f63;
+    font-weight: 700;
+}
+
+.modal p{
+    color:#435561;
+    margin-bottom: 2rem;
+}
+
 /* ==========================================| RODAPÉ |========================================== */
+
+footer{
+    background-color: #323e48;
+}
+
+footer .row{
+    padding: 2rem 10rem 0.5rem 10rem;
+}
+
+footer .footer-logo{
+    width: 7rem;
+    /* height: 3rem; */
+}
+
+footer .footer-politica{
+    text-align: right;
+    list-style: none;
+}
+
+footer .footer-politica a{
+    font-size: 0.8rem;
+    color:#435561;
+}
+
+footer hr{
+    margin: 0;
+    font-family: roboto-bold, sans-serif;
+    border: 2px solid #435561;
+    margin: 0 9rem;
+}
+
+footer .footer-direitos{
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 1rem 0;
+}
 
 /* ==========================================| RESPONSIVO |========================================== */
 
 @media only screen and (max-width: 992px) {
+    /* HEADER */
+
+    header .header-logo{
+        width: 10rem;
+        height: 2rem;
+    }
+
     /* BANNER */
+
     .banner-lead{
         position: absolute;
         left: 10%;
@@ -152,5 +345,100 @@ header .nav-item{
 
     .banner-titulo{
         font-size: 1.5rem;
+    }
+
+    /* IOT */
+
+    #iot .container{
+        padding: 3rem 2rem 0 2rem;
+    }
+
+    #iot .col-md-6{
+        text-align: center;
+    }
+
+    /* SOLUCOES */
+
+    .carousel-indicators{
+        margin: 0 auto;
+    }
+
+    #solucoes .btn-outline-success{
+        position: relative;
+        top: 65%;
+        left: 30%;
+    }
+
+    #solucoes .bov{
+        background: url('../img/01_.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    
+    #solucoes .utilities{
+        background: url('../img/02_.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    
+    #solucoes .temp{
+        background: url('../img/03_.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    
+    #solucoes .track{
+        background: url('../img/04_.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    
+    #solucoes .parking{
+        background: url('../img/05_.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    /* ACADEMY */
+
+    #academy{
+        background: url('../img/academyRESP.png') no-repeat center center;
+        background-size: cover;
+    }
+
+    /* NÃO ENCONTROU */
+
+    .naoEncontrou{
+        width: 90%;
+    }
+
+    .naoEncontrou-titulo{
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .naoEncontrou-texto{
+        padding: 0;
+        text-align: justify;
+    }
+
+    /* CONTATO */
+
+    #contato .formulario{
+        padding: 0 2rem;
+    }
+
+    #contato .localizacao{
+        margin-top: 3rem;
+        padding: 0 2rem;
+    }
+
+    /* FOOTER */
+
+    footer .row{
+        padding: 1rem 3rem;
+    }
+
+    footer .footer-politica{
+        margin-top: 1rem;
+    }
+
+    footer hr{
+        margin: 0 2rem;
     }
 }
