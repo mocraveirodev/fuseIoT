@@ -101,18 +101,43 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item bov active">
+                        <h4 class="carousel-titulo">SOLUÇÕES</h4>
+                        <div class="carousel-resp d-block d-sm-none">
+                            <h5 class="titulo-solucao">Fuse Bov</h5>
+                            <p class="texto-solucao">Solução para monitoramento e rastreamento de gado de corte gerando informações de localização, comportamento e comparativo com dados históricos compeltos de cada animal.</p>
+                        </div>
                         <a href="#contato" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
                     </div>
                     <div class="carousel-item utilities">
+                        <h4 class="carousel-titulo">SOLUÇÕES</h4>
+                        <div class="carousel-resp d-block d-sm-none">
+                            <h5 class="titulo-solucao">Fuse Utilities</h5>
+                            <p class="texto-solucao">Monitore o consumo de água, gás e energia elétrica e evite desperdícios, identifique vazamentos, aumente a segurança no trabalho e reduza custos.</p>
+                        </div>
                         <a href="#contato" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
                     </div>
                     <div class="carousel-item temp">
+                        <h4 class="carousel-titulo">SOLUÇÕES</h4>
+                        <div class="carousel-resp d-block d-sm-none">
+                            <h5 class="titulo-solucao">Fuse Temp</h5>
+                            <p class="texto-solucao">Solução completa para acompanhamento de temperatura, umidade, e contato binário (ligado/desligado, aberto/fechado), totalmente validável para hospitais e Inmetro.</p>
+                        </div>
                         <a href="#contato" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
                     </div>
                     <div class="carousel-item track">
+                        <h4 class="carousel-titulo">SOLUÇÕES</h4>
+                        <div class="carousel-resp d-block d-sm-none">
+                            <h5 class="titulo-solucao">Fuse Track</h5>
+                            <p class="texto-solucao">Saiba tudo sobre sua frota, rastreie seus ativos, otimize rotas, ganhe agilidade, reduza custos e tenha mais segurança sobre seus bens e serviços.</p>
+                        </div>
                         <a href="#contato" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
                     </div>
                     <div class="carousel-item parking">
+                        <h4 class="carousel-titulo">SOLUÇÕES</h4>
+                        <div class="carousel-resp d-block d-sm-none">
+                            <h5 class="titulo-solucao">Fuse Parking</h5>
+                            <p class="texto-solucao">Monitore vagas de estacionamento ou locais de parada proibida, receba alertas em tempo real em caso de infração e controle o tráfego de veículos em locais de estudo.</p>
+                        </div>
                         <a href="#contato" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
                     </div>
                 </div>

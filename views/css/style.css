@@ -367,10 +367,39 @@ footer .footer-direitos{
         margin: 0 auto;
     }
 
+    #solucoes .carousel-resp{
+        margin: 0 auto;
+        background: url('../img/border.png') no-repeat center center;
+        background-size: contain;
+        width: 70%;
+        height: 65%;
+    }
+
+    #solucoes .carousel-titulo{
+        font-family: roboto-bold, sans-serif;
+        text-align: center;
+        padding-top: 5%;
+        color: #1ca14b;
+    }
+
+    #solucoes .titulo-solucao{
+        padding-top: 1rem;
+        padding-left: 1rem;
+        color: #fff;
+        text-align: center;
+    }
+
+    #solucoes .texto-solucao{
+        padding: 1.3rem 1rem 0 1rem;
+        font-family: roboto-light, sans-serif;
+        /* text-align: justify; */
+        color: #fff;
+    }
+
     #solucoes .btn-outline-success{
         position: relative;
-        top: 65%;
-        left: 30%;
+        top: 75%;
+        left: 27%;
     }
 
     #solucoes .bov{
