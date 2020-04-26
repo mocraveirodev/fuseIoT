@@ -7,5 +7,10 @@
             $controller = new HomeController();
             $controller->acao($rotas);
         break;
+        case "academy":
+            include "controllers/AcademyController.php";
+            $controller = new AcademyController();
+            $controller->acao($rotas);
+        break;
     }
 ?>

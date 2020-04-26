@@ -154,7 +154,8 @@ header .nav-item{
 #carouselSolucoes{
     width: 100%;
     height: 80vh;
-    position: relative;
+    /* position: relative; */
+    z-index: 0;
 }
 
 .carousel-inner, .carousel-item{
@@ -162,13 +163,16 @@ header .nav-item{
     height: 100%;
 }
 
+/* #solucoes .carousel-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
 #solucoes .btn-outline-success{
     color: #fff;
     border-width: 0.2rem;
-    margin-right: 2rem;
-    position: absolute;
-    top: 60%;
-    left: 50%;
+    margin: 21% 30% 10% 50%;
 }
 
 .carousel-indicators{
@@ -328,6 +332,59 @@ footer .footer-direitos{
     padding: 1rem 0;
 }
 
+/* ==========================================| REDES SOCIAIS |========================================== */
+
+#redesSociais{
+    z-index: 1;
+}
+
+#redesSociais a {
+    position: fixed; /* Position them relative to the browser window */
+    left: -7.5rem; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 0.5rem;
+    width: 10rem; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+    text-align: right;
+}
+
+#redesSociais a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+#redesSociais .social-logo{
+    width: 2rem;
+    height: 1.5rem;
+}
+
+#linkedin {
+    bottom: 30%;
+    background-color: #282828;
+}
+
+#youtube {
+    bottom: 25%;
+    background-color: #282828; /* Blue */
+}
+
+#instagram {
+    bottom: 20%;
+    background-color: #282828; /* Red */
+}
+
+#facebook {
+    bottom: 15%;
+    background-color: #282828 /* Light Black */
+}
+
+#tiktok {
+    bottom: 10%;
+    background-color: #282828 /* Light Black */
+}
+
+
 /* ==========================================| RESPONSIVO |========================================== */
 
 @media only screen and (max-width: 992px) {
@@ -363,43 +420,38 @@ footer .footer-direitos{
 
     /* SOLUCOES */
 
-    .carousel-indicators{
-        margin: 0 auto;
+    #solucoes .carousel-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
-    #solucoes .carousel-resp{
+    .carousel-indicators{
         margin: 0 auto;
-        background: url('../img/border.png') no-repeat center center;
-        background-size: contain;
-        width: 70%;
-        height: 65%;
     }
 
     #solucoes .carousel-titulo{
         font-family: roboto-bold, sans-serif;
         text-align: center;
-        padding-top: 5%;
         color: #1ca14b;
     }
 
     #solucoes .titulo-solucao{
-        padding-top: 1rem;
-        padding-left: 1rem;
         color: #fff;
         text-align: center;
     }
 
     #solucoes .texto-solucao{
-        padding: 1.3rem 1rem 0 1rem;
+        border: 0.5rem solid #faad12;
+        border-radius: 1rem;
         font-family: roboto-light, sans-serif;
-        /* text-align: justify; */
         color: #fff;
+        margin: 0 4rem;
+        padding: 0.5rem;
     }
 
     #solucoes .btn-outline-success{
-        position: relative;
-        top: 75%;
-        left: 27%;
+        margin: 0 auto 2rem auto;
     }
 
     #solucoes .bov{
@@ -473,5 +525,17 @@ footer .footer-direitos{
 
     footer hr{
         margin: 0 2rem;
+    }
+
+    /* REDES SOCIAIS */
+
+    #redesSociais a {
+        left: -8.5rem;
+        width: 10rem;
+    }
+
+    #redesSociais .social-logo{
+        width: 0.8rem;
+        height: 0.8rem;
     }
 }
