@@ -58,9 +58,11 @@
     box-sizing: border-box;
 }
 
-/* html {
-    scroll-behavior: smooth;
-} */
+.erro{
+    font-family: lato-bold,sans-serif;
+    font-size: 1.2rem;
+    color: red;
+}
 
 .btn-login{
     position: absolute;
@@ -76,6 +78,21 @@
 
 .nav-link{
     padding-bottom: 0;
+}
+
+.navbarChange{
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0.5rem 0.5rem 0 rgba(0,0,0,0.4);
+}
+
+.navbar-collapse{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
 }
 
 /* ==========================================| INICIO |========================================== */
@@ -169,7 +186,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 4rem;
 }
 
 .habilidades{
@@ -182,7 +198,6 @@
 #trilhas{
     background: url('../img/Slide_logo_contorno_black.png') no-repeat center center;
     background-size: cover;
-    padding-top: 4rem;
 }
 
 .titulo-trilhas{
@@ -214,9 +229,31 @@ ul{
     height: 5rem;
 }
 
+/* ==========================================| MODAL |========================================== */
+
+.modal-header .close{
+    margin: 0;
+    padding: 0;
+}
+
+.modal-header{
+    align-items: center;
+}
+
+/* ==========================================| CURSOS |========================================== */
+
+.btn-menu{
+
+}
+
 /* ==========================================| RESPONSIVO |========================================== */
 
 @media only screen and (max-width: 992px) {
+    /* MENU */
+
+    .navbar-nav .nav-link{
+        padding: 0.5rem;
+    }
     /* INICIO */
 
     #inicio{

@@ -4,7 +4,7 @@
     include_once('views/includes/envio.php');
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,9 +19,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="views/css/styleAcademy.css">
 </head>
+<!-- <body data-spy="scroll" data-target=".navbar" data-offset="100" onscroll="scrollChange()"> -->
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
     <header>
-        <nav data-scroll-header class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <nav data-scroll-header class="navbar navbar-expand-lg navbar-dark navbarChange fixed-top">
             <div class="container">
                 <a data-scroll class="navbar-brand" href="/?"><img src="views/img/LogoFusefooter.svg" class="logonav" alt="Logo Fuse IoT"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +44,7 @@
                             <a data-scroll class="nav-link" href="#trilhas">Trilhas</a>
                         </li>
                     </ul>
-                    <a href="/?login" class="btn btn-outline-light">Login</a>
+                    <a href="" class="btn btn-outline-light" data-toggle="modal" data-target="#modalLogin">Login</a>
                 </div>
             </div>
         </nav>
@@ -189,10 +190,116 @@
         </section>
     </main>
 
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-between">
+                    <img src="views/img/LogoFusenav.svg" class="logonav" alt="Logo Fuse IoT">
+                    <h5 class="modal-title" id="modalLoginTitle">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="erro"><?php if(isset($_SESSION['errologin'])) echo $_SESSION['errologin'] ?></p>
+                    <form action="/?login" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Insira seu e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="senha">Senha:</label>
+                            <input type="password" class="form-control" id="senha" name="senha" placeholder="Insira sua senha" minlength="8" required>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="submit" class="btn btn-sm btn-success">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p class="sub">Esqueceu a senha ou é novo? <a href="/?alterasenha">Clique aqui</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalAltera" tabindex="-1" role="dialog" aria-labelledby="modalAlteraTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="views/img/LogoFusenav.svg" class="logonav" alt="Logo Fuse IoT">
+                    <h5 class="modal-title" id="modalAlteraTitle">Alterar Senha</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="erro"><?php if(isset($_SESSION['erroemail'])) echo $_SESSION['erroemail'] ?></p>
+                    <form action="/?novasenha" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="email">Informe o e-mail cadastrado:</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Insira seu e-mail" required>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="submit" class="btn btn-sm btn-success">Alterar Senha</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                <p class="sub">Lembrou a senha ou não é novo? <a href="" data-toggle="modal" data-target="#modalLogin">Clique aqui</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalSenha" tabindex="-1" role="dialog" aria-labelledby="modalSenhaTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="views/img/LogoFusenav.svg" class="logonav" alt="Logo Fuse IoT">
+                    <h5 class="modal-title" id="modalSenhaTitle">Alterar Senha</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="erro"><?php if(isset($_SESSION['errosenha'])) echo $_SESSION['errosenha'] ?></p>
+                    <form action="/?login" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="senha">Nova Senha:</label>
+                            <input type="password" class="form-control" id="senha" name="senha" placeholder="Insira a nova senha" minlength="8" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confsenha">Confirme a Senha:</label>
+                            <input type="password" class="form-control" id="confsenha" name="confsenha" placeholder="Confirme a nova senha" minlength="8" required>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="submit" class="btn btn-sm btn-success">Alterar Senha</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                <p class="sub">Lembrou a senha ou não é novo? <a href="" data-toggle="modal" data-target="#modalLogin">Clique aqui</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="./views/js/smoothscroll.js"></script>
+    <!-- <script src="./views/js/scrollchange.js"></script> -->
+    <?php
+        if($_SESSION['errologin'] != ""){
+            echo "<script>$('#modalLogin').modal('show');</script>";
+        }
+        if(isset($_SESSION['alterasenha'])){
+            if($_SESSION['alterasenha'] == "email"){
+                echo "<script>$('#modalAltera').modal('show');</script>";
+            }
+            if($_SESSION['alterasenha'] == "senha"){
+                echo "<script>$('#modalSenha').modal('show');</script>";
+            }
+        }
+    ?>
 </body>
 </html>

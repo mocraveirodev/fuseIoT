@@ -11,6 +11,12 @@
         }
 
         private function viewHome(){
+            if(isset($_SESSION['usuario'])){
+                $_SESSION['errologin'] = "";
+                $_SESSION['erroemail'] = "";
+                $_SESSION['errosenha'] = "";
+                $_SESSION['alterasenha'] = "";
+            }
             include "views/home.php";
         }
     }
