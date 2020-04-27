@@ -1,0 +1,254 @@
+/* ==========================================| FONTES |========================================== */
+
+@font-face {
+    font-family: lato-bold;
+    src: local('fonts/Lato-Bold.ttf'), url('fonts/Lato-Bold.ttf');
+    src: url('fonts/Lato-Bold.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: lato-light;
+    src: local('fonts/Lato-Light.ttf'), url('fonts/Lato-Light.ttf');
+    src: url('fonts/Lato-Light.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: lato-regular;
+    src: local('fonts/Lato-Regular.ttf'), url('fonts/Lato-Regular.ttf');
+    src: url('fonts/Lato-Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: local('fonts/Roboto-Bold.ttf'), url('fonts/Roboto-Bold.ttf');
+    src: url('fonts/Roboto-Bold.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: roboto-light;
+    src: local('fonts/Roboto-Light.ttf'), url('fonts/Roboto-Light.ttf');
+    src: url('fonts/Roboto-Light.ttf') format('opentype');
+}
+@font-face {
+    font-family: roboto-medium;
+    src: local('fonts/Roboto-Medium.ttf'), url('fonts/Roboto-Medium.ttf');
+    src: url('fonts/Roboto-Medium.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: local('fonts/Roboto-Regular.ttf'), url('fonts/Roboto-Regular.ttf');
+    src: url('fonts/Roboto-Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: barlow-regular;
+    src: local('fonts/Barlow-Regular.ttf'), url('fonts/Barlow-Regular.ttf');
+    src: url('fonts/Barlow-Regular.ttf') format('opentype');
+}
+
+/* ==========================================| GERAL |========================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: roboto-medium, sans-serif;
+    font-size: 16px;
+    color:#435561;
+    box-sizing: border-box;
+}
+
+.btn-login{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+/* ==========================================| MENU |========================================== */
+
+.logonav{
+    width: 7rem;
+}
+
+.nav-link{
+    padding-bottom: 0;
+}
+
+/* ==========================================| INICIO |========================================== */
+
+#inicio{
+    background: url('../img/BG.jpg') no-repeat center center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding-top: 4rem;
+}
+
+.bemvindo {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter;
+    display: inline-block;
+    position: relative;
+    animation-duration: 10s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+    color: #fff;
+}
+
+.bemvindo::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+}
+
+@keyframes typewriter {
+    0%, 100% {
+        width: 0;
+    }
+    20%, 80% {
+        width: 13em;
+    }
+}
+@keyframes caret {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.logofuse{
+    width: 3rem;
+    height: 5rem;
+}
+
+.brand{
+    color: #fff;
+    /* align-self: flex-start;
+    padding-left: 2rem; */
+}
+
+/* ==========================================| LEMA |========================================== */
+
+#lema{
+    background: url('../img/Slide_logo.png') no-repeat center center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lema{
+    font-family: roboto-bold, sans-serif;
+    padding-right: 20rem;
+    padding-left: 4rem;
+}
+
+/* ==========================================| HABILIDADES |========================================== */
+
+#habilidades{
+    background: url('../img/Slide_logo_contorno_esq.png') no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.habilidades{
+    width: 80%;
+    margin: 2rem 0;
+}
+
+/* ==========================================| TRILHAS |========================================== */
+
+#trilhas{
+    background: url('../img/Slide_logo_contorno_black.png') no-repeat center center;
+    background-size: cover;
+    padding-top: 4rem;
+}
+
+.titulo-trilhas{
+    color: #fff;
+    text-align: center;
+}
+
+.logotrilha{
+    width: 1.75rem;
+}
+
+.trilhas{
+    border: 0.5rem solid #2F528F;
+    padding: 0.5rem 1.5rem;
+    margin-top: 3rem;
+}
+
+.btn-block{
+    margin: 1rem 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.verticais{
+    width: 8rem;
+    height: 5rem;
+}
+
+/* ==========================================| RESPONSIVO |========================================== */
+
+@media only screen and (max-width: 992px) {
+    /* INICIO */
+
+    #inicio{
+        justify-content: center;
+    }
+
+    .bemvindo {
+        white-space: normal;
+        animation: none;
+        display: inline;
+        font-size: 2rem;
+    }
+    
+    .bemvindo::after {
+        content: "";
+        animation: none;
+    }
+
+    .brand{
+        align-self: center;
+        padding-left: 0;
+        font-family: roboto-light, sans-serif;
+    }
+
+    /* LEMA */
+
+    .lema{
+        font-family: roboto-medium, sans-serif;
+        padding-right: 8rem;
+        font-size: 1rem;
+    }
+
+    /* HABILIDADES */
+
+    #habilidades{
+        height: auto;
+    }
+
+}
