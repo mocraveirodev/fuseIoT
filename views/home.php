@@ -150,7 +150,7 @@
             </div>
         </section>
         <section id="academy" class="d-flex justify-content-center align-items-end">
-            <a href="/?goacademy" class="btn btn-padrao btn-success mb-5">Conheça a fuse | Academy</a>
+            <a href="/?goacademy" class="btn btn-padrao btn-academy btn-warning mb-5">Conheça a fuse | Academy</a>
         </section>
         <section id="naoEncontrou">
             <div class="naoEncontrou">
@@ -268,7 +268,7 @@
 
     <div id="redesSociais" class="social">
         <a href="https://www.linkedin.com/company/fuseiot/" id="linkedin" target="_blank">LinkedIn <img class="social-logo" src="views/img/linkedin.svg" alt="Logo LinkedIn"></img></a>
-        <a href="https://www.youtube.com/channel/UCriqvVHBLKsX_Oh3t5RrxLw" id="youtube" target="_blank">YouTube <img class="social-logo" src="views/img/youtube.svg" alt="Logo YouTube"></img></a>
+        <a href="https://www.youtube.com/c/fuseiotacademy" id="youtube" target="_blank">YouTube <img class="social-logo" src="views/img/youtube.svg" alt="Logo YouTube"></img></a>
         <a href="https://www.instagram.com/fuseiotacademy/" id="instagram" target="_blank">Instagram <img class="social-logo" src="views/img/instagram.svg" alt="Logo Instagram"></img></a>
         <a href="https://www.facebook.com/fuseiotacademy/" id="facebook" target="_blank">Facebook <img class="social-logo" src="views/img/facebook.svg" alt="Logo Facebook"></img></a>
         <a href="https://vm.tiktok.com/W6PMRo/" id="tiktok" target="_blank">TikTok <img class="social-logo" src="views/img/tiktok.svg" alt="Logo TikTok"></img></a>

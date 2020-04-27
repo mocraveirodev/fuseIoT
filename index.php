@@ -27,6 +27,11 @@
             $controller = new UsuarioController();
             $controller->acao($rotas);
         break;
+        case "logar":
+            include "controllers/UsuarioController.php";
+            $controller = new UsuarioController();
+            $controller->acao($rotas);
+        break;
         case "logout":
             include "controllers/UsuarioController.php";
             $controller = new UsuarioController();

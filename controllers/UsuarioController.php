@@ -5,11 +5,13 @@
 
     class UsuarioController{
 
-        // Direcionando para a pagina correta
         public function acao($rotas){
             switch($rotas){
                 case "login":
                     $this->loginUsuario();
+                break;
+                case "logar":
+                    $this->logarModal();
                 break;
                 case "alterasenha":
                     $this->alteraSenha();
@@ -61,46 +63,65 @@
         }
 
         private function logarUsuario(){
-            //Pegando dados do usuario
-            $email = $_POST['email'];
-            $senha = $_POST['senha'];
-            if($this->validaUsuario($email,$senha)){
-                $db = new Usuario(); //instancia usuario
-                $db->ultimoLogin($email);
-                $_SESSION['usuario'] = $db->recuperaUsuario($email); //Coloca dados do usuario na superglobal
-                $_SESSION['errologin'] = "";
-                header('Location:/?homecurso');
+            if($_POST){
+                $email = $_POST['email'];
+                $senha = $_POST['senha'];
+                if($this->validaUsuario($email,$senha)){
+                    $db = new Usuario();
+                    $db->ultimoLogin($email);
+                    $_SESSION['usuario'] = $db->recuperaUsuario($email);
+                    header('Location:/?homecurso');
+                }else{
+                    $_SESSION['errologin'] = "Email e/ou senha incorretos!";
+                    $_SESSION['erroemail'] = "";
+                    $_SESSION['errosenha'] = "";
+                    $_SESSION['alterasenha'] = "";
+                    header('Location:/?academy');
+                }
             }else{
-                $_SESSION['errologin'] = "Email e/ou senha incorretos!"; //Coloca mensagem de erro na superglobal
-                header('Location:/?academy'); //direciona pra pagina de login
+                $_SESSION['errologin'] = "logar";
+                $_SESSION['erroemail'] = "";
+                $_SESSION['errosenha'] = "";
+                $_SESSION['alterasenha'] = "";
+                header('Location:/?academy');
             }
         }
 
+        private function logarModal(){
+            $_SESSION['errologin'] = "";
+        }
+
         private function validaUsuario($email,$senha){
-            $db = new Usuario(); //instancia usuario
+            $db = new Usuario();
 
-            $usuario = $db->recuperaUsuario($email); //Pega dados do usuario
+            $usuario = $db->recuperaUsuario($email);
 
-            return password_verify($senha,$usuario->senha) ? true : false; //Valida se a senha esta correta
+            return password_verify($senha,$usuario->senha) ? true : false;
 
         }
 
         private function alteraSenha(){
-            $_SESSION['alterasenha'] = "email"; //Coloca mensagem de erro na superglobal
+            $_SESSION['errologin'] = "";
+            $_SESSION['alterasenha'] = "email";
+            $_SESSION['errosenha'] = "";
             header('Location:/?academy');
         }
 
         private function novaSenha(){
-            //Pegando dados do usuario
             $email = $_POST['email'];
-            $db = new Usuario(); //instancia usuario
-            $usuario = $db->recuperaUsuario($email); //Coloca dados do usuario na superglobal
+            $db = new Usuario();
+            $usuario = $db->recuperaUsuario($email);
             if($usuario->email == $email){
                 $_SESSION['altera'] = $email;
-                $_SESSION['alterasenha'] = "senha"; //Coloca mensagem de erro na superglobal
+                $_SESSION['errologin'] = "";
+                $_SESSION['errosenha'] = "";
+                $_SESSION['erroemail'] = "";
+                $_SESSION['alterasenha'] = "senha";
                 header('Location:/?academy');
             }else{
                 $_SESSION['alterasenha'] = "email";
+                $_SESSION['errologin'] = "";
+                $_SESSION['errosenha'] = "";
                 $_SESSION['erroemail'] = "Email incorreto ou não cadastrado!"; //Coloca mensagem de erro na superglobal
                 header('Location:/?academy');; //direciona pra pagina de login
             }

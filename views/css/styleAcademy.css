@@ -158,9 +158,9 @@
     padding-left: 2rem; */
 }
 
-/* ==========================================| LEMA |========================================== */
+/* ==========================================| OBJETIVO |========================================== */
 
-#lema{
+#objetivo{
     background: url('../img/Slide_logo.png') no-repeat center center;
     background-size: cover;
     height: 50vh;
@@ -170,7 +170,7 @@
     align-items: center;
 }
 
-.lema{
+.objetivo{
     font-family: roboto-bold, sans-serif;
     padding-right: 20rem;
     padding-left: 4rem;
@@ -242,8 +242,58 @@ ul{
 
 /* ==========================================| CURSOS |========================================== */
 
-.btn-menu{
 
+
+/* ==========================================| REDES SOCIAIS |========================================== */
+
+#redesSociais{
+    z-index: 1;
+}
+
+#redesSociais a {
+    position: fixed; /* Position them relative to the browser window */
+    left: -7.5rem; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 0.5rem;
+    width: 10rem; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+    text-align: right;
+}
+
+#redesSociais a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+#redesSociais .social-logo{
+    width: 2rem;
+    height: 1.5rem;
+}
+
+#linkedin {
+    bottom: 30%;
+    background-color: #282828;
+}
+
+#youtube {
+    bottom: 25%;
+    background-color: #282828; /* Blue */
+}
+
+#instagram {
+    bottom: 20%;
+    background-color: #282828; /* Red */
+}
+
+#facebook {
+    bottom: 15%;
+    background-color: #282828 /* Light Black */
+}
+
+#tiktok {
+    bottom: 10%;
+    background-color: #282828 /* Light Black */
 }
 
 /* ==========================================| RESPONSIVO |========================================== */
@@ -280,7 +330,7 @@ ul{
 
     /* LEMA */
 
-    .lema{
+    .objetivo{
         font-family: roboto-medium, sans-serif;
         padding-right: 8rem;
         font-size: 1rem;
@@ -292,4 +342,15 @@ ul{
         height: auto;
     }
 
+    /* REDES SOCIAIS */
+
+    #redesSociais a {
+        left: -8.5rem;
+        width: 10rem;
+    }
+
+    #redesSociais .social-logo{
+        width: 0.8rem;
+        height: 0.8rem;
+    }
 }

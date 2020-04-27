@@ -35,7 +35,7 @@
                             <a data-scroll class="nav-link" href="#inicio">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a data-scroll class="nav-link" href="#lema">Lema</a>
+                            <a data-scroll class="nav-link" href="#objetivo">Objetivo</a>
                         </li>
                         <li class="nav-item">
                             <a data-scroll class="nav-link" href="#habilidades">Habilidades</a>
@@ -57,8 +57,8 @@
             <img src="views/img/logofusebranco.png" class="logofuse d-none d-md-block" alt="Logo Fuse IoT">
             <p class="brand">Dare the status. Innovate with us.</p>
         </section>
-        <section id="lema">
-            <h2 class="lema"><i class="fas fa-fw fa-quote-left text-secondary"></i> Queremos habilitar o aluno para entender toda a cadeia de valor de IoT, fornecendo uma base sólida de conhecimento para a entrega de um produto final com qualidade e competitividade. <i class="fas fa-fw fa-quote-right text-secondary"></i></h2>
+        <section id="objetivo">
+            <h2 class="objetivo"><i class="fas fa-fw fa-quote-left text-secondary"></i> Queremos habilitar o aluno para entender toda a cadeia de valor de IoT, fornecendo uma base sólida de conhecimento para a entrega de um produto final com qualidade e competitividade. <i class="fas fa-fw fa-quote-right text-secondary"></i></h2>
         </section>
         <section id="habilidades">
             <img src="views/img/habilidades.png" class="habilidades" alt="Habilidades Academy">
@@ -244,7 +244,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                <p class="sub">Lembrou a senha ou não é novo? <a href="" data-toggle="modal" data-target="#modalLogin">Clique aqui</a>.</p>
+                <p class="sub">Lembrou a senha ou não é novo? <a href="/?logar">Clique aqui</a>.</p>
                 </div>
             </div>
         </div>
@@ -276,10 +276,18 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                <p class="sub">Lembrou a senha ou não é novo? <a href="" data-toggle="modal" data-target="#modalLogin">Clique aqui</a>.</p>
+                <p class="sub">Lembrou a senha ou não é novo? <a href="/?logar">Clique aqui</a>.</p>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="redesSociais" class="social">
+        <a href="https://www.linkedin.com/company/fuseiot/" id="linkedin" target="_blank">LinkedIn <img class="social-logo" src="views/img/linkedin.svg" alt="Logo LinkedIn"></img></a>
+        <a href="https://www.youtube.com/c/fuseiotacademy" id="youtube" target="_blank">YouTube <img class="social-logo" src="views/img/youtube.svg" alt="Logo YouTube"></img></a>
+        <a href="https://www.instagram.com/fuseiotacademy/" id="instagram" target="_blank">Instagram <img class="social-logo" src="views/img/instagram.svg" alt="Logo Instagram"></img></a>
+        <a href="https://www.facebook.com/fuseiotacademy/" id="facebook" target="_blank">Facebook <img class="social-logo" src="views/img/facebook.svg" alt="Logo Facebook"></img></a>
+        <a href="https://vm.tiktok.com/W6PMRo/" id="tiktok" target="_blank">TikTok <img class="social-logo" src="views/img/tiktok.svg" alt="Logo TikTok"></img></a>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -290,7 +298,12 @@
     <!-- <script src="./views/js/scrollchange.js"></script> -->
     <?php
         if($_SESSION['errologin'] != ""){
-            echo "<script>$('#modalLogin').modal('show');</script>";
+            if($_SESSION['errologin'] == "logar"){
+                $_SESSION['errologin'] = "";
+                echo "<script>$('#modalLogin').modal('show');</script>";
+            }else{
+                echo "<script>$('#modalLogin').modal('show');</script>";
+            }
         }
         if(isset($_SESSION['alterasenha'])){
             if($_SESSION['alterasenha'] == "email"){

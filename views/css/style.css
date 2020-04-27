@@ -223,6 +223,11 @@ header .nav-item{
     width: 100%;
 }
 
+.btn-academy{
+    font-size: 1.5rem;
+}
+
+
 /* ==========================================| NÃO ENCONTROU |========================================== */
 
 .naoEncontrou{
