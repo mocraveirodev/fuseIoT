@@ -19,27 +19,27 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="views/css/style.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="75">
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
     <header id="header">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav data-scroll-header class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#header"><img class="header-logo" src="views/img/LogoFusenav.svg" alt="Logo Fuse IoT"></a>
+            <a data-scroll class="navbar-brand" href="#header"><img class="header-logo" src="views/img/LogoFusenav.svg" alt="Logo Fuse IoT"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#iot">IoT</a>
+                        <a data-scroll class="nav-link" href="#iot">IoT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#solucoes">Soluções</a>
+                        <a data-scroll class="nav-link" href="#solucoes">Soluções</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#academy">Academy</a>
+                        <a data-scroll class="nav-link" href="#academy">Academy</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
+                        <a data-scroll class="nav-link" href="#contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -53,7 +53,7 @@
                 <div class="banner-lead">
                     <h1 class="banner-titulo titulo">Vamos fazer seu negócio gerar ainda mais resultados</h1>
                     <p class="banner-texto">A <span>fuse | IoT</span> é uma StartUp focada em tecnologias de IoT e Inteligência Artificial, que gera resultados com aprimoramento de processos visando a melhoria contínua do seu negócio.</p>
-                    <a href="#contato" class="btn btn-padrao banner-btn btn-outline-success">Me ajude agora</a>
+                    <a data-scroll href="#contato" class="btn btn-padrao banner-btn btn-outline-success">Me ajude agora</a>
                 </div>
             </div>
         </section>
@@ -66,7 +66,7 @@
                     <div class="col-md-6 order-md-1">
                         <h5 class="titulo">Smartcities</h5>
                         <p class="verticais">Soluções para cidades conectadas. Monitore e controle a iluminação pública, lixeiras inteligentes, smart parking e muito mais.</p>
-                        <a href="#contato" class="btn btn-padrao btn-success">Quero saber mais</a>
+                        <a data-scroll href="#contato" class="btn btn-padrao btn-success">Quero saber mais</a>
                     </div>
                     <div class="col-md-6 order-md-2">
                         <img class="bg-verticais" src="views/img/cities.svg" alt="">
@@ -74,7 +74,7 @@
                     <div class="col-md-6 order-md-4">
                         <h5 class="titulo">Agrobusiness</h5>
                         <p class="verticais">Aumente sua produtividade com monitoração climática e de solo, controle de temperatura e umidade, localização de ativos, rastreamento de bovino numa plataforma de gestão de fazendas.</p>
-                        <a href="#contato" class="btn btn-padrao btn-success">Quero saber mais</a>
+                        <a data-scroll href="#contato" class="btn btn-padrao btn-success">Quero saber mais</a>
                     </div>
                     <div class="col-md-6 order-md-3">
                         <img class="bg-verticais" src="views/img/boi.svg" alt="">
@@ -82,7 +82,7 @@
                     <div class="col-md-6 order-md-5">
                         <h5 class="titulo">Health</h5>
                         <p class="verticais">Evite desperdícios, reduza custos e riscos controlando a temperatura e o funcionamento de geladeiras de vacinas e medicamentos, tecidos e amostras, bolsas de sangue e plasma, para ambientes hospitalares, clínicas, medicina diagnóstica e centros de pesquisa.</p>
-                        <a href="#contato" class="btn btn-padrao btn-success">Quero saber mais</a>
+                        <a data-scroll href="#contato" class="btn btn-padrao btn-success">Quero saber mais</a>
                     </div>
                     <div class="col-md-6 order-md-6">
                         <img class="bg-verticais" src="views/img/health.svg" alt="">
@@ -90,7 +90,7 @@
                     <div class="col-md-6 order-md-8">
                         <h5 class="titulo">Indústria 4.0</h5>
                         <p class="verticais">Aumente a competitividade do seu negócio com melhora de eficiência operacional. Monitoração do funcionamento de máquinas e serviços otimizando manutenções preventivas, com controle de consumo elétrico, de água e gás.</p>
-                        <a href="#contato" class="btn btn-padrao btn-success">Quero saber mais</a>
+                        <a data-scroll href="#contato" class="btn btn-padrao btn-success">Quero saber mais</a>
                     </div>
                     <div class="col-md-6 order-md-7">
                         <img class="bg-verticais" src="views/img/ind.svg" alt="">
@@ -112,31 +112,31 @@
                         <h4 class="carousel-titulo d-block d-sm-none">SOLUÇÕES</h4>
                         <h5 class="titulo-solucao d-block d-sm-none">Fuse Bov</h5>
                         <p class="texto-solucao d-block d-sm-none">Solução para monitoramento e rastreamento de gado de corte gerando informações de localização, comportamento e comparativo com dados históricos compeltos de cada animal.</p>
-                        <a href="#contato" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
+                        <a data-scroll href="#contato" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
                     </div>
                     <div class="carousel-item utilities">
                         <h4 class="carousel-titulo d-block d-sm-none">SOLUÇÕES</h4>
                         <h5 class="titulo-solucao d-block d-sm-none">Fuse Utilities</h5>
                         <p class="texto-solucao d-block d-sm-none">Monitore o consumo de água, gás e energia elétrica e evite desperdícios, identifique vazamentos, aumente a segurança no trabalho e reduza custos.</p>
-                        <a href="#contato" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
+                        <a data-scroll href="#contato" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
                     </div>
                     <div class="carousel-item temp">
                         <h4 class="carousel-titulo d-block d-sm-none">SOLUÇÕES</h4>
                         <h5 class="titulo-solucao d-block d-sm-none">Fuse Temp</h5>
                         <p class="texto-solucao d-block d-sm-none">Solução completa para acompanhamento de temperatura, umidade, e contato binário (ligado/desligado, aberto/fechado), totalmente validável para hospitais e Inmetro.</p>
-                        <a href="#contato" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
+                        <a data-scroll href="#contato" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
                     </div>
                     <div class="carousel-item track">
                         <h4 class="carousel-titulo d-block d-sm-none">SOLUÇÕES</h4>
                         <h5 class="titulo-solucao d-block d-sm-none">Fuse Track</h5>
                         <p class="texto-solucao d-block d-sm-none">Saiba tudo sobre sua frota, rastreie seus ativos, otimize rotas, ganhe agilidade, reduza custos e tenha mais segurança sobre seus bens e serviços.</p>
-                        <a href="#contato" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
+                        <a data-scroll href="#contato" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
                     </div>
                     <div class="carousel-item parking">
                         <h4 class="carousel-titulo d-block d-sm-none">SOLUÇÕES</h4>
                         <h5 class="titulo-solucao d-block d-sm-none">Fuse Parking</h5>
                         <p class="texto-solucao d-block d-sm-none">Monitore vagas de estacionamento ou locais de parada proibida, receba alertas em tempo real em caso de infração e controle o tráfego de veículos em locais de estudo.</p>
-                        <a href="#contato" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
+                        <a data-scroll href="#contato" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselSolucoes" role="button" data-slide="prev">
@@ -156,7 +156,7 @@
             <div class="naoEncontrou">
                 <h3 class="naoEncontrou-titulo">Não encontrou o que você procurava?</h3>
                 <p class="naoEncontrou-texto">Customizamos soluções sob medida para sua necessidade. Entre em contato e te ajudaremos a tornar a sua imaginação o limite para resolver problemas com IoT!</p>
-                <a href="#contato" class="btn btn-padrao btn-naoEncontrou btn-secondary">Quero uma solução customizada</a>
+                <a data-scroll href="#contato" class="btn btn-padrao btn-naoEncontrou btn-secondary">Quero uma solução customizada</a>
             </div>
         </section>
         <section id="contato">
@@ -257,8 +257,8 @@
             <div class="row justify-content-between align-items-center">
                 <img class="footer-logo" src="views/img/LogoFusefooter.svg" alt="Logo Fuse IoT"></img>
                 <ul class="footer-politica">
-                    <li class=""><a href="/">Política de Privacidade</a></li>
-                    <li class=""><a href="/">Informações Legais</a></li>
+                    <li class=""><a data-scroll href="#">Política de Privacidade<#a></li>
+                    <li class=""><a data-scroll href="#">Informações Legais</a></li>
                 </ul>
             </div>
             <hr>
@@ -277,5 +277,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="./views/js/smoothscroll.js"></script>
 </body>
 </html>

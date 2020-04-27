@@ -58,6 +58,10 @@
     box-sizing: border-box;
 }
 
+/* html {
+    scroll-behavior: smooth;
+} */
+
 .titulo{
     font-family: roboto-bold, sans-serif;
     color: #2d2f63;
