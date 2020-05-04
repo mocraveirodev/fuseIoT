@@ -20,16 +20,17 @@
     <link rel="stylesheet" href="views/css/styleAcademy.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
-    <main>
-        <section id="cursos">
-            <div class="top">
-                <h3 class="titulo-trilhas">
-                    <img src="views/img/logofuse.png" class="logotrilha" alt="Logo Fuse IoT"> 
-                    Trilhas de Aprendizagem
-                </h3>
-    
+    <header>
+    <nav data-scroll-header class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a data-scroll class="navbar-brand" href="/?"><img src="views/img/LogoFusenav.svg" class="logonav" alt="Logo Fuse IoT"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="dropdown">
-                    <a href="" class="btn btn-success btn-user dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a href="" class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Olá, <?=$_SESSION['usuario']->nome?>!
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -39,25 +40,33 @@
                         <a class="dropdown-item" href="/?logout">Logout</a>
                     </div>
                 </div>
+                </div>
             </div>
-
-            <div class="cursos">
-                <a href="/?conceitosbasicos" class="btn btn-primary">Conceitos Básicos</a>
-                <a class="btn btn-secondary disabled" aria-disabled="true">Conceitos de Hardware</a>
-                <a class="btn btn-secondary disabled" aria-disabled="true">Conceitos de Software</a>
-                <a class="btn btn-secondary disabled" aria-disabled="true">Conectividade</a>
-                <a class="btn btn-secondary disabled" aria-disabled="true">Segurança</a>
-                <a class="btn btn-secondary disabled" aria-disabled="true">Arquitetura - Cases</a>
-                <a class="btn btn-secondary disabled" aria-disabled="true">Legislação</a>
-                <a class="btn btn-secondary disabled" aria-disabled="true">Negócios</a>
-            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="layout">        
+            <nav class="menu-curso">
+                <button class="accordion">Conceitos Básicos</button>
+                <div class="panel">
+                    <ul>
+                        <li><a href="" class="menu-acc">História do IoT</a></li>
+                        <li><a href="" class="menu-acc">Casos de uso</a></li>
+                        <li><a href="" class="menu-acc">Eletrônica básica - I</a></li>
+                        <li><a href="" class="menu-acc">Telecom - Conectividade</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
         </section>
     </main>
+    
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="./views/js/smoothscroll.js"></script>
+    <script src="./views/js/accordion.js"></script>
 </body>
 </html>

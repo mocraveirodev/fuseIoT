@@ -60,7 +60,7 @@
         <section id="iot">
             <div class="container">
                 <h3 class="titulo text-center">Você está preparado para a evolução digital?</h3>
-                <h3 class="titulo text-center">A fuse | IoT te ajuda nessa!</h3>
+                <h3 class="titulo text-center">A <span>fuse | IoT</span> te ajuda nessa!</h3>
                 <p class="iot text-justify">Com ecossistemas completos, entregamos uma solução única para sua necessidade. Ajudamos a controlar e monitorar ambientes remotos, evitando desperdícios, aumentando a segurança com dados relevantes que agilizam a tomada de decisões. Use a tecnologia como sua aliada, e tenha redução de perdas e aumento de receita.</p>
                 <div class="row justify-content-between">
                     <div class="col-md-6 order-md-1">
@@ -271,7 +271,7 @@
         <a href="https://www.youtube.com/c/fuseiotacademy" id="youtube" target="_blank">YouTube <img class="social-logo" src="views/img/youtube.svg" alt="Logo YouTube"></img></a>
         <a href="https://www.instagram.com/fuseiotacademy/" id="instagram" target="_blank">Instagram <img class="social-logo" src="views/img/instagram.svg" alt="Logo Instagram"></img></a>
         <a href="https://www.facebook.com/fuseiotacademy/" id="facebook" target="_blank">Facebook <img class="social-logo" src="views/img/facebook.svg" alt="Logo Facebook"></img></a>
-        <a href="https://vm.tiktok.com/W6PMRo/" id="tiktok" target="_blank">TikTok <img class="social-logo" src="views/img/tiktok.svg" alt="Logo TikTok"></img></a>
+        <a href="https://www.tiktok.com/@fuseiotacademy" id="tiktok" target="_blank">TikTok <img class="social-logo" src="views/img/tiktok.svg" alt="Logo TikTok"></img></a>
     </div>
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

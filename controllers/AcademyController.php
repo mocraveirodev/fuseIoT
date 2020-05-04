@@ -13,6 +13,9 @@
                 case "homecurso":
                     $this->viewHomeCurso();
                 break;
+                case "conceitosbasicos":
+                    $this->viewConceitosBasicos();
+                break;
             }
         }
 
@@ -37,6 +40,13 @@
                 $_SESSION['alterasenha'] = "";
             }
             include "views/academy/homecurso.php";
+        }
+
+        private function viewConceitosBasicos(){
+            // $db = new Usuario();
+            // $prog = $db->cadastrarProgresso($_SESSION['usuario']->id);
+            $_SESSION['curso'] = "conceitosbasicos";
+            include "views/academy/layoutcurso.php";
         }
     }
 ?>

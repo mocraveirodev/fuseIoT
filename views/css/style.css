@@ -139,6 +139,10 @@ header .nav-item{
     padding: 3rem 0;
 }
 
+#iot span{
+    font-size: inherit;
+}
+
 #iot .col-md-6{
     height: 20rem;
     margin: 1rem 0;

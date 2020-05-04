@@ -60,9 +60,9 @@
             return $resultado;
         }
 
-        public function cadastrarUploads($nome,$sobrenome,$email){
+        public function cadastrarProgresso($id){
             $db = parent::criarConexao(); //Sintaxe para chamar um metodo da classe pai
-            $query = $db->prepare("INSERT INTO usuarios (nome,sobrenome,email) VALUES (?,?,?)"); //Prepara query para inserir dados no BD
+            $query = $db->prepare("INSERT INTO progresso (nome,sobrenome,email) VALUES (?,?,?)"); //Prepara query para inserir dados no BD
             return $query->execute([$nome,$sobrenome,$email]); //Executa query para inserir no BD
         }
     }
@@ -79,6 +79,16 @@ create table usuarios(
     email varchar(100) not null unique,
     senha varchar(100),
     criado_em TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    ultimo_login DATETIME
+);
+
+create table progresso(
+	id int primary key auto_increment,
+    id_aluno varchar(50) not null,
+    progresso varchar(100) not null,
+    email varchar(100) not null unique,
+    senha varchar(100),
+    comecou_em TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     ultimo_login DATETIME
 );
 

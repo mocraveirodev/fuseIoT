@@ -22,6 +22,11 @@
             $controller = new AcademyController();
             $controller->acao($rotas);
         break;
+        case "conceitosbasicos":
+            include "controllers/AcademyController.php";
+            $controller = new AcademyController();
+            $controller->acao($rotas);
+        break;
         case "login":
             include "controllers/UsuarioController.php";
             $controller = new UsuarioController();
