@@ -1,0 +1,192 @@
+/* ==========================================| FONTES |========================================== */
+
+@font-face {
+    font-family: lato-bold;
+    src: local('fonts/Lato-Bold.ttf'), url('fonts/Lato-Bold.ttf');
+    src: url('fonts/Lato-Bold.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: lato-light;
+    src: local('fonts/Lato-Light.ttf'), url('fonts/Lato-Light.ttf');
+    src: url('fonts/Lato-Light.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: lato-regular;
+    src: local('fonts/Lato-Regular.ttf'), url('fonts/Lato-Regular.ttf');
+    src: url('fonts/Lato-Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: local('fonts/Roboto-Bold.ttf'), url('fonts/Roboto-Bold.ttf');
+    src: url('fonts/Roboto-Bold.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: roboto-light;
+    src: local('fonts/Roboto-Light.ttf'), url('fonts/Roboto-Light.ttf');
+    src: url('fonts/Roboto-Light.ttf') format('opentype');
+}
+@font-face {
+    font-family: roboto-medium;
+    src: local('fonts/Roboto-Medium.ttf'), url('fonts/Roboto-Medium.ttf');
+    src: url('fonts/Roboto-Medium.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: local('fonts/Roboto-Regular.ttf'), url('fonts/Roboto-Regular.ttf');
+    src: url('fonts/Roboto-Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: barlow-regular;
+    src: local('fonts/Barlow-Regular.ttf'), url('fonts/Barlow-Regular.ttf');
+    src: url('fonts/Barlow-Regular.ttf') format('opentype');
+}
+
+/* ==========================================| GERAL |========================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: roboto-medium, sans-serif;
+    font-size: 16px;
+    color:#435561;
+    box-sizing: border-box;
+}
+
+/* ==========================================| CURSOS |========================================== */
+
+#cursos{
+    background: url('../img/Slide_logo.png') no-repeat center center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    padding: 4rem;
+}
+
+#cursos .cursos{
+    padding: 0.5rem 1.5rem;
+    margin-top: 3rem;
+}
+
+.logotrilha{
+    width: 1.75rem;
+}
+
+.cursos .btn{
+    margin: 1.5rem;
+    width: 30%;
+    height: 15%;
+}
+
+.cursos .disabled{
+    cursor: default;
+    pointer-events: none;
+    color: #fff;
+}
+
+.top{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+/* ==========================================| LAYOUT |========================================== */
+
+#layout{
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu-curso{
+    height: 100vh;
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+#layout .active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+#layout .active:after {
+    content: "\2796";
+}
+
+.panel ul{
+    list-style-type: none;
+    font-family: lato-bold, sans-serif;
+    margin: 1rem;
+}
+
+.menu-acc{
+    text-decoration: none;
+}
+
+.menu-acc:hover{
+    text-decoration: none;
+}
+
+/* ==========================================| RESPONSIVO |========================================== */
+
+@media only screen and (max-width: 992px) {
+    /* CURSOS */
+
+    #cursos{
+        padding: 1.5rem;
+    }
+
+    .top{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .titulo-trilhas{
+        margin-top: 3rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #cursos .trilhas{
+        margin-top: 0;
+    }
+
+    .trilhas .btn{
+        margin: 0.5rem;
+        width: 42%;
+        height: 10vh;
+    }
+}
