@@ -1,3 +1,3 @@
 <div class="base-rodape">
-    <p>Copyright - fuseiot.io</p>
+    <p>Copyright &#169;&#65039; - fuseiot.io</p>
 </div>

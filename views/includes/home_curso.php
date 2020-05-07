@@ -1,15 +1,15 @@
 <div class="caixa">
-    <h2 class="titulo"><span class="case"><i class="ico duvida"></i>Home</span> Seja Bem Vindo</h2>
+    <h2 class="titulo"><span class="case"><i class="ico duvida"></i>Home</span> Olá, <?=$_SESSION['usuario']->nome." ".$sobrenome[0]?>!</h2>
 </div>
 <div class="base-home">
     <div class="rows detalhes py-3">
         <div class="col-4">
             <figure class="caixa">
-                <div class="thumb"><img src="img/foto01.png"></div>
+                <div class="thumb"><img src="views/img/foto01.png"></div>
                 <figcaption>
-                        <strong>Manoel jailton</strong>
-                        <small><b>Seu tutor nos cursos</b></small>
-                        <small>mjaiton@gmail.com</small>
+                        <strong><?=$_SESSION['usuario']->nome." ".$sobrenome[0]?></strong>
+                        <!-- <small><b>Seu tutor nos cursos</b></small> -->
+                        <small><?=$_SESSION['usuario']->email?></small>
                 </figcaption>
             </figure>
         </div>
@@ -50,15 +50,14 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr><td><a href="curso.html">Curso de Java</a></td></tr>                   
-                                <tr><td><a href="curso.html">Curso de lógica de programação</a></td></tr> 
-                                <tr><td><a href="curso.html">Curso de frontend</a></td></tr> 
-                                <tr><td><a href="curso.html">Curso de android</a></td></tr> 
-                                <tr><td><a href="curso.html">Curso de PHP</a></td></tr> 
-                                <tr><td><a href="curso.html">Curso de Java</a></td></tr> 
-                                <tr><td><a href="curso.html">Curso de lógica de programação</a></td></tr> 
-                                <tr><td><a href="curso.html">Curso de frontend</a></td></tr> 
-                                <tr><td><a href="curso.html">Curso de android</a></td>		</tr> 		
+                                <tr><td><a href="curso.html">Conceitos Básicos</a></td></tr>
+                                <tr><td><a href="curso.html">Conceitos de Hardware</a></td></tr>
+                                <tr><td><a href="curso.html">Conceitos de Software</a></td></tr>
+                                <tr><td><a href="curso.html">Conectividade</a></td></tr>
+                                <tr><td><a href="curso.html">Segurança</a></td></tr>
+                                <tr><td><a href="curso.html">Arquitetura - Cases</a></td></tr>
+                                <tr><td><a href="curso.html">Legislação</a></td></tr>
+                                <tr><td><a href="curso.html">Negócios</a></td></tr>
                             </tbody>
                         </table>
                         </div>
@@ -127,12 +126,11 @@
                                     </table>
                                 </div>
                             </div>
-                            <a href="meus_cursos.html" class="btn btn-curso d-table">VER MEUS CURSOS</a>
+                            <a href="/?homecurso=1" class="btn btn-curso d-table">VER MEUS CURSOS</a>
                             
-                <!--	<div class="naoativo">
-                        <img src="img/nao-matriculado.png"><h2>Nenhuma aula assistida</h2>
-                    </div>
-                    -->
+                        <!-- <div class="naoativo">
+                            <img src="views/img/nao-matriculado.png"><h2>Nenhuma aula assistida</h2>
+                        </div> -->
                     </div>
             </div>
     </div>
