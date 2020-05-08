@@ -50,14 +50,14 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr><td><a href="curso.html">Conceitos Básicos</a></td></tr>
-                                <tr><td><a href="curso.html">Conceitos de Hardware</a></td></tr>
-                                <tr><td><a href="curso.html">Conceitos de Software</a></td></tr>
-                                <tr><td><a href="curso.html">Conectividade</a></td></tr>
-                                <tr><td><a href="curso.html">Segurança</a></td></tr>
-                                <tr><td><a href="curso.html">Arquitetura - Cases</a></td></tr>
-                                <tr><td><a href="curso.html">Legislação</a></td></tr>
-                                <tr><td><a href="curso.html">Negócios</a></td></tr>
+                                <tr><td><a href="/?homecurso=2">Conceitos Básicos</a></td></tr>
+                                <tr><td><a href="/?homecurso=2">Conceitos de Hardware</a></td></tr>
+                                <tr><td><a href="/?homecurso=2">Conceitos de Software</a></td></tr>
+                                <tr><td><a href="/?homecurso=2">Conectividade</a></td></tr>
+                                <tr><td><a href="/?homecurso=2">Segurança</a></td></tr>
+                                <tr><td><a href="/?homecurso=2">Arquitetura - Cases</a></td></tr>
+                                <tr><td><a href="/?homecurso=2">Legislação</a></td></tr>
+                                <tr><td><a href="/?homecurso=2">Negócios</a></td></tr>
                             </tbody>
                         </table>
                         </div>
@@ -83,44 +83,128 @@
                                         </thead>
                                         <tbody>
                                                 <tr>
-                                                    <td><i></i> Lógica de programaçao com PHP</td>
-                                                    <td align="center">12/05/2018</td>
+                                                    <td><i></i>História do IoT</td>
+                                                    <td align="center">01/05/2020</td>
                                                 </tr>
                                                 <tr>
-                                                    <td><i></i> Lógica de programaçao com PHP</td>
-                                                    <td align="center">12/05/2018</td>
+                                                    <td><i></i>Casos de uso</td>
+                                                    <td align="center">01/05/2020</td>
                                                 </tr>
                                                 <tr>
-                                                    <td><i></i> Lógica de programaçao com PHP</td>
-                                                    <td align="center">12/05/2018</td>
+                                                    <td><i></i>Eletrônica básica - I</td>
+                                                    <td align="center">01/05/2020</td>
                                                 </tr>
                                                 <tr>
-                                                    <td><i></i> Lógica de programaçao com PHP</td>
-                                                    <td align="center">12/05/2018</td>
+                                                    <td><i></i>Telecom - Conectividade</td>
+                                                    <td align="center">01/05/2020</td>
                                                 </tr>
                                                 <tr>
-                                                    <td><i></i> Lógica de programaçao com PHP</td>
-                                                    <td align="center">12/05/2018</td>
+                                                    <td><i></i>Eletrônica básica – II</td>
+                                                    <td align="center">01/05/2020</td>
                                                 </tr>
                                                 <tr>
-                                                    <td><i></i> Lógica de programaçao com PHP</td>
-                                                    <td align="center">12/05/2018</td>
+                                                    <td><i></i>Processadores e Controladores</td>
+                                                    <td align="center">01/05/2020</td>
                                                 </tr>
                                                 <tr>
-                                                    <td><i></i> Lógica de programaçao com PHP</td>
-                                                    <td align="center">12/05/2018</td>
+                                                    <td><i></i>Tipos de transmissão sem fio</td>
+                                                    <td align="center">01/05/2020</td>
                                                 </tr>
                                                 <tr>
-                                                    <td><i></i> Lógica de programaçao com PHP</td>
-                                                    <td align="center">12/05/2018</td>
+                                                    <td><i></i>Kits de Desenvolvimento</td>
+                                                    <td align="center">01/05/2020</td>
                                                 </tr>
                                                 <tr>
-                                                    <td><i></i> Lógica de programaçao com PHP</td>
-                                                    <td align="center">12/05/2018</td>
+                                                    <td><i></i>Arquitetura</td>
+                                                    <td align="center">01/05/2020</td>
                                                 </tr>
                                                 <tr>
-                                                    <td><i></i> Lógica de programaçao com PHP</td>
-                                                    <td align="center">12/05/2018</td>
+                                                    <td><i></i>Noções de programação</td>
+                                                    <td align="center">01/05/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i></i>Principais linguagens utilizadas</td>
+                                                    <td align="center">01/05/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i></i>Software Embarcado</td>
+                                                    <td align="center">01/05/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i></i>EdgeComputing</td>
+                                                    <td align="center">01/05/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i></i>Cloud e Blockchain</td>
+                                                    <td align="center">01/05/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i></i>Plataformas</td>
+                                                    <td align="center">01/05/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i></i>Conceitos de: LoRa, SigFox, NB-IoT, 2G, 3G, 4G e 5G, Zigbee, WiFi, BLE, NFC, RFiD, Satélite, UHF, Ultrasom</td>
+                                                    <td align="center">01/05/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i></i>Protocolos</td>
+                                                    <td align="center">01/05/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i></i>Codecs</td>
+                                                    <td align="center">01/05/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i></i>LGPD</td>
+                                                    <td align="center">01/05/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i></i>CiberSegurança</td>
+                                                    <td align="center">01/05/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i></i>Criptografia</td>
+                                                    <td align="center">01/05/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i></i>Avaliação de cenários</td>
+                                                    <td align="center">01/05/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i></i>Criação de ecossistemas</td>
+                                                    <td align="center">01/05/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i></i>Infraestrutura</td>
+                                                    <td align="center">01/05/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i></i>Propriedade Intelectual</td>
+                                                    <td align="center">01/05/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i></i>Homologação Anatel, Everynet, Inmetro, ONA, JCI, ANVISA e etc.</td>
+                                                    <td align="center">01/05/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i></i>Frequências Licenciadas e Não-Licenciadas</td>
+                                                    <td align="center">01/05/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i></i>Modelo CAPEX e OPEX</td>
+                                                    <td align="center">01/05/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i></i>Modelo SaaS e PaaS</td>
+                                                    <td align="center">01/05/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i></i>CX e UX</td>
+                                                    <td align="center">01/05/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i></i>ROI</td>
+                                                    <td align="center">01/05/2020</td>
                                                 </tr>
                                         </tbody>
                                     </table>

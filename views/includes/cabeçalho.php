@@ -7,14 +7,14 @@
         <ul class="menu-topo">
             <li class="sub"><a href=""><i class="ico cursos"></i>Cursos</a>
                 <ul>
-                    <li><a href="">Conceitos Básicos</a></li>
-                    <li><a href="">Conceitos de Hardware</a></li>
-                    <li><a href="">Conceitos de Software</a></li>
-                    <li><a href="">Conectividade</a></li>
-                    <li><a href="">Segurança</a></li>
-                    <li><a href="">Arquitetura - Cases</a></li>
-                    <li><a href="">Legislação</a></li>
-                    <li><a href="">Negócios</a></li>
+                    <li><a href="/?homecurso=2">Conceitos Básicos</a></li>
+                    <li><a href="/?homecurso=2">Conceitos de Hardware</a></li>
+                    <li><a href="/?homecurso=2">Conceitos de Software</a></li>
+                    <li><a href="/?homecurso=2">Conectividade</a></li>
+                    <li><a href="/?homecurso=2">Segurança</a></li>
+                    <li><a href="/?homecurso=2">Arquitetura - Cases</a></li>
+                    <li><a href="/?homecurso=2">Legislação</a></li>
+                    <li><a href="/?homecurso=2">Negócios</a></li>
                 </ul>
             </li>
             <li class="sub user"><a href="" class="thumb"><img src="views/img/foto01.png"></a>
