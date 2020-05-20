@@ -279,5 +279,74 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="./views/js/smoothscroll.js"></script>
+    <script>
+        var msgid = 1;
+        function GoSend() {
+            var table=document.getElementById("msglog");
+            var row = table.insertRow(1);
+            
+            var NUMcell = row.insertCell(0);
+            NUMcell.innerHTML=msgid++;
+            
+            var DATEcell = row.insertCell(1);
+            var d = new Date();
+            DATEcell.innerHTML=d.toLocaleTimeString();
+            
+            var TOcell = row.insertCell(2);
+            TOcell.innerHTML=document.mailform.toemail.value;
+            
+            var FROMcell = row.insertCell(3);
+            FROMcell.innerHTML=document.mailform.from.value;
+            
+            var SUBJECTcell = row.insertCell(4);
+            SUBJECTcell.innerHTML=document.mailform.subject.value;
+            
+            var MESSAGEcell = row.insertCell(5);
+            MESSAGEcell.innerHTML=document.mailform.message.value;
+            
+            var METHODcell = row.insertCell(6);
+            METHODcell.innerHTML=document.mailform.sendmethod.value;
+            
+            var NODEcell = row.insertCell(7);
+            
+            var RESULTcell = row.insertCell(8);
+            RESULTcell.innerHTML="<img height=\"24\" src=\"data:image/gif;base64,R0lGODlhEAAQAPYAAP///wAAANTU1JSUlGBgYEBAQERERG5ubqKiotzc3KSkpCQkJCgoKDAwMDY2Nj4+Pmpqarq6uhwcHHJycuzs7O7u7sLCwoqKilBQUF5eXr6+vtDQ0Do6OhYWFoyMjKqqqlxcXHx8fOLi4oaGhg4ODmhoaJycnGZmZra2tkZGRgoKCrCwsJaWlhgYGAYGBujo6PT09Hh4eISEhPb29oKCgqioqPr6+vz8/MDAwMrKyvj4+NbW1q6urvDw8NLS0uTk5N7e3s7OzsbGxry8vODg4NjY2PLy8tra2np6erS0tLKyskxMTFJSUlpaWmJiYkJCQjw8PMTExHZ2djIyMurq6ioqKo6OjlhYWCwsLB4eHqCgoE5OThISEoiIiGRkZDQ0NMjIyMzMzObm5ri4uH5+fpKSkp6enlZWVpCQkEpKSkhISCIiIqamphAQEAwMDKysrAQEBJqamiYmJhQUFDg4OHR0dC4uLggICHBwcCAgIFRUVGxsbICAgAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAAHjYAAgoOEhYUbIykthoUIHCQqLoI2OjeFCgsdJSsvgjcwPTaDAgYSHoY2FBSWAAMLE4wAPT89ggQMEbEzQD+CBQ0UsQA7RYIGDhWxN0E+ggcPFrEUQjuCCAYXsT5DRIIJEBgfhjsrFkaDERkgJhswMwk4CDzdhBohJwcxNB4sPAmMIlCwkOGhRo5gwhIGAgAh+QQJCgAAACwAAAAAEAAQAAAHjIAAgoOEhYU7A1dYDFtdG4YAPBhVC1ktXCRfJoVKT1NIERRUSl4qXIRHBFCbhTKFCgYjkII3g0hLUbMAOjaCBEw9ukZGgidNxLMUFYIXTkGzOmLLAEkQCLNUQMEAPxdSGoYvAkS9gjkyNEkJOjovRWAb04NBJlYsWh9KQ2FUkFQ5SWqsEJIAhq6DAAIBACH5BAkKAAAALAAAAAAQABAAAAeJgACCg4SFhQkKE2kGXiwChgBDB0sGDw4NDGpshTheZ2hRFRVDUmsMCIMiZE48hmgtUBuCYxBmkAAQbV2CLBM+t0puaoIySDC3VC4tgh40M7eFNRdH0IRgZUO3NjqDFB9mv4U6Pc+DRzUfQVQ3NzAULxU2hUBDKENCQTtAL9yGRgkbcvggEq9atUAAIfkECQoAAAAsAAAAABAAEAAAB4+AAIKDhIWFPygeEE4hbEeGADkXBycZZ1tqTkqFQSNIbBtGPUJdD088g1QmMjiGZl9MO4I5ViiQAEgMA4JKLAm3EWtXgmxmOrcUElWCb2zHkFQdcoIWPGK3Sm1LgkcoPrdOKiOCRmA4IpBwDUGDL2A5IjCCN/QAcYUURQIJIlQ9MzZu6aAgRgwFGAFvKRwUCAAh+QQJCgAAACwAAAAAEAAQAAAHjIAAgoOEhYUUYW9lHiYRP4YACStxZRc0SBMyFoVEPAoWQDMzAgolEBqDRjg8O4ZKIBNAgkBjG5AAZVtsgj44VLdCanWCYUI3txUPS7xBx5AVDgazAjC3Q3ZeghUJv5B1cgOCNmI/1YUeWSkCgzNUFDODKydzCwqFNkYwOoIubnQIt244MzDC1q2DggIBACH5BAkKAAAALAAAAAAQABAAAAeJgACCg4SFhTBAOSgrEUEUhgBUQThjSh8IcQo+hRUbYEdUNjoiGlZWQYM2QD4vhkI0ZWKCPQmtkG9SEYJURDOQAD4HaLuyv0ZeB4IVj8ZNJ4IwRje/QkxkgjYz05BdamyDN9uFJg9OR4YEK1RUYzFTT0qGdnduXC1Zchg8kEEjaQsMzpTZ8avgoEAAIfkECQoAAAAsAAAAABAAEAAAB4iAAIKDhIWFNz0/Oz47IjCGADpURAkCQUI4USKFNhUvFTMANxU7KElAhDA9OoZHH0oVgjczrJBRZkGyNpCCRCw8vIUzHmXBhDM0HoIGLsCQAjEmgjIqXrxaBxGCGw5cF4Y8TnybglprLXhjFBUWVnpeOIUIT3lydg4PantDz2UZDwYOIEhgzFggACH5BAkKAAAALAAAAAAQABAAAAeLgACCg4SFhjc6RhUVRjaGgzYzRhRiREQ9hSaGOhRFOxSDQQ0uj1RBPjOCIypOjwAJFkSCSyQrrhRDOYILXFSuNkpjggwtvo86H7YAZ1korkRaEYJlC3WuESxBggJLWHGGFhcIxgBvUHQyUT1GQWwhFxuFKyBPakxNXgceYY9HCDEZTlxA8cOVwUGBAAA7AAAAAAAAAAAA\">";
+
+            var postdata= "sendemail=1&toemail="+document.mailform.toemail.value;
+                postdata+="&from="+document.mailform.from.value;
+                postdata+="&subject="+document.mailform.subject.value;
+                postdata+="&sendmethod="+document.mailform.sendmethod.value;
+                postdata+="&nome="+document.mailform.nome.value;
+                postdata+="&email="+document.mailform.email.value;
+                postdata+="&telefone="+document.mailform.telefone.value;
+                postdata+="&empresa="+document.mailform.empresa.value;
+                postdata+="&message="+encodeURIComponent(document.mailform.message.value).replace("%20", "+");
+            var url="<?=$_SERVER['PHP_SELF']; ?>";
+            var request=new XMLHttpRequest();
+            request.open("POST",url,true);
+            request.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+            request.overrideMimeType("text/plain");
+            request.onreadystatechange=function() { 
+                if ( request.readyState==4 ) {
+                    NODEcell.innerHTML=request.getResponseHeader("X-Node");
+                    if ( request.responseText == "OK" || request.responseText == "FAIL" ) {
+                        RESULTcell.innerHTML=request.responseText;
+                    } else {
+                        if ( request.status == 0 ) {
+                            RESULTcell.innerHTML="ERR_EMPTY_RESPONSE";
+                        } else {
+                            RESULTcell.innerHTML="HTTP/1.1 "+request.status+" "+request.statusText+"<br /><br />"+request.responseText;
+                            if(request.status == 200){
+                                $('#modalOk').modal('show');
+                            }else{
+                                $('#modalErro').modal('show');
+                            }
+                        }
+                    }
+                }
+            }
+            request.send(postdata);
+        }
+    </script>
 </body>
 </html>
