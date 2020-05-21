@@ -95,4 +95,3 @@ create table progresso(
 INSERT INTO usuarios (nome,sobrenome,email) VALUES ("Monica","Craveiro de Menezes","monica.craveiro@fuseiot.io");
 
 select * from usuarios; -->
-

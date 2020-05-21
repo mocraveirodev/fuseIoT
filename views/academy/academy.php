@@ -51,9 +51,9 @@
     </header>
     <main>
         <section id="inicio">
-            <h1 class="bemvindo d-none d-md-block">Bem vindo à fuse | Academy</h1>
-            <h1 class="bemvindo d-block d-md-none">Bem vindo à</h1>
-            <h1 class="bemvindo d-block d-md-none">fuse | Academy</h1>
+            <h1 class="bemvindo d-none d-md-block">Bem-vindo a fuse | IoT Academy</h1>
+            <h1 class="bemvindo d-block d-md-none">Bem-vindo a</h1>
+            <h1 class="bemvindo d-block d-md-none">fuse | IoT Academy</h1>
             <img src="views/img/logofusebranco.png" class="logofuse d-none d-md-block" alt="Logo Fuse IoT">
             <p class="brand">Dare the status. Innovate with us.</p>
         </section>
@@ -72,7 +72,7 @@
                             Trilhas de Aprendizagem
                         </h3>
                         <div class="trilhas">
-                            <button class="btn btn-primary btn-sm btn-block" type="button" data-toggle="collapse" data-target="#basicos" aria-expanded="false" aria-controls="basicos">Conceitos Básicos</button>
+                            <button class="btn btn-primary btn-sm btn-block" type="button" data-toggle="collapse" data-target="#basicos" aria-expanded="false" aria-controls="basicos">1 - Conceitos Básicos</button>
                             <div class="collapse" id="basicos">
                                 <div class="card card-body">
                                     <ul>
@@ -83,7 +83,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <button class="btn btn-warning btn-sm btn-block" type="button" data-toggle="collapse" data-target="#hardware" aria-expanded="false" aria-controls="hardware">Conceitos de Hardware</button>
+                            <button class="btn btn-warning btn-sm btn-block" type="button" data-toggle="collapse" data-target="#hardware" aria-expanded="false" aria-controls="hardware">2 - Conceitos de Hardware</button>
                             <div class="collapse" id="hardware">
                                 <div class="card card-body">
                                     <ul>
@@ -95,7 +95,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <button class="btn btn-success btn-sm btn-block" type="button" data-toggle="collapse" data-target="#software" aria-expanded="false" aria-controls="software">Conceitos de Software</button>
+                            <button class="btn btn-success btn-sm btn-block" type="button" data-toggle="collapse" data-target="#software" aria-expanded="false" aria-controls="software">3 - Conceitos de Software</button>
                             <div class="collapse" id="software">
                                 <div class="card card-body">
                                     <ul>
@@ -108,7 +108,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <button class="btn btn-danger btn-sm btn-block" type="button" data-toggle="collapse" data-target="#conectividade" aria-expanded="false" aria-controls="conectividade">Conectividade</button>
+                            <button class="btn btn-danger btn-sm btn-block" type="button" data-toggle="collapse" data-target="#conectividade" aria-expanded="false" aria-controls="conectividade">4 - Conectividade</button>
                             <div class="collapse" id="conectividade">
                                 <div class="card card-body">
                                     <ul>
@@ -118,7 +118,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <button class="btn btn-primary btn-sm btn-block" type="button" data-toggle="collapse" data-target="#seguranca" aria-expanded="false" aria-controls="seguranca">Segurança</button>
+                            <button class="btn btn-primary btn-sm btn-block" type="button" data-toggle="collapse" data-target="#seguranca" aria-expanded="false" aria-controls="seguranca">5 - Segurança</button>
                             <div class="collapse" id="seguranca">
                                 <div class="card card-body">
                                     <ul>
@@ -128,7 +128,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <button class="btn btn-danger btn-sm btn-block" type="button" data-toggle="collapse" data-target="#arquitetura" aria-expanded="false" aria-controls="arquitetura">Arquitetura - Cases</button>
+                            <button class="btn btn-danger btn-sm btn-block" type="button" data-toggle="collapse" data-target="#arquitetura" aria-expanded="false" aria-controls="arquitetura">6 - Arquitetura - Cases</button>
                             <div class="collapse" id="arquitetura">
                                 <div class="card card-body">
                                     <ul>
@@ -138,7 +138,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <button class="btn btn-success btn-sm btn-block" type="button" data-toggle="collapse" data-target="#legislacao" aria-expanded="false" aria-controls="legislacao">Legislação</button>
+                            <button class="btn btn-success btn-sm btn-block" type="button" data-toggle="collapse" data-target="#legislacao" aria-expanded="false" aria-controls="legislacao">7 - Legislação</button>
                             <div class="collapse" id="legislacao">
                                 <div class="card card-body">
                                     <ul>
@@ -148,7 +148,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <button class="btn btn-warning btn-sm btn-block" type="button" data-toggle="collapse" data-target="#negocios" aria-expanded="false" aria-controls="negocios">Negócios</button>
+                            <button class="btn btn-warning btn-sm btn-block" type="button" data-toggle="collapse" data-target="#negocios" aria-expanded="false" aria-controls="negocios">8 - Negócios</button>
                             <div class="collapse" id="negocios">
                                 <div class="card card-body">
                                     <ul>
