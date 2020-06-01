@@ -30,7 +30,7 @@
         <div class="col">
             <div class="caixa">
                 <i class="ico exercicio"></i>
-                <small>Exrcicios concluídos</small>
+                <small>Exercicios concluídos</small>
                 <h3>200</h3>
             </div>
         </div>

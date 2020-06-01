@@ -7,10 +7,10 @@
 				<div class="caixa">
 						<img src="img/frontend.jpg">
 						<div class="del-curso">
-								<p>FORMAÇÃO FRONT-END COMPLETO</p>
+								<p>Conceitos Básicos</p>
 								<small>Desempenho <b>50%</b></small>
 								<progress value="4" max="7"></progress>
-								<a href="index.php?link=2" class="btn">Ir para o curso</a>
+								<a href="/?homecurso=2" class="btn">Ir para o curso</a>
 						</div>
 				</div>
 		</div>
@@ -18,10 +18,10 @@
 				<div class="caixa">
 						<img src="img/jsf-01.jpg">
 						<div class="del-curso">
-								<p>FORMAÇÃO jsf prime</p>
+								<p>Conceitos de Hardware</p>
 								<small>Desempenho <b>50%</b></small>
 								<progress value="4" max="7"></progress>
-								<a href="index.php?link=2" class="btn">Ir para o curso</a>
+								<a href="/?homecurso=2" class="btn">Ir para o curso</a>
 						</div>
 				</div>
 		</div>
@@ -29,10 +29,10 @@
 				<div class="caixa">
 						<img src="img/projeto-php.jpg">
 						<div class="del-curso">
-								<p>Projetos php completo</p>
+								<p>Conceitos de Software</p>
 								<small>Desempenho <b>50%</b></small>
 								<progress value="4" max="7"></progress>
-								<a href="index.php?link=2" class="btn">Ir para o curso</a>
+								<a href="/?homecurso=2" class="btn">Ir para o curso</a>
 						</div>
 				</div>
 		</div>
@@ -40,10 +40,10 @@
 				<div class="caixa">
 						<img src="img/start-01.jpg">
 						<div class="del-curso">
-								<p>Start: curso profissionalizante de programação para iniciantes</p>
+								<p>Conectividade</p>
 								<small>Desempenho <b>50%</b></small>
 								<progress value="4" max="7"></progress>
-								<a href="index.php?link=2" class="btn">Ir para o curso</a>
+								<a href="/?homecurso=2" class="btn">Ir para o curso</a>
 						</div>
 				</div>
 		</div>
@@ -51,10 +51,10 @@
 				<div class="caixa">
 						<img src="img/frontend.jpg">
 						<div class="del-curso">
-								<p>FORMAÇÃO FRONT-END COMPLETO</p>
+								<p>Segurança</p>
 								<small>Desempenho <b>50%</b></small>
 								<progress value="4" max="7"></progress>
-								<a href="index.php?link=2" class="btn">Ir para o curso</a>
+								<a href="/?homecurso=2" class="btn">Ir para o curso</a>
 						</div>
 				</div>
 		</div>
@@ -62,10 +62,10 @@
 				<div class="caixa">
 						<img src="img/jsf-01.jpg">
 						<div class="del-curso">
-								<p>FORMAÇÃO jsf prime</p>
+								<p>Arquitetura - Cases</p>
 								<small>Desempenho <b>50%</b></small>
 								<progress value="4" max="7"></progress>
-								<a href="index.php?link=2" class="btn">Ir para o curso</a>
+								<a href="/?homecurso=2" class="btn">Ir para o curso</a>
 						</div>
 				</div>
 		</div>
@@ -73,10 +73,10 @@
 				<div class="caixa">
 						<img src="img/projeto-php.jpg">
 						<div class="del-curso">
-								<p>Projetos php completo</p>
+								<p>Legislação</p>
 								<small>Desempenho <b>50%</b></small>
 								<progress value="4" max="7"></progress>
-								<a href="index.php?link=2" class="btn">Ir para o curso</a>
+								<a href="/?homecurso=2" class="btn">Ir para o curso</a>
 						</div>
 				</div>
 		</div>
@@ -84,10 +84,10 @@
 				<div class="caixa">
 						<img src="img/start-01.jpg">
 						<div class="del-curso">
-								<p>Start: curso profissionalizante de programação para iniciantes</p>
+								<p>Negócios</p>
 								<small>Desempenho <b>50%</b></small>
 								<progress value="4" max="7"></progress>
-								<a href="index.php?link=2" class="btn">Ir para o curso</a>
+								<a href="/?homecurso=2" class="btn">Ir para o curso</a>
 						</div>
 				</div>
 		</div>

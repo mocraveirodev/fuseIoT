@@ -257,7 +257,7 @@
             <div class="row justify-content-between align-items-center">
                 <img class="footer-logo" src="views/img/LogoFusefooter.svg" alt="Logo Fuse IoT"></img>
                 <ul class="footer-politica">
-                    <li class=""><a data-scroll href="#">Política de Privacidade<#a></li>
+                    <li class=""><a data-scroll href="#">Política de Privacidade</a></li>
                     <li class=""><a data-scroll href="#">Informações Legais</a></li>
                 </ul>
             </div>

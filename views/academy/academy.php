@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="views/css/styleAcademy.css">
 </head>
-<!-- <body data-spy="scroll" data-target=".navbar" data-offset="100" onscroll="scrollChange()"> -->
+
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
     <header>
         <nav data-scroll-header class="navbar navbar-expand-lg navbar-dark navbarChange fixed-top">
@@ -44,7 +44,7 @@
                             <a data-scroll class="nav-link" href="#trilhas">Trilhas</a>
                         </li>
                     </ul>
-                    <a href="" class="btn btn-outline-light" data-toggle="modal" data-target="#modalLogin">Login</a>
+                    <a href="/?embreve" class="btn btn-outline-light">Entrar</a>
                 </div>
             </div>
         </nav>
@@ -190,6 +190,22 @@
         </section>
     </main>
 
+    <div class="modal fade" id="modalEmBreve" tabindex="-1" role="dialog" aria-labelledby="modalEmBreveTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-between">
+                    <img src="views/img/LogoFusenav.svg" class="logonav" alt="Logo Fuse IoT">
+                    <h5 class="modal-title" id="modalEmBreveTitle">Em breve fuse | IoT Academy</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -216,7 +232,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <p class="sub">Esqueceu a senha ou é novo? <a href="/?alterasenha">Clique aqui</a>.</p>
+                    <!-- <p class="sub">Esqueceu a senha ou é novo? <a href="/?alterasenha">Clique aqui</a>.</p> -->
                 </div>
             </div>
         </div>
@@ -244,7 +260,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                <p class="sub">Lembrou a senha ou não é novo? <a href="/?logar">Clique aqui</a>.</p>
+                <!-- <p class="sub">Lembrou a senha ou não é novo? <a href="/?logar">Clique aqui</a>.</p> -->
                 </div>
             </div>
         </div>
@@ -276,7 +292,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                <p class="sub">Lembrou a senha ou não é novo? <a href="/?logar">Clique aqui</a>.</p>
+                <!-- <p class="sub">Lembrou a senha ou não é novo? <a href="/?logar">Clique aqui</a>.</p> -->
                 </div>
             </div>
         </div>
@@ -295,7 +311,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="./views/js/smoothscroll.js"></script>
-    <!-- <script src="./views/js/scrollchange.js"></script> -->
     <?php
         if($_SESSION['errologin'] != ""){
             if($_SESSION['errologin'] == "logar"){
@@ -311,6 +326,17 @@
             }
             if($_SESSION['alterasenha'] == "senha"){
                 echo "<script>$('#modalSenha').modal('show');</script>";
+            }
+        }
+        if(isset($_SESSION['abreLogin'])){
+            if($_SESSION['abreLogin'] == "login"){
+                echo "<script>$('#modalLogin').modal('show');</script>";
+            }
+        }
+        
+        if(isset($_SESSION['emBreve'])){
+            if($_SESSION['emBreve'] == "abre"){
+                echo "<script>$('#modalEmBreve').modal('show');</script>";
             }
         }
     ?>

@@ -48,7 +48,7 @@
 							</div>
 							<div class="col-3 mb-3">
 								<label>Telefone</label>
-								<input type="text" placeholder="TElefone">
+								<input type="text" placeholder="Telefone">
 							</div>
 							<div class="col-3 mb-3">
 								<label>Profissão</label>

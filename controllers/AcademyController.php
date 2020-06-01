@@ -38,8 +38,10 @@
                 $_SESSION['erroemail'] = "";
                 $_SESSION['errosenha'] = "";
                 $_SESSION['alterasenha'] = "";
+                include "views/academy/homecurso.php";
+            }else{
+                header('Location:/?login');
             }
-            include "views/academy/homecurso.php";
         }
 
         private function viewConceitosBasicos(){

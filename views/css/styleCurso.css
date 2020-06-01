@@ -966,7 +966,29 @@ ul,li,ol{list-style:none;}
     float:left;clear: inherit;padding: 10px 20px;
 }
 .base-cursos.ver_videos .caixa-video .controles .proximo{
-    float:right;clear: inherit;padding: 10px 20px;
+	float:right;
+	clear: inherit;
+	padding: 10px 20px;
+}
+
+.base-cursos.ver_videos .caixa-video .controles .disable{
+	float:right;
+	clear: inherit;
+	padding: 10px 20px;
+	
+	display:block;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	-o-border-radius:4px;
+	cursor: not-allowed;
+	background:#6c757d;
+	color:#FFF;
+	text-transform:uppercase;
+	font-size:.9em;
+	text-align:center;
+	border:0;
+	text-decoration:none;
 }
 .base-cursos.ver_videos .caixa-video iframe{
     background:#000;

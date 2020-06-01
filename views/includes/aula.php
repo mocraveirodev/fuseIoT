@@ -1,18 +1,20 @@
 <div class="caixa">
-	<h2 class="titulo"><span class="case"><i class="ico curso"></i>Formação Front-end</span> Módulo 01 <i class="seta"></i> Capitulo 01 <i class="seta"></i> Aula 01</h2>
+	<h2 class="titulo"><span class="case"><i class="ico curso"></i>Conceitos Básicos</span> Módulo 01 <i class="seta"></i> Capitulo 01 <i class="seta"></i> Aula 01</h2>
 </div>
 <div class="base-home">
 	<div class="rows base-cursos ver_videos py-3">
 		<div class="col-9 d-flex">
 			<div class="caixa">
-				<span class="titulo2">Apresentação do Curso de HTML/1-14314</span>
+				<span class="titulo2">Aula 01 - História do IoT</span>
 				<div class="caixa-video">
 					<div class="caixa-embed">
-						<iframe src="https://www.youtube.com/embed/TDVm_vcgOec" class="embed-item" width="655" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						<!-- <iframe src="https://www.youtube.com/embed/TDVm_vcgOec?enablejsapi=1&origin=https://fuseiot.io" id="player" type="text/html" class="embed-item" width="655" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+						<div id="player"></div>
 					</div>
 					<div class="controles">
 						<a href="" class="btn anterior">Anterior</a>
-						<a href="" class="btn proximo">Próximo</a>  
+						<a href="" class="btn proximo d-none">Próximo</a>
+						<span class="disable">Próximo</span>
 					</div>
 				</div>
 			</div>

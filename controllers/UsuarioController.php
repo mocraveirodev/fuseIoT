@@ -22,6 +22,9 @@
                 case "logout":
                     $this->deslogarUsuario();
                 break;
+                case "embreve":
+                    $this->emBreve();
+                break;
             }
         }
 
@@ -41,12 +44,16 @@
                         $_SESSION['erroemail'] = "";
                         $_SESSION['errosenha'] = "";
                         $_SESSION['alterasenha'] = "";
+                        $_SESSION['abreLogin'] = "";
+                        $_SESSION['emBreve'] = "";
                         header('Location:/?academy');
                     }else{
                         $_SESSION['errologin'] = "";
                         $_SESSION['erroemail'] = "";
                         $_SESSION['alterasenha'] = "senha";
                         $_SESSION['errosenha'] = "Senha não alterada! Tente de novo.";
+                        $_SESSION['abreLogin'] = "";
+                        $_SESSION['emBreve'] = "";
                         header('Location:/?academy');
                     }
                 }else{
@@ -54,11 +61,23 @@
                     $_SESSION['erroemail'] = "";
                     $_SESSION['alterasenha'] = "senha";
                     $_SESSION['errosenha'] = "Senha digitadas não conferem!";
+                    $_SESSION['abreLogin'] = "";
+                    $_SESSION['emBreve'] = "";
                     header('Location:/?academy');
                 }
             }else{
-                $_SESSION = [];
-                $this->logarUsuario();
+                if(isset($_POST['email'])){
+                    $_SESSION = [];
+                    $this->logarUsuario();
+                }else{
+                    $_SESSION['errologin'] = "";
+                    $_SESSION['erroemail'] = "";
+                    $_SESSION['alterasenha'] = "";
+                    $_SESSION['errosenha'] = "";
+                    $_SESSION['abreLogin'] = "login";
+                    $_SESSION['emBreve'] = "";
+                    header('Location:/?academy');
+                }
             }
         }
 
@@ -68,14 +87,16 @@
                 $senha = $_POST['senha'];
                 if($this->validaUsuario($email,$senha)){
                     $db = new Usuario();
-                    $db->ultimoLogin($email);
                     $_SESSION['usuario'] = $db->recuperaUsuario($email);
+                    $db->ultimoLogin($_SESSION['usuario']->id_usuario);
                     header('Location:/?homecurso');
                 }else{
                     $_SESSION['errologin'] = "Email e/ou senha incorretos!";
                     $_SESSION['erroemail'] = "";
                     $_SESSION['errosenha'] = "";
                     $_SESSION['alterasenha'] = "";
+                    $_SESSION['abreLogin'] = "";
+                    $_SESSION['emBreve'] = "";
                     header('Location:/?academy');
                 }
             }else{
@@ -83,6 +104,8 @@
                 $_SESSION['erroemail'] = "";
                 $_SESSION['errosenha'] = "";
                 $_SESSION['alterasenha'] = "";
+                $_SESSION['abreLogin'] = "";
+                $_SESSION['emBreve'] = "";
                 header('Location:/?academy');
             }
         }
@@ -104,6 +127,8 @@
             $_SESSION['errologin'] = "";
             $_SESSION['alterasenha'] = "email";
             $_SESSION['errosenha'] = "";
+            $_SESSION['abreLogin'] = "";
+            $_SESSION['emBreve'] = "";
             header('Location:/?academy');
         }
 
@@ -117,36 +142,39 @@
                 $_SESSION['errosenha'] = "";
                 $_SESSION['erroemail'] = "";
                 $_SESSION['alterasenha'] = "senha";
+                $_SESSION['abreLogin'] = "";
+                $_SESSION['emBreve'] = "";
                 header('Location:/?academy');
             }else{
                 $_SESSION['alterasenha'] = "email";
                 $_SESSION['errologin'] = "";
                 $_SESSION['errosenha'] = "";
-                $_SESSION['erroemail'] = "Email incorreto ou não cadastrado!"; //Coloca mensagem de erro na superglobal
-                header('Location:/?academy');; //direciona pra pagina de login
+                $_SESSION['erroemail'] = "Email incorreto ou não cadastrado!";
+                $_SESSION['abreLogin'] = "";
+                $_SESSION['emBreve'] = "";
+                header('Location:/?academy');
             }
         }
 
         private function deslogarUsuario(){
             session_gc();
-            session_destroy(); //destroi sessão
-            header('Location:/?'); //direciona pra pagina de login
+            session_destroy();
+            header('Location:/?');
         }
 
         private function registrarUsuario(){
-            //Pegando dados do usuario
             $nome = $_POST['nome'];
             $sobrenome = $_POST['sobrenome'];
             $operação = $_POST['operacao'];
             $email = $_POST['email'];
             // $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
 
-            $db = new Usuario(); //instancia usuario
+            $db = new Usuario();
 
-            $cadastro = $db->cadastrarUsuario($nome,$sobrenome,$operação,$email); //cadastra usuario no BD
+            $cadastro = $db->cadastrarUsuario($nome,$sobrenome,$operação,$email);
 
             if($cadastro){
-                $_SESSION['cadastrado'] = $db->recuperaUsuario($email); //Coloca dados do usuario na superglobal
+                $_SESSION['cadastrado'] = $db->recuperaUsuario($email);
                 $_SESSION['invalido'] = "Usuário Cadastrado com Sucesso!";
                 include "views/cadastrado.php";
             }else{
@@ -157,6 +185,17 @@
 
         private function cadastrarUsuario(){
             include "views/cadastro.php";
+        }
+
+        private function emBreve(){
+            $_SESSION['altera'] = "";
+            $_SESSION['errologin'] = "";
+            $_SESSION['errosenha'] = "";
+            $_SESSION['erroemail'] = "";
+            $_SESSION['alterasenha'] = "";
+            $_SESSION['abreLogin'] = "";
+            $_SESSION['emBreve'] = "abre";
+            header('Location:/?academy');
         }
     }
 ?>
