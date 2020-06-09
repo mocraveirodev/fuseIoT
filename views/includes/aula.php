@@ -27,25 +27,25 @@
 						<ul>				
 							<li class="marcado">
 								<a href="">
-									Apresentação do Curso de HTML	
+									Aula 01 - História do IoT	
 								</a>
 							</li>				
-							<li class="marcado">
+							<li class="naomarcado">
 								<a href="">
-									Aula 02 - Conceitos iniciais								
-								</a>
-							</li>		
-							<li class="marcado">
-								<a href="">
-									Aula 03 - Conceituando HTML								
+									Aula 02 - Casos de uso								
 								</a>
 							</li>		
 							<li class="naomarcado">
 								<a href="">
-									Aula 04 - Criando a primeira página	
+									Aula 03 - Eletrônica básica - I								
+								</a>
+							</li>		
+							<li class="naomarcado">
+								<a href="">
+									Aula 04 - Telecom - Conectividade	
 								</a>
 							</li>	
-							<li class="naomarcado">
+							<!-- <li class="naomarcado">
 								<a href="">
 									Aula 04 - Criando a primeira página	
 								</a>
@@ -64,7 +64,7 @@
 								<a href="">
 									Aula 04 - Criando a primeira página	
 								</a>
-							</li>
+							</li> -->
 						</ul>
 					</div>
 				</div>	
@@ -77,8 +77,8 @@
 				<div class="caixa">
 					<span class="titulo2">ARQUIVOS DISPONÍVEÍS PARA DOWNLOADS</span>						
 						<ul>
-							<li><a href="" class="icon" target="_blank">Imagens para desenvolvimento do site</a></li>	
-							<li><a href="" class="icon" target="_blank">Imagens para desenvolvimento do site</a></li>		
+							<li><a href="" class="icon" target="_blank">Apresentação da História do IoT</a></li>	
+							<!-- <li><a href="" class="icon" target="_blank">Imagens para desenvolvimento do site</a></li>		 -->
 						</ul>
 				</div>
 			</div>
@@ -99,7 +99,7 @@
 						<li>
 							<i class="ico acesso"></i>
 							<span class="tt1">ÚLTIMO CESSO</span>
-							<span class="tt2">20/06/17</span>
+							<span class="tt2">20/04/2020</span>
 						</li>
 						<li>
 							<i class="ico horas"></i>
@@ -117,8 +117,6 @@
 							<span class="tt1">Aulas assistidas</span>
 							<span class="tt2">27 aulas </span>
 						</li>
-						
-						
 					</ul>
 				</div>
 			</div>

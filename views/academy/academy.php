@@ -44,7 +44,8 @@
                             <a data-scroll class="nav-link" href="#trilhas">Trilhas</a>
                         </li>
                     </ul>
-                    <a href="/?embreve" class="btn btn-outline-light">Entrar</a>
+                    <a href="/?login" class="btn btn-outline-light">Entrar</a>
+                    <!-- <a href="/?embreve" class="btn btn-outline-light">Entrar</a> -->
                 </div>
             </div>
         </nav>
@@ -232,7 +233,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <!-- <p class="sub">Esqueceu a senha ou é novo? <a href="/?alterasenha">Clique aqui</a>.</p> -->
+                    <p class="sub">Esqueceu a senha ou é novo? <a href="/?alterasenha">Clique aqui</a>.</p>
                 </div>
             </div>
         </div>

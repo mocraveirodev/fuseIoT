@@ -69,35 +69,35 @@
 							<!-- <tr>
 								<td align="left"><a href="/?homecurso=3"><i class="ico ititulo"></i>Apresentação do Curso de HTML</a></td>
 								<td align="left"><i class="ico iduracao"></i>06min14s</td>
-								<td align="left"><i class="ico idata"></i>08/01/2018</td>
+								<td align="left"><i class="ico idata"></i>08/01/2020</td>
 								<td align="left"><i class="ico inaoassistido"></i>Sim</td>
 								<td align="left"><i class="ico iaula"></i>Aula</td>
 							</tr>			 
 							<tr>
 								<td align="left"><a href="/?homecurso=3"><i class="ico ititulo"></i>Apresentação do Curso de HTML</a></td>
 								<td align="left"><i class="ico iduracao"></i>06min14s</td>
-								<td align="left"><i class="ico idata"></i>08/01/2018</td>
+								<td align="left"><i class="ico idata"></i>08/01/2020</td>
 								<td align="left"><i class="ico inaoassistido"></i>Sim</td>
 								<td align="left"><i class="ico iaula"></i>Aula</td>
 							</tr>			 
 							<tr>
 								<td align="left"><a href="/?homecurso=3"><i class="ico ititulo"></i>Apresentação do Curso de HTML</a></td>
 								<td align="left"><i class="ico iduracao"></i>06min14s</td>
-								<td align="left"><i class="ico idata"></i>08/01/2018</td>
+								<td align="left"><i class="ico idata"></i>08/01/2020</td>
 								<td align="left"><i class="ico inaoassistido"></i>Sim</td>
 								<td align="left"><i class="ico iaula"></i>Aula</td>
 							</tr>			 
 							<tr>
 								<td align="left"><a href="/?homecurso=3"><i class="ico ititulo"></i>Apresentação do Curso de HTML</a></td>
 								<td align="left"><i class="ico iduracao"></i>06min14s</td>
-								<td align="left"><i class="ico idata"></i>08/01/2018</td>
+								<td align="left"><i class="ico idata"></i>08/01/2020</td>
 								<td align="left"><i class="ico inaoassistido"></i>Sim</td>
 								<td align="left"><i class="ico iaula"></i>Aula</td>
 							</tr>			 
 							<tr>
 								<td align="left"><a href="/?homecurso=3"><i class="ico ititulo"></i>Apresentação do Curso de HTML</a></td>
 								<td align="left"><i class="ico iduracao"></i>06min14s</td>
-								<td align="left"><i class="ico idata"></i>08/01/2018</td>
+								<td align="left"><i class="ico idata"></i>08/01/2020</td>
 								<td align="left"><i class="ico inaoassistido"></i>Sim</td>
 								<td align="left"><i class="ico iaula"></i>Aula</td>
 							</tr>-->

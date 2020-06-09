@@ -22,6 +22,7 @@
         private function viewHomeAcademy(){
             include "views/academy/academy.php";
         }
+        
         private function viewGoAcademy(){
             if(isset($_SESSION['usuario'])){
                 $_SESSION['errologin'] = "";

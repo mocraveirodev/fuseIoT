@@ -12,7 +12,7 @@
 							<div class="col-6">
 								<label>Foto perfil</label>
 								<div class="thumb">
-									<img src="img/foto01.png">
+									<img src="views/img/foto01.png">
 									<input type="file" name="" value="">
 								</div>
 								<small class="text-center d-block">Tamanho máximo: 220px altura x 220px largura</small>
