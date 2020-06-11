@@ -143,7 +143,9 @@ header .nav-item{
 }
 
 #iot span{
-    font-size: inherit;
+    font-family: roboto-bold, sans-serif;
+    color: #2d2f63;
+    font-size: 1.3rem;
 }
 
 #iot .col-md-6{
@@ -290,25 +292,53 @@ header .nav-item{
     resize: none;
 }
 
-/* ==========================================| MODAL CONTATO |========================================== */
+/* ==========================================| MODAL |========================================== */
 
-.modal-content{
+#modal .modal-content{
     border-radius: 1.5rem;
 }
 
-.modal-body{
+#modal .modal-body{
     padding: 2rem;
 }
 
-.modal h3{
+#modal .modal h3{
     color:#2d2f63;
     font-weight: 700;
 }
 
-.modal p{
+#modal .modal p{
     color:#435561;
     margin-bottom: 2rem;
 }
+
+#modal #modalInfo .modal-content{
+    border-radius: 0.5rem;
+}
+
+#modal #modalInfo .modal-body{
+    padding: 1rem;
+}
+#modal #modalInfo .buttons{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#modal #modalInfo .btn{
+    width: 48%;
+}
+#modal #modalInfo .close{
+    margin-bottom: 0.5rem;
+}
+
+#modal #modalInfo span{
+    font-size: 1.5rem;
+}
+
+/* #modal #modalInfo .img-fluid{
+    margin: 0 1rem;
+} */
 
 /* ==========================================| RODAPÉ |========================================== */
 

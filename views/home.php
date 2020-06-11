@@ -1,9 +1,3 @@
-<?php
-    include_once('views/includes/phpmailer.php');
-    include_once('views/includes/smtp.php');
-    include_once('views/includes/envio.php');
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -60,7 +54,7 @@
         <section id="iot">
             <div class="container">
                 <h3 class="titulo text-center">Você está preparado para a evolução digital?</h3>
-                <h3 class="titulo text-center">A <span>fuse | IoT</span> te ajuda nessa!</h3>
+                <h3 class="titulo text-center">A fuse | <span>IoT</span> te ajuda nessa!</h3>
                 <p class="iot text-justify">Com ecossistemas completos, entregamos uma solução única para sua necessidade. Ajudamos a controlar e monitorar ambientes remotos, evitando desperdícios, aumentando a segurança com dados relevantes que agilizam a tomada de decisões. Use a tecnologia como sua aliada, e tenha redução de perdas e aumento de receita.</p>
                 <div class="row justify-content-between">
                     <div class="col-md-6 order-md-1">
@@ -164,9 +158,9 @@
                 <div class="row">
                     <div class="col-md-8 formulario">
                         <h3 class="titulo">Contate-nos agora mesmo</h3>
-                        <form id="mailform" name="mailform">
+                        <form action="/?email" method="post" enctype="multipart/form-data">
                             <div class="form-group">
-                                <input value="murilo.silva@fuseiot.io" name="toemail" type="text" hidden />
+                                <input value="Contato Site - fuse | IoT" name="subject" type="text" hidden />
                             </div>
                             <div class="form-group">
                                 <input value="contato@fuseiot.io" name="from" type="text" hidden />
@@ -178,23 +172,15 @@
                                 <input type="email" class="form-control" name="email" id="email" placeholder="Seu e-mail" required/>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Seu telefone" required/>
+                                <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Seu telefone com DDD" required/>
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control" name="empresa" id="empresa" placeholder="Sua empresa" required/>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto do contato" required/>
-                            </div>
-                            <div class="form-group">
                                 <textarea class="form-control" id="message" name="message" rows="4" placeholder="Sua mensagem"></textarea>
                             </div>
-                            <button type="button" id="sendemail" class="btn btn-padrao btn-success" onclick="GoSend();"><img class="btn-ctt mr-3" src="views/img/paper_plane-512.svg" alt="Enviar"></img> Enviar contato</button>
-                            <div class="form-group">
-                                <select class="form-control" name="sendmethod" hidden >
-                                    <option value="smtp" selected >SMTP</option>
-                                </select>
-                            </div>
+                            <button type="submit" class="btn btn-padrao btn-success"><img class="btn-ctt mr-3" src="views/img/paper_plane-512.svg" alt="Enviar"></img> Enviar contato</button>
                         </form>
                     </div>
                     <div class="col-md-4 localizacao">
@@ -213,13 +199,13 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="modal">
             <div class="modal fade" id="modalOk" tabindex="-1" role="dialog" aria-labelledby="modalOkTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
                             <h3>Pronto!</h3>
-                            <p>Em breve nossos especialistas irão entrar em contato para dar mais informações.</p>
+                            <p><?= $_SESSION['mailresult'] ?></p>
                             <a class="btn btn-padrao btn-success text-white" data-dismiss="modal" aria-label="Fechar">OK</a>
                         </div>
                     </div>
@@ -231,26 +217,66 @@
                     <div class="modal-content">
                         <div class="modal-body">
                             <h3>Erro!</h3>
-                            <p><?= "Houve um erro enviando o email. Tente de novo mais tarde!" ?></p>
+                            <p><?= $_SESSION['ErrorInfo'] ?></p>
                             <a class="btn btn-padrao btn-success text-white" data-dismiss="modal" aria-label="Fechar">OK</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="modal fade" id="modalInfo" tabindex="-1" role="dialog" aria-labelledby="modalInfoLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="views/img/bannerwebinar.jpeg" class="img-fluid" alt="Banner Webinar">
+                        <div class="buttons">
+                            <button type="button" class="btn btn-padrao btn-outline-success" data-dismiss="modal">Continue no site</button>
+                            <button type="button" class="btn btn-padrao btn-success" data-toggle="modal" data-target="#modalForm" data-dismiss="modal">Inscreva-se no IoT Talks</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="modalFormLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h3>IoT Talks</h3>
+                        <p>Preencha o formulário abaixo para inscrição:</p>
+                        <form action="/?email" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <input value="Inscrição Webinar | IoT Talks" name="subject" type="text" hidden />
+                            </div>
+                            <div class="form-group">
+                                <input value="iottalks@fuseiot.io" name="from" type="text" hidden />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="nome" id="nome" placeholder="Seu nome*" required/>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Seu e-mail*" required/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Seu telefone com DDD*" required/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="empresa" id="empresa" placeholder="Sua empresa*" required/>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Sua mensagem" hidden>Inscrição Webinar | IoT Talks</textarea>
+                            </div>
+                            <button type="submit" class="btn btn-padrao btn-success">Quero participar do IoT Talks!</button>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <table hidden id="msglog" border="1" bordercolor="#FFCC00" style="background-color:#FFFFCC" width="100%" cellpadding="3" cellspacing="3">
-            <tr>
-                <td>#</td>
-                <td>TIME</td>
-                <td>TO</td>
-                <td>FROM</td>
-                <td>SUBJECT</td>
-                <td>MESSAGE</td>
-                <td>METHOD</td>
-                <td>NODE</td>
-                <td>RESULT</td>
-            </tr>
-        </table>
     </main>
     <footer>
         <div class="container">
@@ -279,74 +305,36 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="./views/js/smoothscroll.js"></script>
-    <script>
-        var msgid = 1;
-        function GoSend() {
-            var table=document.getElementById("msglog");
-            var row = table.insertRow(1);
-            
-            var NUMcell = row.insertCell(0);
-            NUMcell.innerHTML=msgid++;
-            
-            var DATEcell = row.insertCell(1);
-            var d = new Date();
-            DATEcell.innerHTML=d.toLocaleTimeString();
-            
-            var TOcell = row.insertCell(2);
-            TOcell.innerHTML=document.mailform.toemail.value;
-            
-            var FROMcell = row.insertCell(3);
-            FROMcell.innerHTML=document.mailform.from.value;
-            
-            var SUBJECTcell = row.insertCell(4);
-            SUBJECTcell.innerHTML=document.mailform.subject.value;
-            
-            var MESSAGEcell = row.insertCell(5);
-            MESSAGEcell.innerHTML=document.mailform.message.value;
-            
-            var METHODcell = row.insertCell(6);
-            METHODcell.innerHTML=document.mailform.sendmethod.value;
-            
-            var NODEcell = row.insertCell(7);
-            
-            var RESULTcell = row.insertCell(8);
-            RESULTcell.innerHTML="<img height=\"24\" src=\"data:image/gif;base64,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\">";
+    <?php
+        // if(isset($_SESSION['modalInfo'])){
+        //     if(($_SESSION['mailresult'] == "") && ($_SESSION['ErrorInfo'] == "")){
+        //         echo "<script>$('#modalInfo').modal('show');</script>";
+        //         unset($_SESSION['modalInfo']);
+        //     }else{
+        //         echo "<script>$('#modalInfo').modal('hide');</script>";
+        //         unset($_SESSION['modalInfo']);
+        //     }
+        // }
 
-            var postdata= "sendemail=1&toemail="+document.mailform.toemail.value;
-                postdata+="&from="+document.mailform.from.value;
-                postdata+="&subject="+document.mailform.subject.value;
-                postdata+="&sendmethod="+document.mailform.sendmethod.value;
-                postdata+="&nome="+document.mailform.nome.value;
-                postdata+="&email="+document.mailform.email.value;
-                postdata+="&telefone="+document.mailform.telefone.value;
-                postdata+="&empresa="+document.mailform.empresa.value;
-                postdata+="&message="+encodeURIComponent(document.mailform.message.value).replace("%20", "+");
-            var url="<?=$_SERVER['PHP_SELF']; ?>";
-            var request=new XMLHttpRequest();
-            request.open("POST",url,true);
-            request.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-            request.overrideMimeType("text/plain");
-            request.onreadystatechange=function() { 
-                if ( request.readyState==4 ) {
-                    NODEcell.innerHTML=request.getResponseHeader("X-Node");
-                    if ( request.responseText == "OK" || request.responseText == "FAIL" ) {
-                        RESULTcell.innerHTML=request.responseText;
-                    } else {
-                        if ( request.status == 0 ) {
-                            RESULTcell.innerHTML="ERR_EMPTY_RESPONSE";
-                        } else {
-                            RESULTcell.innerHTML="HTTP/1.1 "+request.status+" "+request.statusText+"<br /><br />"+request.responseText;
-                            if(request.status == 200){
-                                $('#modalOk').modal('show');
-                            }else{
-                                $('#modalErro').modal('show');
-                            }
-                        }
-                    }
-                }
+        if(isset($_SESSION['mailresult'])){
+            if($_SESSION['mailresult'] != ""){
+                echo "<script>$('#modalOk').modal('show');</script>";
+                unset($_SESSION['mailresult']);
+            }else{
+                echo "<script>$('#modalInfo').modal('hide');</script>";
+                unset($_SESSION['modalInfo']);
             }
-            request.send(postdata);
         }
-    </script>
+
+        if(isset($_SESSION['ErrorInfo'])){
+            if($_SESSION['ErrorInfo'] != ""){
+                echo "<script>$('#modalErro').modal('show');</script>";
+                unset($_SESSION['ErrorInfo']);
+            }else{
+                echo "<script>$('#modalInfo').modal('hide');</script>";
+                unset($_SESSION['modalInfo']);
+            }
+        }
+    ?>
 </body>
 </html>
