@@ -61,10 +61,6 @@
     vertical-align:middle;
 }
 
-/* html {
-    scroll-behavior: smooth;
-} */
-
 .titulo{
     font-family: roboto-bold, sans-serif;
     color: #2d2f63;
@@ -167,7 +163,6 @@ header .nav-item{
 #carouselSolucoes{
     width: 100%;
     height: 80vh;
-    /* position: relative; */
     z-index: 0;
 }
 
@@ -176,16 +171,16 @@ header .nav-item{
     height: 100%;
 }
 
-/* #solucoes .carousel-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+#solucoes .carousel-item{
+    position: relative;
+}
 
 #solucoes .btn-outline-success{
     color: #fff;
     border-width: 0.2rem;
-    margin: 21% 30% 10% 50%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
 }
 
 .carousel-indicators{
@@ -196,6 +191,10 @@ header .nav-item{
     width: 0.8rem;
     height: 0.8rem;
     border-radius: 50%;
+}
+
+.carousel-titulo, .titulo-solucao, .texto-solucao{
+    display: none;
 }
 
 #solucoes .bov{
@@ -226,14 +225,23 @@ header .nav-item{
 /* ==========================================| ACADEMY |========================================== */
 
 #academy{
-    background: url('../img/academy.png') no-repeat center center;
+    background: url('../img/fuseacademy.jpg') no-repeat center center;
     background-size: cover;
     height: 80vh;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .btn-academy{
     font-size: 1.5rem;
+    margin-right: 6rem!important;
+    margin-top: 15rem!important;
+}
+
+#academy .academy, #academy p{
+    display: none;
 }
 
 
@@ -412,176 +420,20 @@ footer .footer-direitos{
 
 #youtube {
     bottom: 25%;
-    background-color: #282828; /* Blue */
+    background-color: #282828;
 }
 
 #instagram {
     bottom: 20%;
-    background-color: #282828; /* Red */
+    background-color: #282828;
 }
 
 #facebook {
     bottom: 15%;
-    background-color: #282828 /* Light Black */
+    background-color: #282828
 }
 
 #tiktok {
     bottom: 10%;
-    background-color: #282828 /* Light Black */
-}
-
-
-/* ==========================================| RESPONSIVO |========================================== */
-
-@media only screen and (max-width: 992px) {
-    /* HEADER */
-
-    header .header-logo{
-        width: 10rem;
-        height: 2rem;
-    }
-
-    /* BANNER */
-
-    .banner-lead{
-        position: absolute;
-        left: 10%;
-        top: 20%;
-        width: 80%;
-    }
-
-    .banner-titulo{
-        font-size: 1.5rem;
-    }
-
-    /* IOT */
-
-    #iot .container{
-        padding: 3rem 2rem 0 2rem;
-    }
-
-    #iot .col-md-6{
-        text-align: center;
-    }
-
-    /* SOLUCOES */
-
-    #solucoes .carousel-item{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .carousel-indicators{
-        margin: 0 auto;
-    }
-
-    #solucoes .carousel-titulo{
-        font-family: roboto-bold, sans-serif;
-        text-align: center;
-        color: #1ca14b;
-    }
-
-    #solucoes .titulo-solucao{
-        color: #fff;
-        text-align: center;
-    }
-
-    #solucoes .texto-solucao{
-        border: 0.5rem solid #faad12;
-        border-radius: 1rem;
-        font-family: roboto-light, sans-serif;
-        color: #fff;
-        margin: 0 4rem;
-        padding: 0.5rem;
-    }
-
-    #solucoes .btn-outline-success{
-        margin: 0 auto 2rem auto;
-    }
-
-    #solucoes .bov{
-        background: url('../img/01_.jpg') no-repeat center center;
-        background-size: cover;
-    }
-    
-    #solucoes .utilities{
-        background: url('../img/02_.jpg') no-repeat center center;
-        background-size: cover;
-    }
-    
-    #solucoes .temp{
-        background: url('../img/03_.jpg') no-repeat center center;
-        background-size: cover;
-    }
-    
-    #solucoes .track{
-        background: url('../img/04_.jpg') no-repeat center center;
-        background-size: cover;
-    }
-    
-    #solucoes .parking{
-        background: url('../img/05_.jpg') no-repeat center center;
-        background-size: cover;
-    }
-
-    /* ACADEMY */
-
-    #academy{
-        background: url('../img/academyRESP.png') no-repeat center center;
-        background-size: cover;
-    }
-
-    /* NÃO ENCONTROU */
-
-    .naoEncontrou{
-        width: 90%;
-    }
-
-    .naoEncontrou-titulo{
-        padding: 0;
-        margin-bottom: 2rem;
-    }
-
-    .naoEncontrou-texto{
-        padding: 0;
-        text-align: justify;
-    }
-
-    /* CONTATO */
-
-    #contato .formulario{
-        padding: 0 2rem;
-    }
-
-    #contato .localizacao{
-        margin-top: 3rem;
-        padding: 0 2rem;
-    }
-
-    /* FOOTER */
-
-    footer .row{
-        padding: 1rem 3rem;
-    }
-
-    footer .footer-politica{
-        margin-top: 1rem;
-    }
-
-    footer hr{
-        margin: 0 2rem;
-    }
-
-    /* REDES SOCIAIS */
-
-    #redesSociais a {
-        left: -8.5rem;
-        width: 10rem;
-    }
-
-    #redesSociais .social-logo{
-        width: 0.8rem;
-        height: 0.8rem;
-    }
+    background-color: #282828
 }

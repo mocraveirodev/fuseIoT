@@ -12,6 +12,7 @@
     <link rel="icon" href="views/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="views/css/style.css">
+    <link rel="stylesheet" href="views/css/m-style.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
     <header id="header">
@@ -103,33 +104,33 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item bov active">
-                        <h4 class="carousel-titulo d-block d-sm-none">SOLUÇÕES</h4>
-                        <h5 class="titulo-solucao d-block d-sm-none">Fuse Bov</h5>
-                        <p class="texto-solucao d-block d-sm-none">Solução para monitoramento e rastreamento de gado de corte gerando informações de localização, comportamento e comparativo com dados históricos compeltos de cada animal.</p>
+                        <h4 class="carousel-titulo">SOLUÇÕES</h4>
+                        <h5 class="titulo-solucao">Fuse Bov</h5>
+                        <p class="texto-solucao">Solução para monitoramento e rastreamento de gado de corte gerando informações de localização, comportamento e comparativo com dados históricos compeltos de cada animal.</p>
                         <a data-scroll href="#contato" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
                     </div>
                     <div class="carousel-item utilities">
-                        <h4 class="carousel-titulo d-block d-sm-none">SOLUÇÕES</h4>
-                        <h5 class="titulo-solucao d-block d-sm-none">Fuse Utilities</h5>
-                        <p class="texto-solucao d-block d-sm-none">Monitore o consumo de água, gás e energia elétrica e evite desperdícios, identifique vazamentos, aumente a segurança no trabalho e reduza custos.</p>
+                        <h4 class="carousel-titulo">SOLUÇÕES</h4>
+                        <h5 class="titulo-solucao">Fuse Utilities</h5>
+                        <p class="texto-solucao">Monitore o consumo de água, gás e energia elétrica e evite desperdícios, identifique vazamentos, aumente a segurança no trabalho e reduza custos.</p>
                         <a data-scroll href="#contato" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
                     </div>
                     <div class="carousel-item temp">
-                        <h4 class="carousel-titulo d-block d-sm-none">SOLUÇÕES</h4>
-                        <h5 class="titulo-solucao d-block d-sm-none">Fuse Temp</h5>
-                        <p class="texto-solucao d-block d-sm-none">Solução completa para acompanhamento de temperatura, umidade, e contato binário (ligado/desligado, aberto/fechado), totalmente validável para hospitais e Inmetro.</p>
+                        <h4 class="carousel-titulo">SOLUÇÕES</h4>
+                        <h5 class="titulo-solucao">Fuse Temp</h5>
+                        <p class="texto-solucao">Solução completa para acompanhamento de temperatura, umidade, e contato binário (ligado/desligado, aberto/fechado), totalmente validável para hospitais e Inmetro.</p>
                         <a data-scroll href="#contato" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
                     </div>
                     <div class="carousel-item track">
-                        <h4 class="carousel-titulo d-block d-sm-none">SOLUÇÕES</h4>
-                        <h5 class="titulo-solucao d-block d-sm-none">Fuse Track</h5>
-                        <p class="texto-solucao d-block d-sm-none">Saiba tudo sobre sua frota, rastreie seus ativos, otimize rotas, ganhe agilidade, reduza custos e tenha mais segurança sobre seus bens e serviços.</p>
+                        <h4 class="carousel-titulo">SOLUÇÕES</h4>
+                        <h5 class="titulo-solucao">Fuse Track</h5>
+                        <p class="texto-solucao">Saiba tudo sobre sua frota, rastreie seus ativos, otimize rotas, ganhe agilidade, reduza custos e tenha mais segurança sobre seus bens e serviços.</p>
                         <a data-scroll href="#contato" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
                     </div>
                     <div class="carousel-item parking">
-                        <h4 class="carousel-titulo d-block d-sm-none">SOLUÇÕES</h4>
-                        <h5 class="titulo-solucao d-block d-sm-none">Fuse Parking</h5>
-                        <p class="texto-solucao d-block d-sm-none">Monitore vagas de estacionamento ou locais de parada proibida, receba alertas em tempo real em caso de infração e controle o tráfego de veículos em locais de estudo.</p>
+                        <h4 class="carousel-titulo">SOLUÇÕES</h4>
+                        <h5 class="titulo-solucao">Fuse Parking</h5>
+                        <p class="texto-solucao">Monitore vagas de estacionamento ou locais de parada proibida, receba alertas em tempo real em caso de infração e controle o tráfego de veículos em locais de estudo.</p>
                         <a data-scroll href="#contato" class="btn btn-padrao btn-outline-success">Quero saber mais</a>
                     </div>
                 </div>
@@ -143,8 +144,10 @@
                 </a>
             </div>
         </section>
-        <section id="academy" class="d-flex justify-content-center align-items-end">
-            <a href="/?goacademy" class="btn btn-padrao btn-academy btn-warning mb-5">Conheça a fuse | Academy</a>
+        <section id="academy">
+            <img src="views/img/Logo Cima Letras Branco.png" class="academy" alt="Logo Fuse IoT Academy">
+            <p>Dare the status. Innovate with us.</p>
+            <a href="/?goacademy" class="btn btn-padrao btn-academy btn-success">Conheça a fuse | Academy</a>
         </section>
         <section id="naoEncontrou">
             <div class="naoEncontrou">
@@ -184,7 +187,7 @@
                         </form>
                     </div>
                     <div class="col-md-4 localizacao">
-                    <h3 class="titulo">Onde estamos</h3>
+                        <h3 class="titulo">Onde estamos</h3>
                         <p>SÃO PAULO</p>
                         <br>
                         <p>Av. Roque Petroni Jr., 850</p>

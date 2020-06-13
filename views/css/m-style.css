@@ -1,0 +1,270 @@
+/* ==========================================| BANNER |========================================== */
+
+@media only screen and (max-width: 992px) {
+    #banner .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-lead{
+        position: inherit;
+        width: 50%;
+    }
+
+    .banner-texto, .banner-texto span{
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .banner-lead{
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .banner-lead{
+        width: 90%;
+    }
+    .banner-texto, .banner-texto span{
+        font-size: 1rem;
+    }
+}
+/* ==========================================| IOT |========================================== */
+
+@media only screen and (max-width: 992px) {
+    #iot .container{
+        padding: 3rem 3rem 0 3rem;
+    }
+
+    #iot .col-md-6{
+        text-align: center;
+    }
+}
+
+/* ==========================================| SOLUÇÕES |========================================== */
+
+@media only screen and (max-width: 576px) {
+
+    /* .carousel-inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+
+    #solucoes .carousel-item{
+        text-align: center;
+    }
+
+    .carousel-titulo, .titulo-solucao, .texto-solucao{
+        display: block;
+    }
+
+    #solucoes .carousel-titulo{
+        font-family: roboto-bold, sans-serif;
+        font-size: 2rem;
+        color: #1ca14b;
+        margin-top: 15%;
+    }
+
+    #solucoes .titulo-solucao{
+        color: #fff;
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    #solucoes .texto-solucao{
+        border: 0.5rem solid #faad12;
+        border-radius: 1rem;
+        font-family: roboto-light, sans-serif;
+        color: #fff;
+        margin: 2rem 6rem;
+        padding: 0.5rem;
+    }
+    #solucoes .track .texto-solucao{
+        padding: 0.5rem 1rem;
+    }
+
+    #solucoes .btn-outline-success{
+        position: initial;
+        margin-top: 1rem;
+    }    
+
+    #solucoes .bov{
+        background: url('../img/01_.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    
+    #solucoes .utilities{
+        background: url('../img/02_.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    
+    #solucoes .temp{
+        background: url('../img/03_.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    
+    #solucoes .track{
+        background: url('../img/04_.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    
+    #solucoes .parking{
+        background: url('../img/05_.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    .carousel-indicators{
+        margin: 0 0 2rem 0;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    #solucoes .texto-solucao{
+        margin: 2rem 4rem;
+    }
+
+    #solucoes .bov .texto-solucao{
+        padding: 0.5rem 0.3rem;
+    }
+
+    #solucoes .track .texto-solucao{
+        padding: 0.5rem 1.5rem;
+    }
+}
+
+/* ==========================================| ACADEMY |========================================== */
+
+@media only screen and (max-width: 992px) {
+    .btn-academy{
+        margin-right: 2rem!important;
+        margin-top: 7rem!important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #academy{
+        background: url('../img/bgpub.jpeg') no-repeat center center;
+        background-size: cover;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+    }
+
+    #academy .academy{
+        display: block;
+        width: 50%;
+        height: 50%;
+    }
+
+    #academy p{
+        color: #fff;
+        font-family: roboto-bold, sans-serif;
+        font-size: 2rem;
+    }
+
+    .btn-academy{
+        margin-right: 0!important;
+        margin-top: 3rem!important;
+    }
+}
+@media only screen and (max-width: 576px) {
+    #academy .academy{
+        height: 40%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #academy .academy{
+        height: 30%;
+    }
+
+    #academy p{
+        font-size: 1.5rem;
+    }
+}
+
+/* ==========================================| NÃO ENCONTROU |========================================== */
+
+@media only screen and (max-width: 992px) {
+    .naoEncontrou{
+        width: 70%;
+    }
+
+    .naoEncontrou-titulo{
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .naoEncontrou-texto{
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .naoEncontrou{
+        width: 90%;
+    }
+}
+
+/* ==========================================| CONTATO |========================================== */
+
+@media only screen and (max-width: 992px) {
+
+}
+@media only screen and (max-width: 768px) {
+    #contato .formulario{
+        padding: 0 2rem;
+    }
+}
+@media only screen and (max-width: 576px) {
+    #contato .formulario{
+        padding: 0 2rem 4rem 2rem;
+    }
+
+    #contato .localizacao{
+        padding: 0 2rem 0 2rem;
+    }
+}
+/* ==========================================| REDES SOCIAIS |========================================== */
+
+@media only screen and (max-width: 992px) {
+
+}
+@media only screen and (max-width: 768px) {
+    
+}
+@media only screen and (max-width: 576px) {
+    
+}
+/* ==========================================| HEADER |========================================== */
+
+@media only screen and (max-width: 992px) {
+
+}
+@media only screen and (max-width: 768px) {
+    
+}
+@media only screen and (max-width: 576px) {
+    
+}
+/* ==========================================| HEADER |========================================== */
+
+@media only screen and (max-width: 992px) {
+
+}
+@media only screen and (max-width: 768px) {
+    
+}
+@media only screen and (max-width: 576px) {
+    #redesSociais a {
+        left: -7.8rem;
+        width: 10rem;
+    }
+
+    #redesSociais .social-logo{
+        width: 1.5rem;
+    }
+}

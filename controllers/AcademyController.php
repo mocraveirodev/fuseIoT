@@ -25,10 +25,15 @@
         
         private function viewGoAcademy(){
             if(isset($_SESSION['usuario'])){
-                $_SESSION['errologin'] = "";
-                $_SESSION['erroemail'] = "";
-                $_SESSION['errosenha'] = "";
-                $_SESSION['alterasenha'] = "";
+                unset($_SESSION['modalInfo']);
+                unset($_SESSION['ErrorInfo']);
+                unset($_SESSION['mailresult']);
+                unset($_SESSION['errologin']);
+                unset($_SESSION['erroemail']);
+                unset($_SESSION['errosenha']);
+                unset($_SESSION['alterasenha']);
+                unset($_SESSION['abreLogin']);
+                unset($_SESSION['emBreve']);
             }
             header('Location:/?academy');
         }
