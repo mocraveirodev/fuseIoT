@@ -185,6 +185,7 @@
 
         private function cadastrarUsuario(){
             include "views/cadastro.php";
+            
         }
 
         private function emBreve(){
