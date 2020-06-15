@@ -1,4 +1,4 @@
-composer1.json
-composer1.lock
-/vendor1
+composer.json
+composer.lock
+/vendor
 /models/Conexao.php
