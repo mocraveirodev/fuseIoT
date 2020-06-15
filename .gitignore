@@ -1,1 +1,4 @@
+composer1.json
+composer1.lock
+/vendor1
 /models/Conexao.php
