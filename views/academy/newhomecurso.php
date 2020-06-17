@@ -1,15 +1,3 @@
-<?php
-    $sobrenome = explode(" ", $_SESSION["usuario"]->sobrenome);
-    // echo "<pre>";
-    // print_r($_SESSION["cursos"]);
-    // echo "</pre>";
-    // echo "<pre>";
-    // print_r($_SESSION["aulas"]);
-    // echo "</pre>";
-    // echo "<pre>";
-    // print_r($_SESSION["usuario"]);
-    // echo "</pre>";
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -20,35 +8,23 @@
     <meta name="keywords" content="IoT,Internet of Things,Internet das Coisas,Inteligência artificial,Big Data,Analytics,Hardware,Conectividade,Segurança">
     <meta name="author" content="Monica Craveiro">
     <title>fuse | IoT Academy</title>
-    <script src="https://kit.fontawesome.com/3e0edc3a21.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="views/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="views/img/favicon.ico" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <link rel="stylesheet" type="text/css" href="views/css/styleCurso.css">
     <link rel="stylesheet" type="text/css" href="views/css/auxiliar.css">
     <link rel="stylesheet" type="text/css" href="views/css/grade.css">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
-    <?php include "views/includes/cabeçalho.php"; ?>
-
-    <div class="site">
-        <?php include "views/includes/menu.php"; ?>
-
-        <div class="base-geral">
-            <?php
-                $link = is_numeric($_GET["homecurso"]) ? $_GET["homecurso"] : 0;
-                $pag = ["views/includes/home_curso.php","views/includes/meus_cursos.php","views/includes/curso.php","views/includes/aula.php","views/includes/perfil.php","views/includes/comentario.php"];
-                if(file_exists($pag[$link])){
-                    include $pag[$link];
-                }else{
-                    include "views/includes/home_curso.php"; // ou criar um arquivo pra erro 404
-                }
-            ?>
-
-            <?php include "views/includes/rodapé.php"; ?>
-        </div>
-    </div>
-
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <a data-scroll class="navbar-brand" href="/?"><img src="views/img/logoacademydourado.jpeg" class="logonav" alt="Logo Fuse IoT"></a>
+            <form class="form-inline">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav>
+    </header>
     <script type="text/javascript" src="./views/js/youtubescript.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

@@ -1,8 +1,3 @@
-<?php
-    include_once('views/includes/phpmailer.php');
-    include_once('views/includes/smtp.php');
-    include_once('views/includes/envio.php');
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

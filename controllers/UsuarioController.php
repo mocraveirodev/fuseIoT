@@ -2,6 +2,7 @@
     session_start();
 
     include_once "models/Usuario.php";
+    include_once "models/Curso.php";
 
     class UsuarioController{
 
@@ -86,9 +87,12 @@
                 $email = $_POST['email'];
                 $senha = $_POST['senha'];
                 if($this->validaUsuario($email,$senha)){
-                    $db = new Usuario();
-                    $_SESSION['usuario'] = $db->recuperaUsuario($email);
-                    $db->ultimoLogin($_SESSION['usuario']->id_usuario);
+                    $user = new Usuario();
+                    $curso = new Curso();
+                    $_SESSION['usuario'] = $user->recuperaUsuario($email);
+                    $_SESSION['cursos'] = $curso->listarCursos();
+                    $_SESSION['aulas'] = $curso->listarAulas();
+                    $user->ultimoLogin($_SESSION['usuario']->id_usuario);
                     header('Location:/?homecurso');
                 }else{
                     $_SESSION['errologin'] = "Email e/ou senha incorretos!";
