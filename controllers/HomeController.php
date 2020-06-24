@@ -20,7 +20,20 @@
                 case "email":
                     $this->envioEmail();
                 break;
+                case "pagseguro":
+                    $this->viewPagseguro();
+                break;
+                case "pagamento":
+                    $this->viewPagamento();
+                break;
             }
+        }
+
+        private function viewPagseguro(){
+            include "views/pagseguro/pagseguro.php";
+        }
+        private function viewPagamento(){
+            include "views/pagseguro/pagamento.php";
         }
 
         private function viewHome(){

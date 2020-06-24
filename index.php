@@ -12,6 +12,16 @@
             $controller = new HomeController();
             $controller->acao($rotas);
         break;
+        case "pagseguro":
+            include "controllers/HomeController.php";
+            $controller = new HomeController();
+            $controller->acao($rotas);
+        break;
+        case "pagamento":
+            include "controllers/HomeController.php";
+            $controller = new HomeController();
+            $controller->acao($rotas);
+        break;
         case "academy":
             include "controllers/AcademyController.php";
             $controller = new AcademyController();

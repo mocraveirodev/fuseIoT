@@ -2,3 +2,4 @@ composer.json
 composer.lock
 /vendor
 /models/Conexao.php
+/views/pagseguro/configuracao.php
