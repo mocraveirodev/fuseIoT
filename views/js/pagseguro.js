@@ -1,3 +1,5 @@
+pagamento();
+
 function pagamento(){
     var endereco = jQuery('.endereco').attr("data-endereco");
 
@@ -42,3 +44,26 @@ function listarMeiospag(){
         }
     });
 }
+
+$("#numcartao").on('keyup', function(){
+    var numcartao = $(this).val();
+    // console.log(numcartao);
+    if(numcartao.length = 6){
+        PagSeguroDirectPayment.getBrand({
+            cardBin: numcartao,
+            success: function(retorno) {
+                // console.log(retorno);
+                $("#msg").empty();
+                var imgband = retorno.brand.name;
+                $(".band-cartao").html("<img src='https://stc.pagseguro.uol.com.br/public/img/payment-methods-flags/42x20/" + imgband + ".png'>");
+            },
+            error: function(retorno) {
+                $(".band-cartao").empty();
+                $("#msg").html("Cartão inválido");
+            },
+            complete: function(retorno) {
+              //tratamento comum para todas chamadas
+            }
+        });
+    }
+});

@@ -43,7 +43,7 @@
                 $_SESSION['errosenha'] = "";
                 $_SESSION['alterasenha'] = "";
             }
-            // $_SESSION['modalInfo'] = "abre";
+            $_SESSION['title'] = "fuse | IoT";
             include "views/home.php";
         }
 

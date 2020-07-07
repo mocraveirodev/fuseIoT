@@ -14,8 +14,15 @@
     <link rel="stylesheet" href="views/css/m-style.css">
 </head>
 <body>
-    <button onclick="pagamento()">Pagar</button>
+    <!-- <button onclick="pagamento()">Pagar</button> -->
     <span class="endereco" data-endereco="<?= URL ?>"></span>
+    <span id="msg"></span>
+
+    <form action="" method="post">
+        <label for="numcartao">Numero do Cartão</label>
+        <input type="text" name="numcartao" id="numcartao">
+    </form>
+    <div class="band-cartao"></div>
 
     <div class="meio-pag"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
