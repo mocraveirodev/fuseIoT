@@ -1,3 +1,12 @@
+/* ==========================================| MENU |========================================== */
+
+@media only screen and (max-width: 768px) {
+    header .navbar-nav{
+        justify-content: space-around;
+        flex-direction: row;
+    }
+}
+
 /* ==========================================| BANNER |========================================== */
 
 @media only screen and (max-width: 992px) {
@@ -228,36 +237,9 @@
         padding: 0 2rem 0 2rem;
     }
 }
+
 /* ==========================================| REDES SOCIAIS |========================================== */
 
-@media only screen and (max-width: 992px) {
-
-}
-@media only screen and (max-width: 768px) {
-    
-}
-@media only screen and (max-width: 576px) {
-    
-}
-/* ==========================================| HEADER |========================================== */
-
-@media only screen and (max-width: 992px) {
-
-}
-@media only screen and (max-width: 768px) {
-    
-}
-@media only screen and (max-width: 576px) {
-    
-}
-/* ==========================================| HEADER |========================================== */
-
-@media only screen and (max-width: 992px) {
-
-}
-@media only screen and (max-width: 768px) {
-    
-}
 @media only screen and (max-width: 576px) {
     #redesSociais a {
         left: -7.8rem;

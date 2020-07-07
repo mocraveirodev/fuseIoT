@@ -20,6 +20,7 @@
         }
 
         private function viewHomeAcademy(){
+            $_SESSION['title'] = "fuse | IoT Academy";
             include "views/academy/academy.php";
         }
         

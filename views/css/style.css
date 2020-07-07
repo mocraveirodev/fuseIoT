@@ -72,6 +72,12 @@
     border-radius: 2rem;
 }
 
+.erro{
+    font-family: lato-bold,sans-serif;
+    font-size: 1.2rem;
+    color: red;
+}
+
 /* ==========================================| MENU |========================================== */
 
 header .navbar{
@@ -86,13 +92,6 @@ header .header-logo{
 
 header .navbar-nav{
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
-header .nav-item{
-    margin-left: 1.5rem;
 }
 
 /* ==========================================| BANNER |========================================== */
@@ -344,10 +343,6 @@ header .nav-item{
     font-size: 1.5rem;
 }
 
-/* #modal #modalInfo .img-fluid{
-    margin: 0 1rem;
-} */
-
 /* ==========================================| RODAPÉ |========================================== */
 
 footer{
@@ -393,19 +388,19 @@ footer .footer-direitos{
 }
 
 #redesSociais a {
-    position: fixed; /* Position them relative to the browser window */
-    left: -7.5rem; /* Position them outside of the screen */
-    transition: 0.3s; /* Add transition on hover */
+    position: fixed;
+    left: -7.5rem;
+    transition: 0.3s;
     padding: 0.5rem;
-    width: 10rem; /* Set a specific width */
-    text-decoration: none; /* Remove underline */
-    color: white; /* White text color */
-    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+    width: 10rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 0 5px 5px 0;
     text-align: right;
 }
 
 #redesSociais a:hover {
-    left: 0; /* On mouse-over, make the elements appear as they should */
+    left: 0;
 }
 
 #redesSociais .social-logo{

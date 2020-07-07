@@ -1,29 +1,29 @@
-<?php include "views/includes/top.php"; ?>
+<?php include_once 'views/includes/top.php'; ?>
     <header id="header">
-    <nav data-scroll-header class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a data-scroll class="navbar-brand" href="#header"><img class="header-logo" src="views/img/LogoFusenav.svg" alt="Logo Fuse IoT"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a data-scroll class="nav-link" href="#iot">IoT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a data-scroll class="nav-link" href="#solucoes">Soluções</a>
-                    </li>
-                    <li class="nav-item">
-                        <a data-scroll class="nav-link" href="#academy">Academy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a data-scroll class="nav-link" href="#contato">Contato</a>
-                    </li>
-                </ul>
+        <nav data-scroll-header class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a data-scroll class="navbar-brand" href="#header"><img class="header-logo" src="views/img/LogoFusenav.svg" alt="Logo Fuse IoT"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link" href="#iot">IoT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link" href="#solucoes">Soluções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link" href="#academy">Academy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     </header>
 
     <main>
@@ -279,49 +279,7 @@
         </div>
     </footer>
 
-    <div id="redesSociais" class="social">
-        <a href="https://www.linkedin.com/company/fuseiot/" id="linkedin" target="_blank">LinkedIn <img class="social-logo" src="views/img/linkedin.svg" alt="Logo LinkedIn"></img></a>
-        <a href="https://www.youtube.com/c/fuseiotacademy" id="youtube" target="_blank">YouTube <img class="social-logo" src="views/img/youtube.svg" alt="Logo YouTube"></img></a>
-        <a href="https://www.instagram.com/fuseiotacademy/" id="instagram" target="_blank">Instagram <img class="social-logo" src="views/img/instagram.svg" alt="Logo Instagram"></img></a>
-        <a href="https://www.facebook.com/fuseiotacademy/" id="facebook" target="_blank">Facebook <img class="social-logo" src="views/img/facebook.svg" alt="Logo Facebook"></img></a>
-        <a href="https://www.tiktok.com/@fuseiotacademy" id="tiktok" target="_blank">TikTok <img class="social-logo" src="views/img/tiktok.svg" alt="Logo TikTok"></img></a>
-    </div>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="./views/js/smoothscroll.js"></script>
-    <?php
-        // if(isset($_SESSION['modalInfo'])){
-        //     if(($_SESSION['mailresult'] == "") && ($_SESSION['ErrorInfo'] == "")){
-        //         echo "<script>$('#modalInfo').modal('show');</script>";
-        //         unset($_SESSION['modalInfo']);
-        //     }else{
-        //         echo "<script>$('#modalInfo').modal('hide');</script>";
-        //         unset($_SESSION['modalInfo']);
-        //     }
-        // }
-
-        if(isset($_SESSION['mailresult'])){
-            if($_SESSION['mailresult'] != ""){
-                echo "<script>$('#modalOk').modal('show');</script>";
-                unset($_SESSION['mailresult']);
-            }else{
-                echo "<script>$('#modalInfo').modal('hide');</script>";
-                unset($_SESSION['modalInfo']);
-            }
-        }
-
-        if(isset($_SESSION['ErrorInfo'])){
-            if($_SESSION['ErrorInfo'] != ""){
-                echo "<script>$('#modalErro').modal('show');</script>";
-                unset($_SESSION['ErrorInfo']);
-            }else{
-                echo "<script>$('#modalInfo').modal('hide');</script>";
-                unset($_SESSION['modalInfo']);
-            }
-        }
+    <?php 
+        include_once 'views/includes/redessociais.php';
+        include_once 'views/includes/bottom.php';        
     ?>
-</body>
-</html>
