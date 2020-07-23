@@ -438,3 +438,7 @@ footer .footer-direitos{
 .img-band{
     padding-right: 1rem;
 }
+
+.select-qtdParcelas{
+    display: none;
+}

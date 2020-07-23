@@ -1,3 +1,4 @@
+var amount = "600.00";
 pagamento();
 
 function pagamento(){
@@ -18,7 +19,7 @@ function pagamento(){
 
 function listarMeiospag(){
     PagSeguroDirectPayment.getPaymentMethods({
-        amount: 500.00,
+        amount: amount,
         success: function(retorno) {
             // console.log(retorno);
             $(".meio-pag").append("<div>Cartão de Crédito</div>");
@@ -56,6 +57,7 @@ $("#numcartao").on('keyup', function(){
                 $("#msg").empty();
                 var imgband = retorno.brand.name;
                 $(".band-cartao").html("<img src='https://stc.pagseguro.uol.com.br/public/img/payment-methods-flags/42x20/" + imgband + ".png'>");
+                recupParcelas(imgband);
             },
             error: function(retorno) {
                 $(".band-cartao").empty();
@@ -67,3 +69,24 @@ $("#numcartao").on('keyup', function(){
         });
     }
 });
+
+function recupParcelas(bandeira){
+    PagSeguroDirectPayment.getInstallments({
+        amount: amount,
+        maxInstallmentNoInterest: 3,
+        brand: bandeira,
+        success: function(retorno){
+            $.each(retorno.installments, function(ia, obja){
+                $.each(obja, function(ib, objb){
+                    console.log(objb);
+                });
+            });
+        },
+        error: function(retorno) {
+            // callback para chamadas que falharam.
+        },
+        complete: function(retorno){
+            // Callback para todas chamadas.
+        }
+});
+}

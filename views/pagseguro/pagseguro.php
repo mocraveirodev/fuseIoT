@@ -21,6 +21,9 @@
     <form action="" method="post">
         <label for="numcartao">Numero do Cartão</label>
         <input type="text" name="numcartao" id="numcartao">
+        <select name="qtdParcelas" id="qtdParcelas" class="select-qtdParcelas">
+            <option value="">Selecione</option>
+        </select>
     </form>
     <div class="band-cartao"></div>
 

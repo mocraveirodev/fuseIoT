@@ -1,3 +1,6 @@
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^fuseiot.io/ [NC]
-RewriteRule ^(.*)$  [L,R=301]
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  RewriteRule ^([a-z0-9-]+)/?$ index.php?$1 [NC,L]
+</IfModule>
