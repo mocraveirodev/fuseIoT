@@ -134,15 +134,15 @@ header .carrinho:hover{
     font-size: 1.2rem;
 }
 
-#cards{
+#sobre{
     background-color: #9A6E17;
 }
 
-#cards .card-deck{
+#sobre .card-deck{
     margin-top: -10rem;
 }
 
-#cards .card{
+#sobre .card{
     border: none;
     background: url('../img/Boxbranco.jpg') no-repeat center center;
     background-size: cover;
@@ -150,52 +150,73 @@ header .carrinho:hover{
     margin: 0 2.5rem;
 }
 
-#cards .card:hover{
+#sobre .card:hover{
     background: url('../img/boxamarelo.jpg') no-repeat  center;
     background-size: cover;
 }
 
-#cards .card:hover .btn-card{
+#sobre .card:hover .btn-card{
     border: none;
     background-color: #531E8A;
     color: #fff;
 }
 
-#cards .card-body{
+#sobre .card-body{
     padding: 0 1rem;
 }
 
-#cards .icon-card{
+#sobre .icon-card{
     width: 3rem;
     height: 3rem;
     margin-bottom: 1rem;
 }
 
-#cards .card-title{
+#sobre .card-title{
     font-family: roboto-bold, sans-serif;
     margin-bottom: 2rem;
     font-size: 1rem;
 }
 
-#cards ul{
+#sobre ul{
     list-style: none;
     margin-bottom: 2rem;
 }
 
-#cards ul li svg{
+#sobre ul li svg{
     margin-right: 1rem;
 }
 
-#cards ul li{
+#sobre ul li{
     font-family: roboto-light, sans-serif;
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
 }
 
-#cards .btn-card{
+#sobre .btn-card{
     border: 3px solid #FFBB00;
     padding: 0.5rem 1rem;
     border-radius: 0;
     font-family: roboto-light, sans-serif;
     font-size: 0.8rem;
+}
+
+#sobre .sobre{
+    text-align: center;
+    color: #fff;
+    padding: 2.5rem;
+}
+
+#sobre .texto-sobre, #tema .texto-tema{
+    text-align: justify;
+    padding: 2rem 0;
+}
+
+#tema{
+    color: #191816;
+}
+
+#tema .titulo-tema{
+    /* font-family: roboto-bold, sans-serif; */
+    font-size: 2rem;
+    padding-top: 2rem;
 }

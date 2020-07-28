@@ -39,8 +39,8 @@
                             <a data-scroll class="nav-link" href="#trilhas">Trilhas</a>
                         </li>
                     </ul>
-                    <a href="/?login" class="btn btn-outline-light">Entrar</a>
-                    <!-- <a href="/?embreve" class="btn btn-outline-light">Entrar</a> -->
+                    <!-- <a href="/?login" class="btn btn-outline-light">Entrar</a> -->
+                    <a href="/?embreve" class="btn btn-outline-light">Entrar</a>
                 </div>
             </div>
         </nav>
@@ -313,20 +313,24 @@
         if(isset($_SESSION['alterasenha'])){
             if($_SESSION['alterasenha'] == "email"){
                 echo "<script>$('#modalAltera').modal('show');</script>";
+                unset($_SESSION['alterasenha']);
             }
             if($_SESSION['alterasenha'] == "senha"){
                 echo "<script>$('#modalSenha').modal('show');</script>";
+                unset($_SESSION['alterasenha']);
             }
         }
         if(isset($_SESSION['abreLogin'])){
             if($_SESSION['abreLogin'] == "login"){
                 echo "<script>$('#modalLogin').modal('show');</script>";
+                unset($_SESSION['abreLogin']);
             }
         }
         
         if(isset($_SESSION['emBreve'])){
             if($_SESSION['emBreve'] == "abre"){
                 echo "<script>$('#modalEmBreve').modal('show');</script>";
+                unset($_SESSION['emBreve']);
             }
         }
     ?>

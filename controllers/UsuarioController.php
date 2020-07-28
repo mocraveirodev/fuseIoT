@@ -200,7 +200,7 @@
             $_SESSION['alterasenha'] = "";
             $_SESSION['abreLogin'] = "";
             $_SESSION['emBreve'] = "abre";
-            header('Location:/?academy');
+            echo "<script>window.location.href = '/?fuseiotacademy';</script>";
         }
     }
 ?>

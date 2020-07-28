@@ -78,6 +78,18 @@
     color: red;
 }
 
+main .logofuse{
+    color: #323e48;
+    font-family: roboto-bold, sans-serif;
+    font-size: 100%;
+}
+
+main .logoiot{
+    color: #323e48;
+    font-family: roboto-regular, sans-serif;
+    font-size: 80%;
+}
+
 /* ==========================================| MENU |========================================== */
 
 header .navbar{
@@ -137,11 +149,11 @@ header .navbar-nav{
     padding: 3rem 0;
 }
 
-#iot span{
+/* #iot span{
     font-family: roboto-bold, sans-serif;
     color: #2d2f63;
     font-size: 1.3rem;
-}
+} */
 
 #iot .col-md-6{
     height: 20rem;

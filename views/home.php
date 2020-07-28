@@ -31,7 +31,7 @@
             <div class="container">
                 <div class="banner-lead">
                     <h1 class="banner-titulo titulo">Vamos fazer seu negócio gerar ainda mais resultados</h1>
-                    <p class="banner-texto">A <span>fuse | IoT</span> é uma StartUp focada em tecnologias de IoT e Inteligência Artificial, que gera resultados com aprimoramento de processos visando a melhoria contínua do seu negócio.</p>
+                    <p class="banner-texto">A <span class="logofuse">fuse | <span class="logoiot">IoT</span></span> é uma StartUp focada em tecnologias de IoT e Inteligência Artificial, que gera resultados com aprimoramento de processos visando a melhoria contínua do seu negócio.</p>
                     <a data-scroll href="#contato" class="btn btn-padrao banner-btn btn-outline-success">Me ajude agora</a>
                 </div>
             </div>
@@ -39,7 +39,7 @@
         <section id="iot">
             <div class="container">
                 <h3 class="titulo text-center">Você está preparado para a evolução digital?</h3>
-                <h3 class="titulo text-center">A fuse | <span>IoT</span> te ajuda nessa!</h3>
+                <h3 class="titulo text-center">A <span class="logofuse">fuse | <span class="logoiot">IoT</span></span> te ajuda nessa!</h3>
                 <p class="iot text-justify">Com ecossistemas completos, entregamos uma solução única para sua necessidade. Ajudamos a controlar e monitorar ambientes remotos, evitando desperdícios, aumentando a segurança com dados relevantes que agilizam a tomada de decisões. Use a tecnologia como sua aliada, e tenha redução de perdas e aumento de receita.</p>
                 <div class="row justify-content-between">
                     <div class="col-md-6 order-md-1">

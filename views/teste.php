@@ -52,7 +52,7 @@
                 <a data-scroll class="btn btn-banner" href="#especializacoes">ESPECIALIZAÇÕES</a>
             </div>
         </section>
-        <section id="cards">
+        <section id="sobre">
             <div class="container">
                 <div class="card-deck">
                     <div class="card">
@@ -92,6 +92,18 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="sobre">
+                    <h3 class="titulo-sobre">SOBRE NÓS</h3>
+                    <p class="texto-sobre">Queremos habilitar o aluno para entender toda a cadeia de valor de IoT, fornecendo uma base sólida de conhecimento para a entrega de um produto final com qualidade e competitividade. Queremos habilitar o aluno para entender toda a cadeia de valor de IoT, fornecendo uma base sólida de conhecimento para a entrega de um produto final com qualidade e competitividade.</p>
+                    <div id="player"></div>
+                </div>
+            </div>
+        </section>
+        <section id="tema">
+            <div class="container">
+                <h2 class="titulo-tema">TEMA</h2>
+                <p class="texto-tema">Queremos habilitar o aluno para entender toda a cadeia de valor de IoT, fornecendo uma base sólida de conhecimento para a entrega de um produto final com qualidade e competitividade.</p>                
             </div>
         </section>
     </main>
@@ -101,6 +113,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="./views/js/smoothscroll.js"></script>
+    <script src="./views/js/youtubescriptLP.js"></script>
     <?php
         // if(isset($_SESSION['modalInfo'])){
         //     if(($_SESSION['mailresult'] == "") && ($_SESSION['ErrorInfo'] == "")){
