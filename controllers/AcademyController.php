@@ -7,9 +7,9 @@
                 case "fuseiotacademy":
                     $this->viewHomeAcademy();
                 break;
-                // case "goacademy":
-                //     $this->viewGoAcademy();
-                // break;
+                case "teste":
+                    $this->viewTeste();
+                break;
                 case "homecurso":
                     $this->viewHomeCurso();
                 break;
@@ -24,20 +24,10 @@
             include "views/academy/academy.php";
         }
         
-        // private function viewGoAcademy(){
-        //     if(isset($_SESSION['usuario'])){
-        //         unset($_SESSION['modalInfo']);
-        //         unset($_SESSION['ErrorInfo']);
-        //         unset($_SESSION['mailresult']);
-        //         unset($_SESSION['errologin']);
-        //         unset($_SESSION['erroemail']);
-        //         unset($_SESSION['errosenha']);
-        //         unset($_SESSION['alterasenha']);
-        //         unset($_SESSION['abreLogin']);
-        //         unset($_SESSION['emBreve']);
-        //     }
-        //     header('Location:/?academy');
-        // }
+        private function viewTeste(){
+            $_SESSION['title'] = "fuse | IoT Academy";
+            include "views/teste.php";
+        }
 
         private function viewHomeCurso(){
             if(isset($_SESSION['usuario'])){

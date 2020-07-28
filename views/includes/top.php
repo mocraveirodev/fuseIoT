@@ -12,6 +12,8 @@
     <link rel="icon" href="views/img/favicon.ico" type="image/x-icon">
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/3e0edc3a21.js" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="views/css/style.css">
     <link rel="stylesheet" href="views/css/m-style.css">
