@@ -133,3 +133,69 @@ header .carrinho:hover{
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
 }
+
+#cards{
+    background-color: #9A6E17;
+}
+
+#cards .card-deck{
+    margin-top: -10rem;
+}
+
+#cards .card{
+    border: none;
+    background: url('../img/Boxbranco.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 1rem;
+    margin: 0 2.5rem;
+}
+
+#cards .card:hover{
+    background: url('../img/boxamarelo.jpg') no-repeat  center;
+    background-size: cover;
+}
+
+#cards .card:hover .btn-card{
+    border: none;
+    background-color: #531E8A;
+    color: #fff;
+}
+
+#cards .card-body{
+    padding: 0 1rem;
+}
+
+#cards .icon-card{
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+#cards .card-title{
+    font-family: roboto-bold, sans-serif;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+#cards ul{
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+#cards ul li svg{
+    margin-right: 1rem;
+}
+
+#cards ul li{
+    font-family: roboto-light, sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+#cards .btn-card{
+    border: 3px solid #FFBB00;
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    font-family: roboto-light, sans-serif;
+    font-size: 0.8rem;
+}

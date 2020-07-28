@@ -53,36 +53,43 @@
             </div>
         </section>
         <section id="cards">
-            <div class="card-deck">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Atualizações gratuitas</h5>
-                        <ul>
-                            <li>Atualizações do mercado de criptomoedas.</li>
-                            <li>Entrevistas com líderes da indústria.</li>
-                            <li>Torne-se um profissional melhor.</li>
-                        </ul>
+            <div class="container">
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="views/img/Iconeroxo.png" class="icon-card" alt="Icone Card Roxo">
+                            <h5 class="card-title">Atualizações gratuitas</h5>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Atualizações do mercado de criptomoedas.</li>
+                                <li><i class="fas fa-check"></i> Entrevistas com líderes da indústria.</li>
+                                <li><i class="fas fa-check"></i> Torne-se um profissional melhor.</li>
+                            </ul>
+                            <a data-scroll class="btn btn-card" href="#cursos">EXPLORAR CURSOS</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Atualizações gratuitas</h5>
-                        <ul>
-                            <li>Atualizações do mercado de criptomoedas.</li>
-                            <li>Entrevistas com líderes da indústria.</li>
-                            <li>Torne-se um profissional melhor.</li>
-                        </ul>
-
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="views/img/Iconeroxo.png" class="icon-card" alt="Icone Card Roxo">
+                            <h5 class="card-title">Atualizações gratuitas</h5>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Atualizações do mercado de criptomoedas.</li>
+                                <li><i class="fas fa-check"></i> Entrevistas com líderes da indústria.</li>
+                                <li><i class="fas fa-check"></i> Torne-se um profissional melhor.</li>
+                            </ul>
+                            <a data-scroll class="btn btn-card" href="#cursos">EXPLORAR CURSOS</a>    
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Atualizações gratuitas</h5>
-                        <ul>
-                            <li>Atualizações do mercado de criptomoedas.</li>
-                            <li>Entrevistas com líderes da indústria.</li>
-                            <li>Torne-se um profissional melhor.</li>
-                        </ul>
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="views/img/Iconeroxo.png" class="icon-card" alt="Icone Card Roxo">
+                            <h5 class="card-title">Atualizações gratuitas</h5>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Atualizações do mercado de criptomoedas.</li>
+                                <li><i class="fas fa-check"></i> Entrevistas com líderes da indústria.</li>
+                                <li><i class="fas fa-check"></i> Torne-se um profissional melhor.</li>
+                            </ul>
+                            <a data-scroll class="btn btn-card" href="#cursos">EXPLORAR CURSOS</a>
+                        </div>
                     </div>
                 </div>
             </div>
