@@ -32,12 +32,18 @@
                             <img src="views/img/01 carrinho de compra.png" class="carrinho" alt="Carrinho de Compras">
                         </a>
                         </li>
-                        <li class="nav-item">
-                            <a data-scroll class="nav-link btn btn-academy" href="/?login">Entrar</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a data-scroll class="nav-link btn btn-academy" href="#academy">Academy</a>
-                        </li> -->
+                        <?php if(!isset($_SESSION['usuario'])): ?>
+                            <li class="nav-item">
+                                <a data-scroll class="nav-link btn btn-academy" href="/?login">Entrar</a>
+                            </li>
+                        <?php else: ?>
+                            <li class="nav-item">
+                                <a data-scroll class="nav-link btn btn-academy" href="/?perfil">Perfil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-scroll class="nav-link btn btn-academy" href="/?logout">Sair</a>
+                            </li>
+                        <?php endif; ?>
                     </ul>
                 </div>
             </div>
@@ -231,7 +237,7 @@
                                         </div>
                                         <div class="card-footer">
                                             <a data-scroll class="btn" href="#cursos"><img src="views/img/Olgo verde ícon.png" alt="Ver Curso"></a>
-                                            <a data-scroll class="btn btn-success text-white" href="#cursos">COMPRAR</a>
+                                            <a data-scroll class="btn btn-success text-white" href="/?carrinho">COMPRAR</a>
                                         </div>
                                     </div>
                                 </div>
@@ -244,7 +250,7 @@
                                         </div>
                                         <div class="card-footer">
                                             <a data-scroll class="btn" href="#cursos"><img src="views/img/Olgo verde ícon.png" alt="Ver Curso"></a>
-                                            <a data-scroll class="btn btn-success text-white" href="#cursos">COMPRAR</a>
+                                            <a data-scroll class="btn btn-success text-white" href="/?carrinho">COMPRAR</a>
                                         </div>
                                     </div>
                                 </div>
@@ -257,7 +263,7 @@
                                         </div>
                                         <div class="card-footer">
                                             <a data-scroll class="btn" href="#cursos"><img src="views/img/Olgo verde ícon.png" alt="Ver Curso"></a>
-                                            <a data-scroll class="btn btn-success text-white" href="#cursos">COMPRAR</a>
+                                            <a data-scroll class="btn btn-success text-white" href="/?carrinho">COMPRAR</a>
                                         </div>
                                     </div>
                                 </div>
@@ -270,7 +276,7 @@
                                         </div>
                                         <div class="card-footer">
                                             <a data-scroll class="btn" href="#cursos"><img src="views/img/Olgo verde ícon.png" alt="Ver Curso"></a>
-                                            <a data-scroll class="btn btn-success text-white" href="#cursos">COMPRAR</a>
+                                            <a data-scroll class="btn btn-success text-white" href="/?carrinho">COMPRAR</a>
                                         </div>
                                     </div>
                                 </div>
@@ -283,7 +289,7 @@
                                         </div>
                                         <div class="card-footer">
                                             <a data-scroll class="btn" href="#cursos"><img src="views/img/Olgo verde ícon.png" alt="Ver Curso"></a>
-                                            <a data-scroll class="btn btn-success text-white" href="#cursos">COMPRAR</a>
+                                            <a data-scroll class="btn btn-success text-white" href="/?carrinho">COMPRAR</a>
                                         </div>
                                     </div>
                                 </div>
@@ -296,7 +302,7 @@
                                         </div>
                                         <div class="card-footer">
                                             <a data-scroll class="btn" href="#cursos"><img src="views/img/Olgo verde ícon.png" alt="Ver Curso"></a>
-                                            <a data-scroll class="btn btn-success text-white" href="#cursos">COMPRAR</a>
+                                            <a data-scroll class="btn btn-success text-white" href="/?carrinho">COMPRAR</a>
                                         </div>
                                     </div>
                                 </div>
@@ -309,7 +315,7 @@
                                         </div>
                                         <div class="card-footer">
                                             <a data-scroll class="btn" href="#cursos"><img src="views/img/Olgo verde ícon.png" alt="Ver Curso"></a>
-                                            <a data-scroll class="btn btn-success text-white" href="#cursos">COMPRAR</a>
+                                            <a data-scroll class="btn btn-success text-white" href="/?carrinho">COMPRAR</a>
                                         </div>
                                     </div>
                                 </div>
@@ -322,7 +328,7 @@
                                         </div>
                                         <div class="card-footer">
                                             <a data-scroll class="btn" href="#cursos"><img src="views/img/Olgo verde ícon.png" alt="Ver Curso"></a>
-                                            <a data-scroll class="btn btn-success text-white" href="#cursos">COMPRAR</a>
+                                            <a data-scroll class="btn btn-success text-white" href="/?carrinho">COMPRAR</a>
                                         </div>
                                     </div>
                                 </div>
@@ -352,7 +358,7 @@
                                             <h5 class="card-title">Smartcities</h5>
                                         </div>
                                         <div class="card-footer">
-                                            <a data-scroll class="btn btn-success text-white" href="#cursos">CONHEÇA</a>
+                                            <a data-scroll class="btn btn-success text-white" href="/?embreveteste">CONHEÇA</a>
                                         </div>
                                     </div>
                                 </div>
@@ -364,7 +370,7 @@
                                             <h5 class="card-title">Agronegócio</h5>
                                         </div>
                                         <div class="card-footer">
-                                            <a data-scroll class="btn btn-success text-white" href="#cursos">CONHEÇA</a>
+                                            <a data-scroll class="btn btn-success text-white" href="/?embreveteste">CONHEÇA</a>
                                         </div>
                                     </div>
                                 </div>
@@ -376,7 +382,7 @@
                                             <h5 class="card-title">Saúde</h5>
                                         </div>
                                         <div class="card-footer">
-                                            <a data-scroll class="btn btn-success text-white" href="#cursos">CONHEÇA</a>
+                                            <a data-scroll class="btn btn-success text-white" href="/?embreveteste">CONHEÇA</a>
                                         </div>
                                     </div>
                                 </div>
@@ -388,7 +394,7 @@
                                             <h5 class="card-title">Indústria 4.0</h5>
                                         </div>
                                         <div class="card-footer">
-                                            <a data-scroll class="btn btn-success text-white" href="#cursos">CONHEÇA</a>
+                                            <a data-scroll class="btn btn-success text-white" href="/?embreveteste">CONHEÇA</a>
                                         </div>
                                     </div>
                                 </div>
@@ -399,9 +405,214 @@
                 </div>
             </div>
         </section>
+        <section id="modal">
+            <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header d-flex justify-content-between">
+                            <img src="views/img/LogoFusenav.svg" class="logonav" alt="Logo Fuse IoT">
+                            <h5 class="modal-title" id="modalLoginTitle">Login</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="erro"><?php if(isset($_SESSION['errologin'])) echo $_SESSION['errologin'] ?></p>
+                            <form action="/?login" method="post" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label for="email">E-mail:</label>
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Insira seu e-mail" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="senha">Senha:</label>
+                                    <input type="password" class="form-control" id="senha" name="senha" placeholder="Insira sua senha" minlength="8" required>
+                                </div>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-dismiss="modal">Fechar</button>
+                                <button type="submit" class="btn btn-sm btn-success">Login</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <p class="sub">Esqueceu a senha ou é novo? <a href="/?alterasenha">Clique aqui</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modalAltera" tabindex="-1" role="dialog" aria-labelledby="modalAlteraTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="views/img/LogoFusenav.svg" class="logonav" alt="Logo Fuse IoT">
+                            <h5 class="modal-title" id="modalAlteraTitle">Alterar Senha</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="erro"><?php if(isset($_SESSION['erroemail'])) echo $_SESSION['erroemail'] ?></p>
+                            <form action="/?novasenha" method="post" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label for="email">Informe o e-mail cadastrado:</label>
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Insira seu e-mail" required>
+                                </div>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-dismiss="modal">Fechar</button>
+                                <button type="submit" class="btn btn-sm btn-success">Alterar Senha</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                        <!-- <p class="sub">Lembrou a senha ou não é novo? <a href="/?logar">Clique aqui</a>.</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modalSenha" tabindex="-1" role="dialog" aria-labelledby="modalSenhaTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="views/img/LogoFusenav.svg" class="logonav" alt="Logo Fuse IoT">
+                            <h5 class="modal-title" id="modalSenhaTitle">Alterar Senha</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="erro"><?php if(isset($_SESSION['errosenha'])) echo $_SESSION['errosenha'] ?></p>
+                            <form action="/?login" method="post" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label for="senha">Nova Senha:</label>
+                                    <input type="password" class="form-control" id="senha" name="senha" placeholder="Insira a nova senha" minlength="8" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confsenha">Confirme a Senha:</label>
+                                    <input type="password" class="form-control" id="confsenha" name="confsenha" placeholder="Confirme a nova senha" minlength="8" required>
+                                </div>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-dismiss="modal">Fechar</button>
+                                <button type="submit" class="btn btn-sm btn-success">Alterar Senha</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                        <!-- <p class="sub">Lembrou a senha ou não é novo? <a href="/?logar">Clique aqui</a>.</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modalEmBreve" tabindex="-1" role="dialog" aria-labelledby="modalEmBreveTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header d-flex justify-content-between">
+                            <img src="views/img/LogoFusenav.svg" class="logonav" alt="Logo Fuse IoT">
+                            <h5 class="modal-title" id="modalEmBreveTitle">Em breve <span class="logofuse">fuse | <span class="logoiot">IoT</span></span> Academy</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <img class="logo-footer" src="views/img/Logo Fuse IoT Academy_branco.png" alt="Logo Fuse IoT Academy">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="tel:+551142008282">
+                                <i class="fas fa-phone-alt mr-2"></i>
+                                +55 11 4200 - 8282
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mailto:contato@fuseiot.io">
+                                <i class="far fa-envelope mr-2"></i>
+                                contato@fuseiot.io
+                            </a>
+                        </li>
+                    </ul>
+                    <nav class="nav">
+                        <a class="nav-link" href="https://www.linkedin.com/company/fuseiot/" target="_blank"><img class="social-logo" src="views/img/linkedin.svg" alt="Logo LinkedIn"></img></a>
+                        <a class="nav-link" href="https://www.youtube.com/c/fuseiotacademy" target="_blank"><img class="social-logo" src="views/img/youtube.svg" alt="Logo YouTube"></img></a>
+                        <a class="nav-link" href="https://www.instagram.com/fuseiotacademy/" target="_blank"><img class="social-logo" src="views/img/instagram.svg" alt="Logo Instagram"></img></a>
+                        <a class="nav-link" href="https://www.facebook.com/fuseiotacademy/" target="_blank"><img class="social-logo" src="views/img/facebook.svg" alt="Logo Facebook"></img></a>
+                        <a class="nav-link" href="https://www.tiktok.com/@fuseiotacademy" target="_blank"><img class="social-logo" src="views/img/tiktok.svg" alt="Logo TikTok"></img></a>
+                    </nav>
+                </div>
+                <div class="col">
+                    <a class="titulo-footer" href="#">COMPANHIA</a>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Torne-se Professor</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <a class="titulo-footer" href="#">LIGAÇÕES</a>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Perguntas Frequentes</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <a class="titulo-footer" href="#">APOIO, SUPORTE</a>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Documentação</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fóruns</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pacotes de Idiomas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Status da Versão</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <a class="titulo-footer" href="#">RECOMENDAR</a>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">WordPress</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LearnPress</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">WooCommerce</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">bbPres</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -412,33 +623,35 @@
     <script src="./views/js/tab.js"></script>
     <script src="./views/js/youtubescriptLP.js"></script>
     <?php
-        // if(isset($_SESSION['modalInfo'])){
-        //     if(($_SESSION['mailresult'] == "") && ($_SESSION['ErrorInfo'] == "")){
-        //         echo "<script>$('#modalInfo').modal('show');</script>";
-        //         unset($_SESSION['modalInfo']);
-        //     }else{
-        //         echo "<script>$('#modalInfo').modal('hide');</script>";
-        //         unset($_SESSION['modalInfo']);
-        //     }
-        // }
-
-        if(isset($_SESSION['mailresult'])){
-            if($_SESSION['mailresult'] != ""){
-                echo "<script>$('#modalOk').modal('show');</script>";
-                unset($_SESSION['mailresult']);
+        if($_SESSION['errologin'] != ""){
+            if($_SESSION['errologin'] == "logar"){
+                $_SESSION['errologin'] = "";
+                echo "<script>$('#modalLogin').modal('show');</script>";
             }else{
-                echo "<script>$('#modalInfo').modal('hide');</script>";
-                unset($_SESSION['modalInfo']);
+                echo "<script>$('#modalLogin').modal('show');</script>";
+            }
+        }
+        if(isset($_SESSION['alterasenha'])){
+            if($_SESSION['alterasenha'] == "email"){
+                echo "<script>$('#modalAltera').modal('show');</script>";
+                unset($_SESSION['alterasenha']);
+            }
+            if($_SESSION['alterasenha'] == "senha"){
+                echo "<script>$('#modalSenha').modal('show');</script>";
+                unset($_SESSION['alterasenha']);
+            }
+        }
+        if(isset($_SESSION['abreLogin'])){
+            if($_SESSION['abreLogin'] == "login"){
+                echo "<script>$('#modalLogin').modal('show');</script>";
+                unset($_SESSION['abreLogin']);
             }
         }
 
-        if(isset($_SESSION['ErrorInfo'])){
-            if($_SESSION['ErrorInfo'] != ""){
-                echo "<script>$('#modalErro').modal('show');</script>";
-                unset($_SESSION['ErrorInfo']);
-            }else{
-                echo "<script>$('#modalInfo').modal('hide');</script>";
-                unset($_SESSION['modalInfo']);
+        if(isset($_SESSION['emBreve'])){
+            if($_SESSION['emBreve'] == "abre"){
+                echo "<script>$('#modalEmBreve').modal('show');</script>";
+                unset($_SESSION['emBreve']);
             }
         }
     ?>

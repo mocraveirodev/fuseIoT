@@ -11,9 +11,9 @@
                 case "login":
                     $this->loginUsuario();
                 break;
-                case "logar":
-                    $this->logarModal();
-                break;
+                // case "logar":
+                //     $this->logarModal();
+                // break;
                 case "alterasenha":
                     $this->alteraSenha();
                 break;
@@ -26,12 +26,15 @@
                 case "embreve":
                     $this->emBreve();
                 break;
+                case "embreveteste":
+                    $this->emBreveTeste();
+                break;
             }
         }
 
         private function loginUsuario(){
             if(isset($_SESSION['usuario'])){
-                    header('Location:/?homecurso');
+                echo "<script>window.location.href = '/?homecurso';</script>";
             }
 
             if($_POST['confsenha']){
@@ -47,7 +50,8 @@
                         $_SESSION['alterasenha'] = "";
                         $_SESSION['abreLogin'] = "";
                         $_SESSION['emBreve'] = "";
-                        header('Location:/?academy');
+                        // echo "<script>window.location.href = '/?fuseiotacademy';</script>";
+                        echo "<script>window.location.href = '/?teste';</script>";
                     }else{
                         $_SESSION['errologin'] = "";
                         $_SESSION['erroemail'] = "";
@@ -55,7 +59,8 @@
                         $_SESSION['errosenha'] = "Senha não alterada! Tente de novo.";
                         $_SESSION['abreLogin'] = "";
                         $_SESSION['emBreve'] = "";
-                        header('Location:/?academy');
+                        // echo "<script>window.location.href = '/?fuseiotacademy';</script>";
+                        echo "<script>window.location.href = '/?teste';</script>";
                     }
                 }else{
                     $_SESSION['errologin'] = "";
@@ -64,7 +69,8 @@
                     $_SESSION['errosenha'] = "Senha digitadas não conferem!";
                     $_SESSION['abreLogin'] = "";
                     $_SESSION['emBreve'] = "";
-                    header('Location:/?academy');
+                    // echo "<script>window.location.href = '/?fuseiotacademy';</script>";
+                    echo "<script>window.location.href = '/?teste';</script>";
                 }
             }else{
                 if(isset($_POST['email'])){
@@ -77,7 +83,8 @@
                     $_SESSION['errosenha'] = "";
                     $_SESSION['abreLogin'] = "login";
                     $_SESSION['emBreve'] = "";
-                    header('Location:/?academy');
+                    // echo "<script>window.location.href = '/?fuseiotacademy';</script>";
+                    echo "<script>window.location.href = '/?teste';</script>";
                 }
             }
         }
@@ -101,7 +108,8 @@
                     $_SESSION['alterasenha'] = "";
                     $_SESSION['abreLogin'] = "";
                     $_SESSION['emBreve'] = "";
-                    header('Location:/?academy');
+                    // echo "<script>window.location.href = '/?fuseiotacademy';</script>";
+                    echo "<script>window.location.href = '/?teste';</script>";
                 }
             }else{
                 $_SESSION['errologin'] = "logar";
@@ -110,13 +118,14 @@
                 $_SESSION['alterasenha'] = "";
                 $_SESSION['abreLogin'] = "";
                 $_SESSION['emBreve'] = "";
-                header('Location:/?academy');
+                // echo "<script>window.location.href = '/?fuseiotacademy';</script>";
+                echo "<script>window.location.href = '/?teste';</script>";
             }
         }
 
-        private function logarModal(){
-            $_SESSION['errologin'] = "";
-        }
+        // private function logarModal(){
+        //     $_SESSION['errologin'] = "";
+        // }
 
         private function validaUsuario($email,$senha){
             $db = new Usuario();
@@ -133,7 +142,8 @@
             $_SESSION['errosenha'] = "";
             $_SESSION['abreLogin'] = "";
             $_SESSION['emBreve'] = "";
-            header('Location:/?academy');
+            // echo "<script>window.location.href = '/?fuseiotacademy';</script>";
+            echo "<script>window.location.href = '/?teste';</script>";
         }
 
         private function novaSenha(){
@@ -148,7 +158,8 @@
                 $_SESSION['alterasenha'] = "senha";
                 $_SESSION['abreLogin'] = "";
                 $_SESSION['emBreve'] = "";
-                header('Location:/?academy');
+                // echo "<script>window.location.href = '/?fuseiotacademy';</script>";
+                echo "<script>window.location.href = '/?teste';</script>";
             }else{
                 $_SESSION['alterasenha'] = "email";
                 $_SESSION['errologin'] = "";
@@ -156,14 +167,16 @@
                 $_SESSION['erroemail'] = "Email incorreto ou não cadastrado!";
                 $_SESSION['abreLogin'] = "";
                 $_SESSION['emBreve'] = "";
-                header('Location:/?academy');
+                // echo "<script>window.location.href = '/?fuseiotacademy';</script>";
+                echo "<script>window.location.href = '/?teste';</script>";
             }
         }
 
         private function deslogarUsuario(){
             session_gc();
             session_destroy();
-            header('Location:/?');
+            // echo "<script>window.location.href = '/?fuseiotacademy';</script>";
+            echo "<script>window.location.href = '/';</script>";
         }
 
         private function registrarUsuario(){
@@ -183,7 +196,7 @@
                 include "views/cadastrado.php";
             }else{
                 $_SESSION['invalido'] = "Não foi possivel cadastrar o usuario! Verifique os dados e tente novamente.";
-                header('Location:/?cadastrousuario');
+                echo "<script>window.location.href = '/?cadastrousuario';</script>";
             }
         }
 
@@ -201,6 +214,17 @@
             $_SESSION['abreLogin'] = "";
             $_SESSION['emBreve'] = "abre";
             echo "<script>window.location.href = '/?fuseiotacademy';</script>";
+        }
+
+        private function emBreveTeste(){
+            $_SESSION['altera'] = "";
+            $_SESSION['errologin'] = "";
+            $_SESSION['errosenha'] = "";
+            $_SESSION['erroemail'] = "";
+            $_SESSION['alterasenha'] = "";
+            $_SESSION['abreLogin'] = "";
+            $_SESSION['emBreve'] = "abre";
+            echo "<script>window.location.href = '/?teste';</script>";
         }
     }
 ?>
