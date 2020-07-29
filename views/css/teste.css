@@ -60,6 +60,18 @@
     vertical-align:middle;
 }
 
+main .logofuse{
+    /* color: #323e48; */
+    font-family: roboto-bold, sans-serif;
+    font-size: 100%;
+}
+
+main .logoiot{
+    /* color: #323e48; */
+    font-family: roboto-regular, sans-serif;
+    font-size: 80%;
+}
+
 header .navbar{
     box-shadow: 0 0.5rem 0.5rem 0 rgba(0,0,0,0.4);
 }
@@ -74,7 +86,7 @@ header .navbar-light .navbar-nav .nav-link{
 }
 
 header .header-logo{
-    width: 15rem;
+    width: auto;
     height: 5rem;
 }
 
@@ -106,6 +118,7 @@ header .carrinho:hover{
     font-family: roboto-bold, sans-serif;
     font-size: 4rem;
     margin-bottom: 2rem;
+    vertical-align: bottom;
 }
 
 #banner .sub-banner{
@@ -213,10 +226,168 @@ header .carrinho:hover{
 
 #tema{
     color: #191816;
+    padding: 2rem 0;
 }
 
 #tema .titulo-tema{
-    /* font-family: roboto-bold, sans-serif; */
     font-size: 2rem;
-    padding-top: 2rem;
+}
+
+#tema ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+#tema ul li{
+    color: #191816;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+#tema .imgtabbtn{
+    width: 60%;
+    height: auto;
+}
+
+#tema .borda{
+    width: 100%;
+    display: flex;
+}
+
+#tema .temacontent{
+    display: none;
+}
+
+#tema #ideacao{
+    display: block;
+}
+
+#tema .seta{
+    border-top: 1px solid #EEEEEE;
+    height: 2rem;
+    width: 25%;
+    position:relative;
+}
+
+#tema .top{
+    border-top: 1px solid #4181FD;
+}
+
+#tema .arrow{
+	position:absolute;
+	font-size: 0;
+	line-height: 0;
+	width: 0; 
+	height: 0; 
+	z-index:1000;
+	border:solid transparent;
+}
+#tema .down, #tema .down-b {
+	left:50%;
+	border-width: 1.3rem;
+	top:-1px;
+	margin-left:-1.3rem;
+	border-top-color: #4181FD;
+	border-bottom-width:0;
+}		
+#tema .down-b {
+	border-width:1.2rem;
+	top:-2px;
+	margin-left:-1.2rem;
+	border-top-color: #fff;
+	border-bottom-width:0;
+}
+
+#tema .content{
+    width: 100%;
+    display: flex;
+}
+
+#tema .temaimg{
+    width: 40%;
+    height: auto;
+}
+
+#tema .imgtab{
+    width: 100%;
+    height: auto;
+}
+
+#tema .tematexto{
+    width: 60%;
+    height: auto;
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tema .tematexto p{
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+#tema .textotab{
+    font-family: roboto-light, sans-serif;
+    color: #8D8AA5;
+}
+
+#cursos .azul{
+    width: 1rem;
+    height: 50%;
+    background-color: #2933AF;
+}
+
+#cursos .titulo-cursos{
+    font-size: 2rem;
+    color: #2933AF;
+}
+
+#cursos .card-img-top{
+    width: 100%;
+    height: 10rem;
+}
+
+#cursos .card-title{
+    margin: 0;
+}
+
+#cursos .card-footer{
+    text-align: right;
+}
+
+#cursos .btn{
+    border-radius: 0;
+    /* margin: 0 0.5rem; */
+    padding: 0;
+}
+
+#cursos .btn-success{
+    padding: 0.5rem 1rem;
+    font-family: roboto-light, sans-serif;
+    font-size: 0.8rem;
+}
+
+#cursos .card-footer a img{
+    width: 3rem;
+    height: 3rem;
+}
+
+#tema{
+    color: #191816;
+    padding: 2rem 0;
+}
+
+#tema .titulo-especializacao{
+    font-size: 2rem;
+}
+
+footer{
+    background-color: #111111;
 }
