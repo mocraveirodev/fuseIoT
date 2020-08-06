@@ -1,0 +1,146 @@
+/* ==========================================| MENU |========================================== */
+
+@media only screen and (max-width: 768px) {
+    header .navbar-nav{
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    header .navbar-light .navbar-nav .nav-link{
+        padding: 0.5rem;
+    }
+}
+
+/* ==========================================| BANNER |========================================== */
+
+@media only screen and (max-width: 992px) {
+    #banner{
+        height: 70vh;
+    }
+
+    #banner .text-banner{
+        padding: 10vh 10vw;
+    }
+
+    #banner .titulo-banner{
+        font-size: 3rem;
+    }
+
+    #banner .sub-banner{
+        padding-right: 10%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #banner{
+        height: 65vh;
+    }
+
+    #banner .text-banner{
+        padding: 5vh 10vw;
+    }
+
+    #banner .titulo-banner{
+        font-size: 2.5rem;
+    }
+
+    #banner .sub-banner{
+        padding-right: 5%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #banner{
+        height: 85vh;
+    }
+
+    #banner .titulo-banner{
+        font-size: 2rem;
+    }
+
+    #banner .sub-banner{
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #banner{
+        height: 65vh;
+    }
+
+    #banner .text-banner{
+        padding: 5vh 5vw;
+    }
+
+    #banner .titulo-banner{
+        font-size: 1.5rem;
+    }
+    
+    #banner .btn-banner{
+        margin-right: 0.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* ==========================================| SOBRE |========================================== */
+
+@media only screen and (max-width: 992px) {
+    #sobre .card{
+        margin: 0.5rem;
+    }
+
+    #sobre .card-body{
+        padding: 0;
+    }
+
+    #sobre ul{
+        margin-bottom: 1rem;
+        padding-inline-start: 0;
+    }
+
+    #sobre .player{
+        width: 100%;
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #sobre .player{
+        height: 45vh;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #sobre .card-deck{
+        flex-direction: column;
+        padding: 0 5rem;
+    }
+
+    #sobre .card{
+        padding: 3rem;
+    }
+
+    #sobre ul{
+        margin-bottom: 2rem;
+    }
+
+    #sobre .player{
+        height: 35vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #sobre .card-deck{
+        padding: 0 1rem;
+    }
+
+    #sobre .card{
+        padding: 2rem;
+    }
+
+    #sobre .player{
+        height: 25vh;
+    }
+}
+
+/* ==========================================| TEMA |========================================== */

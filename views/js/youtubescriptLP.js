@@ -7,9 +7,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-        height: '360',
-        width: '655',
-        videoId: 'fbnrqx5MCo0',
+        videoId: 'ra1TCcs20kA',
         playerVars: {'rel': 0, 'enablejsapi': 1, 'modestbranding': 1, 'showinfo': 0},
         events: {
         'onReady': onPlayerReady,
@@ -20,6 +18,8 @@ function onYouTubeIframeAPIReady() {
 
 function onPlayerReady(event) {
     event.target.setVolume(100);
+    let iframe = document.querySelector("iframe");
+    iframe.classList.add('player');
 }
 
 function onPlayerStateChange(event) {

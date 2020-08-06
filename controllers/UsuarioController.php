@@ -34,7 +34,7 @@
 
         private function loginUsuario(){
             if(isset($_SESSION['usuario'])){
-                echo "<script>window.location.href = '/?homecurso';</script>";
+                echo "<script>window.location.href = '/?curso';</script>";
             }
 
             if($_POST['confsenha']){
@@ -100,7 +100,9 @@
                     $_SESSION['cursos'] = $curso->listarCursos();
                     $_SESSION['aulas'] = $curso->listarAulas();
                     $user->ultimoLogin($_SESSION['usuario']->id_usuario);
-                    header('Location:/?homecurso');
+                    $_SESSION['qtdlogin'] = $user->recuperaLogin($_SESSION['usuario']->id_usuario);
+                    $_SESSION['progresso'] = $user->recuperaProgresso($_SESSION['usuario']->id_usuario);
+                    echo "<script>window.location.href = '/?curso';</script>";
                 }else{
                     $_SESSION['errologin'] = "Email e/ou senha incorretos!";
                     $_SESSION['erroemail'] = "";
@@ -175,8 +177,7 @@
         private function deslogarUsuario(){
             session_gc();
             session_destroy();
-            // echo "<script>window.location.href = '/?fuseiotacademy';</script>";
-            echo "<script>window.location.href = '/';</script>";
+            echo "<script>window.location.href = '/?teste';</script>";
         }
 
         private function registrarUsuario(){

@@ -50,14 +50,11 @@
 /* ==========================================| GERAL |========================================== */
 
 *{
-    margin: 0;
-    padding: 0;
     font-family: roboto-medium, sans-serif;
     font-size: 16px;
     box-sizing: border-box;
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
-    vertical-align:middle;
 }
 
 main .logofuse{
@@ -72,8 +69,14 @@ main .logoiot{
     font-size: 80%;
 }
 
+/* ==========================================| MENU |========================================== */
+
 header .navbar{
     box-shadow: 0 0.5rem 0.5rem 0 rgba(0,0,0,0.4);
+}
+
+header .navbar-collapse{
+    justify-content: flex-end;
 }
 
 header .navbar-nav{
@@ -107,6 +110,8 @@ header .carrinho:hover{
     border: 1px solid #EC5252;
 }
 
+/* ==========================================| BANNER |========================================== */
+
 #banner{
     background: url('../img/Banner IOT.jpg') no-repeat center center;
     background-size: cover;
@@ -126,7 +131,7 @@ header .carrinho:hover{
     font-size: 1.2rem;
     padding-right: 20%;
     margin-bottom: 2rem;
-
+    text-align: justify;
 }
 
 #banner .text-banner{
@@ -146,6 +151,8 @@ header .carrinho:hover{
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
 }
+
+/* ==========================================| SOBRE |========================================== */
 
 #sobre{
     background-color: #9A6E17;
@@ -193,6 +200,7 @@ header .carrinho:hover{
 #sobre ul{
     list-style: none;
     margin-bottom: 2rem;
+    padding-inline-start: 0;
 }
 
 #sobre ul li svg{
@@ -219,10 +227,17 @@ header .carrinho:hover{
     padding: 2.5rem;
 }
 
+#sobre .player{
+    width: 50%;
+    height: 45vh;
+}
+
 #sobre .texto-sobre, #tema .texto-tema{
     text-align: justify;
     padding: 2rem 0;
 }
+
+/* ==========================================| TEMA |========================================== */
 
 #tema{
     color: #191816;

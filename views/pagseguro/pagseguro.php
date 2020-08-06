@@ -18,12 +18,20 @@
     <span class="endereco" data-endereco="<?= URL ?>"></span>
     <span id="msg"></span>
 
-    <form action="" method="post">
+    <form action="" method="post" id="formpagamento">
         <label for="numcartao">Numero do Cartão</label>
-        <input type="text" name="numcartao" id="numcartao">
+        <input type="text" name="numcartao" id="numcartao"> <br>
+        <label for="qtdParcelas">Quantidade de Parcelas</label>
         <select name="qtdParcelas" id="qtdParcelas" class="select-qtdParcelas">
             <option value="">Selecione</option>
-        </select>
+        </select> <br>
+        <label for="numcartao">Valor da Parcela</label>
+        <input type="text" name="valorparcela" id="valorparcela"> <br>
+        <label for="numcartao">Token do Cartão</label>
+        <input type="text" name="tokencartao" id="tokencartao"> <br>
+        <label for="numcartao">Identificador com os dados do comprador</label>
+        <input type="text" name="hashcartao" id="hashcartao"> <br>
+        <input type="submit" value="Comprar" class="btncomprar" id="btncomprar">
     </form>
     <div class="band-cartao"></div>
 

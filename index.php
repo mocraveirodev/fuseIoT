@@ -32,11 +32,11 @@
             $controller = new AcademyController();
             $controller->acao($rotas);
         break;
-        // case "goacademy":
-        //     include "controllers/AcademyController.php";
-        //     $controller = new AcademyController();
-        //     $controller->acao($rotas);
-        // break;
+        case "curso":
+            include "controllers/AcademyController.php";
+            $controller = new AcademyController();
+            $controller->acao($rotas);
+        break;
         case "homecurso":
             include "controllers/AcademyController.php";
             $controller = new AcademyController();

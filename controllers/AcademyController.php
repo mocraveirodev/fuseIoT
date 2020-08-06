@@ -13,6 +13,9 @@
                 case "homecurso":
                     $this->viewHomeCurso();
                 break;
+                case "curso":
+                    $this->viewCurso();
+                break;
                 case "conceitosbasicos":
                     $this->viewConceitosBasicos();
                 break;
@@ -31,13 +34,26 @@
 
         private function viewHomeCurso(){
             if(isset($_SESSION['usuario'])){
-                $_SESSION['errologin'] = "";
-                $_SESSION['erroemail'] = "";
-                $_SESSION['errosenha'] = "";
-                $_SESSION['alterasenha'] = "";
+                unset($_SESSION['errologin']);
+                unset($_SESSION['erroemail']);
+                unset($_SESSION['errosenha']);
+                unset($_SESSION['alterasenha']);
+                $_SESSION['title'] = "fuse | IoT Academy";
                 include "views/academy/homecurso.php";
             }else{
-                header('Location:/?login');
+                echo "<script>window.location.href = '/?login';</script>";
+            }
+        }
+        private function viewCurso(){
+            if(isset($_SESSION['usuario'])){
+                unset($_SESSION['errologin']);
+                unset($_SESSION['erroemail']);
+                unset($_SESSION['errosenha']);
+                unset($_SESSION['alterasenha']);
+                $_SESSION['title'] = "fuse | IoT Academy";
+                include "views/academy/curso.php";
+            }else{
+                echo "<script>window.location.href = '/?login';</script>";
             }
         }
 

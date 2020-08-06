@@ -56,6 +56,7 @@
             $empresaContato = $_POST['empresa'];
             $mensagemContato = $_POST['message'];
 
+            //trocar pra switch case
             if($_POST['from'] == "iottalks@fuseiot.io"){
                 $nameFrom = 'Inscrição IoT Talks';
                 $message = "Recebemos uma Inscrição para o IoT Talks!<br><br><strong>Nome:</strong> $nomeContato<br/><strong>E-mail:</strong> $mailContato<br/><strong>Telefone:</strong> $telefoneContato<br/><strong>Empresa:</strong> $empresaContato";

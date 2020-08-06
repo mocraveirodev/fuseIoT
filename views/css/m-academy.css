@@ -1,0 +1,12 @@
+/* ==========================================| MENU |========================================== */
+
+@media only screen and (max-width: 768px) {
+    header .navbar-nav{
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    header .navbar-light .navbar-nav .nav-link{
+        padding: 0.5rem;
+    }
+}

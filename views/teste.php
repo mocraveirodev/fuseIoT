@@ -8,29 +8,33 @@
     <meta name="keywords" content="IoT,Internet of Things,Internet das Coisas,Inteligência artificial,Big Data,Analytics,Hardware,Conectividade,Segurança">
     <meta name="author" content="Monica Craveiro">
     <title><?= $_SESSION['title'] ?></title>
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="views/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="views/img/favicon.ico" type="image/x-icon">
+    <!-- RESET CSS -->
+    <!-- <link rel="stylesheet" href="views/css/reset.css"> -->
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- FONT AWESOME -->
-    <script src="https://kit.fontawesome.com/3e0edc3a21.js" crossorigin="anonymous"></script>
-    <!-- CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- CSS PERSONALIZADO-->
     <link rel="stylesheet" href="views/css/teste.css">
+    <link rel="stylesheet" href="views/css/m-teste.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="100">
+<body>
     <header id="header-academy">
-    <nav data-scroll-header class="navbar navbar-expand-lg bg-light navbar-light">
+        <nav data-scroll-header class="navbar navbar-expand-lg bg-light navbar-light">
             <div class="container">
-                <a data-scroll class="navbar-brand" href="#header"><img class="header-logo" src="views/img/Logo Fuse IoT Academy.png" alt="Logo Fuse IoT Academy"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <a data-scroll class="navbar-brand" href="#header-academy"><img class="header-logo" src="views/img/Logo Fuse IoT Academy.png" alt="Logo Fuse IoT Academy"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarAcademy" aria-controls="navbarAcademy" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse" id="navbarAcademy">
+                <ul class="navbar-nav">
                         <li class="nav-item">
-                        <a class=" nav-link btn" href="/?carrinho" role="button">
-                            <img src="views/img/01 carrinho de compra.png" class="carrinho" alt="Carrinho de Compras">
-                        </a>
+                            <a class=" nav-link btn" href="/?carrinho" role="button">
+                                <img src="views/img/01 carrinho de compra.png" class="carrinho" alt="Carrinho de Compras">
+                            </a>
                         </li>
                         <?php if(!isset($_SESSION['usuario'])): ?>
                             <li class="nav-item">
@@ -56,7 +60,7 @@
                 <p class="sub-banner">Queremos habilitar o aluno para entender toda a cadeia de valor de IoT, fornecendo uma base sólida de conhecimento para a entrega de um produto final com qualidade e competitividade.</p>
                 <a data-scroll class="btn btn-banner" href="#cursos">NOSSOS CURSOS</a>
                 <a data-scroll class="btn btn-banner" href="#especializacoes">ESPECIALIZAÇÕES</a>
-            </div>
+            </div> 
         </section>
         <section id="sobre">
             <div class="container">
@@ -622,6 +626,7 @@
     <script src="./views/js/smoothscroll.js"></script>
     <script src="./views/js/tab.js"></script>
     <script src="./views/js/youtubescriptLP.js"></script>
+
     <?php
         if($_SESSION['errologin'] != ""){
             if($_SESSION['errologin'] == "logar"){

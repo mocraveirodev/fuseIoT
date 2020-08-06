@@ -41,7 +41,7 @@ function listarMeiospag(){
             // Callback para chamadas que falharam.
         },
         complete: function(retorno) {
-            // Callback para todas chamadas.
+            // recupTokenCartao();
         }
     });
 }
@@ -76,9 +76,11 @@ function recupParcelas(bandeira){
         maxInstallmentNoInterest: 3,
         brand: bandeira,
         success: function(retorno){
+            // console.log(retorno);
             $.each(retorno.installments, function(ia, obja){
                 $.each(obja, function(ib, objb){
-                    console.log(objb);
+                    // console.log(objb);
+                    $("#qtdParcelas").show().append("<option value='" + objb.quantity + "' data-parcela='" + objb.installmentAmount + "'>" + objb.quantity + " parcelas de R$ " + objb.installmentAmount.toLocaleString("pt-BR") + "</option>");
                 });
             });
         },
@@ -88,5 +90,41 @@ function recupParcelas(bandeira){
         complete: function(retorno){
             // Callback para todas chamadas.
         }
-});
+    });
 }
+
+$("#qtdParcelas").change(function(){
+    $("#valorparcela").val($("#qtdParcelas").find('selected').attr('data-parcela'));
+});
+
+$("#formpagamento").on("submit", function(event){
+    event.preventDefault();
+
+    PagSeguroDirectPayment.createCardToken({
+        cardNumber: '4111111111111111', // Número do cartão de crédito
+        brand: 'visa', // Bandeira do cartão
+        cvv: '123', // CVV do cartão
+        expirationMonth: '12', // Mês da expiração do cartão
+        expirationYear: '2030', // Ano da expiração do cartão, é necessário os 4 dígitos.
+        success: function(retorno) {
+            // console.log(retorno);
+            $("#tokencartao").val(retorno.card.token);
+        },
+        error: function(retorno) {
+                 // Callback para chamadas que falharam.
+        },
+        complete: function(retorno) {
+             // Callback para todas chamadas.
+        }
+    });
+    
+    PagSeguroDirectPayment.onSenderHashReady(function(retorno){
+        // if(retorno.status == 'error') {
+        //     console.log(retorno.message);
+        //     return false;
+        // }
+        // var hash = retorno.senderHash; //Hash estará disponível nesta variável.
+        // console.log(retorno.senderHash); //Hash estará disponível nesta variável.
+        $("#hashcartao").val(retorno.senderHash);
+    });
+});

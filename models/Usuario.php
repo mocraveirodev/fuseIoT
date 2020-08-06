@@ -72,6 +72,15 @@
             return $resultado;
         }
 
+        public function recuperaLogin($id_usuario){
+            $db = parent::criarConexao();
+            $query = $db->prepare("SELECT COUNT(*) FROM fuseiot.login WHERE id_usuario = :id_usuario");
+            $query->bindValue(":id_usuario", $id_usuario);
+            $query->execute();
+            $resultado = $query->fetchColumn();
+            return $resultado;
+        }
+
         public function cadastrarProgresso($id,$progresso){
             $db = parent::criarConexao();
             $query = $db->prepare("INSERT INTO progresso (id_usuario,progresso) VALUES (:id,:progresso)");
