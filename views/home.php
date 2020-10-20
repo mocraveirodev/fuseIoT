@@ -129,9 +129,11 @@
             </div>
         </section>
         <section id="academy">
-            <img src="views/img/Logo Cima Letras Branco.png" class="academy" alt="Logo Fuse IoT Academy">
-            <p>Dare the status. Innovate with us.</p>
-            <a href="/?fuseiotacademy" class="btn btn-padrao btn-academy btn-success">Conheça a fuse | Academy</a>
+            <div class="text-banner">
+                <h1 class="titulo-banner">Conheça a <span class="logofuse">fuse <span class="logoiot">IoT</span></span> Academy</h1>
+                <p class="sub-banner">INOVAÇÃO QUE GERA RESULTADOS.</p>
+                <a href="https://academy.fuseiot.io/" class="btn btn-banner" target="_blank">Saiba mais</a>
+            </div>
         </section>
         <section id="naoEncontrou">
             <div class="naoEncontrou">

@@ -235,23 +235,58 @@ header .navbar-nav{
 /* ==========================================| ACADEMY |========================================== */
 
 #academy{
-    background: url('../img/fuseacademy.jpg') no-repeat center center;
+    background: url('../img/banneracademy.jpg') no-repeat center center;
     background-size: cover;
     height: 80vh;
+    position: relative;
+}
+
+#academy .text-banner{
+    background: rgba(0,0,0,0.6);
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    padding: 20vh 10vw;
 }
 
-.btn-academy{
-    font-size: 1.5rem;
-    margin-right: 6rem!important;
-    margin-top: 15rem!important;
+#academy .titulo-banner{
+    font-family: roboto-bold, sans-serif;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    vertical-align: bottom;    
+    color: #fff;
 }
 
-#academy .academy, #academy p{
-    display: none;
+#academy span{
+    color: #fff;
+}
+
+#academy .sub-banner{
+    font-family: lato-bold, sans-serif;
+    font-size: 1.2rem;
+    padding-right: 20%;
+    margin-bottom: 2rem;
+    text-align: justify;
+    color: #fff;
+}
+
+#academy .text-banner{
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    padding: 20vh 10vw;
+    color: #fff;
+}
+
+#academy .btn-banner{
+    background-color: #9A6E17;
+    color: #fff;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
 }
 
 
