@@ -147,51 +147,25 @@
 
 /* ==========================================| ACADEMY |========================================== */
 
-@media only screen and (max-width: 992px) {
-    .btn-academy{
-        margin-right: 2rem!important;
-        margin-top: 7rem!important;
-    }
-}
 @media only screen and (max-width: 768px) {
-    #academy{
-        background: url('../img/bgpub.jpeg') no-repeat center center;
-        background-size: cover;
-        flex-direction: column;
-        /* align-items: center; */
-        justify-content: center;
-    }
-
-    #academy .academy{
-        display: block;
-        width: 50%;
-        height: 50%;
-    }
-
-    #academy p{
-        color: #fff;
-        font-family: roboto-bold, sans-serif;
-        font-size: 2rem;
-    }
-
-    .btn-academy{
-        margin-right: 0!important;
-        margin-top: 3rem!important;
+    #academy .titulo-banner{
+        font-size: 3rem;
     }
 }
+
 @media only screen and (max-width: 576px) {
-    #academy .academy{
-        height: 40%;
+    #academy .titulo-banner{
+        font-size: 2rem;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    #academy .academy{
-        height: 30%;
-    }
-
-    #academy p{
+    #academy .titulo-banner{
         font-size: 1.5rem;
+    }
+    
+    #academy .sub-banner{
+        font-size: 0.9rem;
     }
 }
 
